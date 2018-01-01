@@ -76,10 +76,10 @@
                 My Account
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="#">Check Out</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
            </ul>
@@ -87,13 +87,62 @@
         </div> <!-- Container Div -->
       </nav>
 
-      <div class="container">
-         <div class="row">
-            <div class="col-md-12">
+      <!--BODY-->
+      <div class="container-fluid text-center">
                <img src="{{ URL::asset('images/sizeMatters.png')}}">
-            </div>
-         </div>
       </div>
+
+
+
+    <!--Footer-->
+<footer class="page-footer center-on-small-only bg-dark text-white">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-6">
+                <h5 class="title text-muted">GET IN TOUCH</h5>
+                <p>This is handmade quality shit we are talking about!!!!<br/>
+                   <br/>
+                   (555)867-5309<br/>
+                   <br/>
+                    JH2 GIGS<br/>
+                    1000 HUN LN<br/>
+                    GROVE, OK 74344</p>
+            </div>
+            <!--/.First column-->
+
+            <!--Second column-->
+            <div class="col-md-2 mx-auto">
+                <h5 class="title text-muted">EXPLORE</h5>
+                <ul>
+                    <li class="text-white"><a href="/myStory">MY STORY</a></li>
+                    <li><a href="/">SERVICES</a></li>
+                    <li><a href="/">CONTACT</a></li>
+                    <li><a href="/">STAY CONNECTED</a></li>
+                </ul>
+            </div>
+            <!--/.Second column-->
+        </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid ">
+            <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
+            <a href="https://www.JH2Gigs.com"> JH2Gigs.com </a>
+            Copyright &#169; JH2 GIGS 2018&hellip;coming soon!!
+        </div>
+    </div>
+    <!--/.Copyright-->
+</footer>
+<!--/.Footer-->
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
