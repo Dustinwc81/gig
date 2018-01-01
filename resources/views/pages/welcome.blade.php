@@ -134,7 +134,7 @@
         <div class="container-fluid ">
             <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
             <a href="https://www.JH2Gigs.com"> JH2Gigs.com </a>
-            Copyright &#169; JH2 GIGS 2018&hellip;coming soon!!
+            Copyright &#169; JH2 GIGS 2018&hellip;Coming Soon!!  All Rights Reserved 
         </div>
     </div>
     <!--/.Copyright-->
