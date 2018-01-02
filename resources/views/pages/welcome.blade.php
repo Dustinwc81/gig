@@ -18,6 +18,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
            <div class="container-fluid">
 
+
              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,11 +27,16 @@
 
              <ul class="navbar-nav mr-auto">
              <a class="navbar-brand" href="#">
-                <img src="{{ URL::asset('images/whiteLogo.png')}}" width="400" height="200">
+                <img src="{{ URL::asset('images/whiteLogo.png')}}" width="300" height="175">
              </a>
             </ul>
+            </div>
 
             <!-- Right justified navbar -->
+
+
+
+
 
             <ul class="nav navbar-nav navbar-right">
 
@@ -88,13 +94,67 @@
       </nav>
 
       <!--BODY-->
-      <div class="container-fluid text-center">
-               <img src="{{ URL::asset('images/sizeMatters.png')}}">
+      <div class="container-fluid text-center margin-top:100px" style="padding-bottom: 20px">
+         <div class="row">
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/threeProng.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">Standard 3 prong</br>
+                  $1,000,000 plus shipping
+               </p>
+            </div>
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">Standard 2 prong</br>
+                  $1,000,000 plus shipping
+               </p>
+            </div>
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">JH2 Sock Hat</br>
+                  $1,000,000 plus shipping
+               </p>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/hat.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">Slighly Used Hat</br>
+                  $1,000,000 plus shipping
+               </p>
+            </div>
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">Standard 2 prong</br>
+                  $1,000,000 plus shipping</br>
+                  (hair not included)
+               </p>
+            </div>
+            <div class="col-md-2 offset-1">
+               <a class="navbar-brand" href="#">
+                  <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
+               </a>
+               <p class="text-center">Sock Hat</br>
+                  $1,000,000 plus shipping</br>
+                  (hair not included)
+               </p>
+            </div>
+         </div>
       </div>
 
 
+<!-- Footer -->
 
-    <!--Footer-->
 <footer class="page-footer center-on-small-only bg-dark text-white">
 
     <!--Footer Links-->
@@ -102,7 +162,7 @@
         <div class="row">
 
             <!--First column-->
-            <div class="col-md-6">
+            <div class="col-md-4 offset-1">
                 <h5 class="title text-muted">GET IN TOUCH</h5>
                 <p>This is handmade quality shit we are talking about!!!!<br/>
                    <br/>
@@ -115,13 +175,13 @@
             <!--/.First column-->
 
             <!--Second column-->
-            <div class="col-md-2 mx-auto">
+            <div class="col-md-4 left-justified offset-1">
                 <h5 class="title text-muted">EXPLORE</h5>
                 <ul>
-                    <li class="text-white"><a href="/myStory">MY STORY</a></li>
-                    <li><a href="/">SERVICES</a></li>
-                    <li><a href="/">CONTACT</a></li>
-                    <li><a href="/">STAY CONNECTED</a></li>
+                    <a class="text-white" href="#!">MY Story</a><br/>
+                    <a class="text-white" href="#!">SERVICES</a><br/>
+                    <a class="text-white" href="#!">CONTACT</a><br/>
+                    <a class="text-white" href="#!">STAY CONNECTED</a><br/>
                 </ul>
             </div>
             <!--/.Second column-->
@@ -130,16 +190,19 @@
     <!--/.Footer Links-->
 
     <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid ">
-            <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
-            <a href="https://www.JH2Gigs.com"> JH2Gigs.com </a>
-            Copyright &#169; JH2 GIGS 2018&hellip;Coming Soon!!  All Rights Reserved 
+    <div class="footer-copyright text-center">
+        <div class="container-fluid">
+           <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
+           <a class="text-white "href="https://www.JH2Gigs.com"> <u>JH2Gigs.com</u> </a>
+           Copyright &#169; JH2 GIGS 2018&hellip;Coming Soon!!  All Rights Reserved
+
         </div>
     </div>
     <!--/.Copyright-->
+
 </footer>
 <!--/.Footer-->
+
 
 
 
