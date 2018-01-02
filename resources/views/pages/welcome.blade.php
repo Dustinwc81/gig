@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS pulled off of https://getbootstrap.com/docs/4.0/getting-started/introduction/#starter-template-->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+   <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 
     <title>JH2 GIGS</title>
   </head>
@@ -26,7 +27,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
              <ul class="navbar-nav mr-auto">
-             <a class="navbar-brand" href="#">
+             <a class="navbar-brand active" href="#">
                 <img src="{{ URL::asset('images/whiteLogo.png')}}" width="300" height="175">
              </a>
             </ul>
@@ -34,12 +35,7 @@
 
             <!-- Right justified navbar -->
 
-
-
-
-
             <ul class="nav navbar-nav navbar-right">
-
                <li class="nav-item">
                  <a class="nav-link" href="/myStory">My Story</a>
                </li>
@@ -68,7 +64,7 @@
                </li>
                <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Appareal
+                   Apparel
                  </a>
                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                    <a class="dropdown-item" href="#">T-Shirts</a>
@@ -88,46 +84,68 @@
                 <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
+            <a href="#" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
+               <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+            </a>
            </ul>
          </div> <!-- Collapse Div -->
         </div> <!-- Container Div -->
       </nav>
 
-      <!--BODY-->
-      <div class="container-fluid text-center margin-top:100px" style="padding-bottom: 20px">
+
+
+   <!--BODY and start of product placements-->
+   <div class="container-fluid text-center bg-dark" style="padding-bottom:100px">
+      <div class="row">
+         <div class="col-md-10 offset-1">
+               <img src="{{ URL::asset('images/sizeMatters.png')}}" width="600" height="350">
+         </div>
+      </div>
+   </div>
+
+
+
+      <!--BODY and start of product placements-->
+      <div class="container-fluid text-center bg-dark" style="padding-bottom: 20px">
          <div class="row">
+
             <div class="col-md-2 offset-1">
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/threeProng.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">Standard 3 prong</br>
+               <p class="text-center text-white">Standard 3 prong</br>
                   $1,000,000 plus shipping
                </p>
             </div>
+
             <div class="col-md-2 offset-1">
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">Standard 2 prong</br>
+               <p class="text-center text-white">Standard 2 prong</br>
                   $1,000,000 plus shipping
                </p>
             </div>
+
             <div class="col-md-2 offset-1">
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">JH2 Sock Hat</br>
+               <p class="text-center text-white">JH2 Sock Hat</br>
                   $1,000,000 plus shipping
                </p>
             </div>
+
          </div>
+
+
 
          <div class="row">
             <div class="col-md-2 offset-1">
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/hat.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">Slighly Used Hat</br>
+               <p class="text-center text-white">Slighly Used Hat</br>
                   $1,000,000 plus shipping
                </p>
             </div>
@@ -135,7 +153,7 @@
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">Standard 2 prong</br>
+               <p class="text-center text-white">Standard 2 prong</br>
                   $1,000,000 plus shipping</br>
                   (hair not included)
                </p>
@@ -144,7 +162,7 @@
                <a class="navbar-brand" href="#">
                   <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center">Sock Hat</br>
+               <p class="text-center text-white">Sock Hat</br>
                   $1,000,000 plus shipping</br>
                   (hair not included)
                </p>
@@ -153,13 +171,14 @@
       </div>
 
 
+
 <!-- Footer -->
 
-<footer class="page-footer center-on-small-only bg-dark text-white">
+<footer class="page-footer center-on-small-only bg-dark text-white" style="padding-top:100px">
 
     <!--Footer Links-->
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="padding-top:20px">
 
             <!--First column-->
             <div class="col-md-4 offset-1">
@@ -178,9 +197,9 @@
             <div class="col-md-4 left-justified offset-1">
                 <h5 class="title text-muted">EXPLORE</h5>
                 <ul>
-                    <a class="text-white" href="#!">MY Story</a><br/>
+                    <a class="text-white" href="/myStory">MY STORY</a><br/>
                     <a class="text-white" href="#!">SERVICES</a><br/>
-                    <a class="text-white" href="#!">CONTACT</a><br/>
+                    <a class="text-white" href="/contact">CONTACT</a><br/>
                     <a class="text-white" href="#!">STAY CONNECTED</a><br/>
                 </ul>
             </div>

@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
    <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 
-    <title>JH2's STORY</title>
+    <title>Contact Me</title>
   </head>
 
 
@@ -36,7 +36,7 @@
             <!-- Right justified navbar -->
 
             <ul class="nav navbar-nav navbar-right">
-               <li class="active">
+               <li class="nav-item">
                  <a class="nav-link" href="/myStory">My Story</a>
                </li>
                <li class="nav-item dropdown">
@@ -92,17 +92,36 @@
         </div> <!-- Container Div -->
       </nav>
 
+      <hr>
+      <!--Contact form-->
+
       <div class="container">
          <div class="row">
             <div class="col-md-12">
-               <h1>MY STORY</h1>
-               <p>I'm the champion bitches</p>
+               <h1>Contact Me</h1>
+               <hr>
+               <div class="form-group">
+                  <label name="email">Email:</label>
+                  <input id="email" name="email" class="form-control">
+               </div>
+
+               <div class="form-group">
+                  <label name="subject">Subject:</label>
+                  <input id="subject" name="subject" class="form-control">
+               </div>
+
+               <div class="form-group">
+                  <label name="message">Message:</label>
+                  <textarea id="message" name="message" class="form-control">Type your message here...</textarea>
+               </div>
+
+               <input type="submit" value="Send Message" class="btn btn-success">
+
             </div>
          </div>
       </div>
-
-
 <!-- Footer -->
+<hr>
 
 <footer class="page-footer center-on-small-only bg-dark text-white">
 
@@ -129,7 +148,7 @@
                 <ul>
                     <a class="text-white" href="/myStory">MY STORY</a><br/>
                     <a class="text-white" href="#!">SERVICES</a><br/>
-                    <a class="text-white" href="/contact">CONTACT</a><br/>
+                    <a class="active" href="/contact">CONTACT</a><br/>
                     <a class="text-white" href="#!">STAY CONNECTED</a><br/>
                 </ul>
             </div>

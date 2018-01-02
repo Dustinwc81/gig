@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/myStory', function () {
     return view('pages/myStory');
 });
+
+Route::get('/contact', function () {
+    return view('pages/contact');
+});
