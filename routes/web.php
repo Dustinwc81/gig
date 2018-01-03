@@ -22,3 +22,7 @@ Route::get('/myStory', function () {
 Route::get('/contact', function () {
     return view('pages/contact');
 });
+
+Route::get('/login', function () {
+    return view('auth/login');
+});

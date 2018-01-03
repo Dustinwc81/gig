@@ -59,7 +59,7 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="#">Register</a>
-                <a class="dropdown-item" href="#">Login</a>
+                <a class="dropdown-item" href="/login">Login</a>
                 <a class="dropdown-item" href="#">Admin Login</a>
                 <a class="dropdown-item" href="#">Check Out</a>
                 <div class="dropdown-divider"></div>
