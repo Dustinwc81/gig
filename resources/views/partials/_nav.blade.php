@@ -54,7 +54,7 @@
                  </div>
                </li>
 
-               <!-- Auth check -->
+               <!-- Auth check, not logged in-->
                @guest
                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,6 +69,7 @@
                 <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
+         <!-- Auth check, logged in-->
          @else
              <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

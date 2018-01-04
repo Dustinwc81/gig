@@ -11,18 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages/welcome');
-});
+// Forward Facing Pages/routes
 
-Route::get('/myStory', function () {
-    return view('pages/myStory');
-});
+Route::get('/', 'PageController@index')->name('pages.welcome');
+Route::get('/contact', 'PageController@contact')->name('pages.contact');
+Route::get('/myStory', 'PageController@myStory')->name('pages.myStory');
 
-Route::get('/contact', function () {
-    return view('pages/contact');
-});
+
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
