@@ -1,4 +1,4 @@
-@extends('main')  <!-- tells where the file is -->
+@extends('layouts.main')  <!-- tells where the file is -->
 
 @section('title', '| Homepage')
 

@@ -54,7 +54,7 @@
                  </div>
                </li>
 
-               <!-- Auth check -->
+               <!-- Auth check, not logged in-->
                @guest
                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,13 +69,14 @@
                 <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
+         <!-- Auth check, logged in-->
          @else
-             <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                     {{ Auth::user()->name }} <span class="caret"></span>
+             <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Welcome {{ Auth::user()->name }}
                  </a>
 
-                 <ul class="dropdown-menu">
+                 <ul class="dropdown-menu text-center">
                      <li>
                          <a href="{{ route('logout') }}"
                              onclick="event.preventDefault();
