@@ -53,12 +53,15 @@
                    <a class="dropdown-item" href="#">MISC</a>
                  </div>
                </li>
+
+               <!-- Auth check -->
+               @guest
                <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Register/Login
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">Register</a>
+                 <a class="dropdown-item" href="/register">Register</a>
                 <a class="dropdown-item" href="/login">Login</a>
                 <a class="dropdown-item" href="#">Admin Login</a>
                 <a class="dropdown-item" href="#">Check Out</a>
@@ -66,6 +69,28 @@
                 <a class="dropdown-item" href="#">Logout</a>
               </div>
             </li>
+         @else
+             <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                     {{ Auth::user()->name }} <span class="caret"></span>
+                 </a>
+
+                 <ul class="dropdown-menu">
+                     <li>
+                         <a href="{{ route('logout') }}"
+                             onclick="event.preventDefault();
+                                      document.getElementById('logout-form').submit();">
+                             Logout
+                         </a>
+
+                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                             {{ csrf_field() }}
+                         </form>
+                     </li>
+                 </ul>
+             </li>
+         @endguest
+
             <a href="#" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
             </a>
