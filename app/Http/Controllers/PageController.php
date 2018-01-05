@@ -18,4 +18,16 @@ class PageController extends Controller
     {
         return view('pages.myStory');
     }
+    public function gigs()
+    {
+        return view('pages.gigs');
+    }
+    public function apparel()
+    {
+        return view('pages.apparel');
+    }
+    public function forgeYourOwn()
+    {
+        return view('pages.forgeYourOwn');
+    }
 }
