@@ -13,13 +13,14 @@
 
 // Forward Facing Pages/routes
 
-Route::get('/', 'PageController@index')->name('pages.welcome');
-Route::get('/contact', 'PageController@contact')->name('pages.contact');
-Route::get('/myStory', 'PageController@myStory')->name('pages.myStory');
+Route::get('/', 'PageController@getWelcome')->name('pages.welcome');
+Route::get('/contact', 'PageController@getContact')->name('pages.contact');
+Route::get('/myStory', 'PageController@getMyStory')->name('pages.myStory');
 
-Route::get('/gigs', 'PageController@gigs')->name('pages.gigs');
-Route::get('/apparel', 'PageController@apparel')->name('pages.apparel');
-Route::get('/forgeYourOwn', 'PageController@forgeYourOwn')->name('pages.forgeYourOwn');
+Route::resource('gigs', 'GigController');
+Route::resource('apparel', 'ApparelController');
+Route::resource('forgeYourOwn', 'ForgeYourOwnController');
+Route::get('/checkOut', 'PageController@checkOut')->name('pages.checkOut');
 
 
 

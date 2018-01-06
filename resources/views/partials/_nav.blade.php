@@ -38,7 +38,7 @@
                  <a class="dropdown-item" href="/register">Register</a>
                 <a class="dropdown-item" href="/login">Login</a>
                 <a class="dropdown-item" href="#">Admin Login</a>
-                <a class="dropdown-item" href="#">Check Out</a>
+                <a class="dropdown-item" href="/checkOut">Check Out</a>
               </div>
             </li>
 
@@ -51,7 +51,7 @@
 
                  <ul class="dropdown-menu text-center">
                      <li>
-                         <a class="dropdown-item" href="#" >Check Out</a>
+                         <a class="dropdown-item" href="/checkOut" >Check Out</a>
                          <div class="dropdown-divider"></div>
                          <a class="text-dark" href="{{ route('logout') }}"
                              onclick="event.preventDefault();

@@ -6,28 +6,31 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function index()
+    // Control all the Static Pages
+    public function getWelcome()
     {
         return view('pages.welcome');
     }
-    public function contact()
+
+    public function getContact()
     {
         return view('pages.contact');
     }
-    public function myStory()
+
+    public function getMyStory()
     {
         return view('pages.myStory');
     }
-    public function gigs()
+
+
+
+
+
+
+
+
+    public function checkOut()
     {
-        return view('pages.gigs');
-    }
-    public function apparel()
-    {
-        return view('pages.apparel');
-    }
-    public function forgeYourOwn()
-    {
-        return view('pages.forgeYourOwn');
+        return view('pages.checkOut');
     }
 }
