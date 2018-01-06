@@ -67,7 +67,7 @@
          @endguest
 
             <a href="#" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
-               <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+               <i class="fa fa-shopping-cart" aria-hidden="true"> CART</i>
             </a>
            </ul>  <!-- Nav Bar right -->
          </div> <!-- Collapse Div -->

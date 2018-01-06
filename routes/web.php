@@ -13,9 +13,9 @@
 
 // Forward Facing Pages/routes
 
-Route::get('/', 'PageController@getWelcome')->name('pages.welcome');
-Route::get('/contact', 'PageController@getContact')->name('pages.contact');
-Route::get('/myStory', 'PageController@getMyStory')->name('pages.myStory');
+Route::view('/', 'pages.welcome')->name('welcome');
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/myStory', 'pages.myStory')->name('myStory');
 
 Route::resource('gigs', 'GigController');
 Route::resource('apparel', 'ApparelController');
