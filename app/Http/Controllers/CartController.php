@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Products;
 use Illuminate\Http\Request;
 
-class ApparelController extends Controller
+class CartController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +13,8 @@ class ApparelController extends Controller
      */
     public function index()
     {
-        $products = Products::orderBy('id', 'desc');
-
-        return view('pages.apparel')->withProducts($products);
+        return view('pages.cart');
     }
-
 
     /**
      * Show the form for creating a new resource.
@@ -49,8 +45,7 @@ class ApparelController extends Controller
      */
     public function show($id)
     {
-        $products = Products::find($id);
-        return view('pages.apparel')->withProducts($products);
+        //
     }
 
     /**

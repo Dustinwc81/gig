@@ -66,7 +66,7 @@
              </li>
          @endguest
 
-            <a href="#" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
+            <a href="/cart" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
                <i class="fa fa-shopping-cart" aria-hidden="true"> CART</i>
             </a>
            </ul>  <!-- Nav Bar right -->

@@ -22,6 +22,6 @@ Route::resource('apparel', 'ApparelController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 Route::get('/checkOut', 'PageController@checkOut')->name('Checkout-page');
 
-
+Route::resource('cart', 'CartController');
 
 Auth::routes();
