@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Products;
 use Illuminate\Http\Request;
 
 class ApparelController extends Controller
@@ -13,7 +14,8 @@ class ApparelController extends Controller
      */
     public function index()
     {
-        return view('pages.apparel');
+        $products = Products::inRandomOrder()->take(1)->get();
+        return view('pages.apparel')->with('products', $products);
     }
 
     /**

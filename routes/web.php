@@ -20,7 +20,7 @@ Route::view('/myStory', 'pages.myStory')->name('myStory');
 Route::resource('gigs', 'GigController');
 Route::resource('apparel', 'ApparelController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
-Route::get('/checkOut', 'PageController@checkOut')->name('pages.checkOut');
+Route::get('/checkOut', 'PageController@checkOut')->name('Checkout-page');
 
 
 

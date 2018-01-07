@@ -34,16 +34,21 @@
       </div><!-- select button div row -->
          <hr>
          <input class="btn btn-secondary" type="submit" value="Submit">
+
    </div> <!-- col div -->
 
-
    <div class="col-sm-4">
+      @foreach ($products as $product)
+
          <img src="{{ URL::asset('images/shirt.jpg')}}" class="img-fluid" alt="Responsive image">
 
-      <a class="text-white"><h2>JH2 Shirts</h2></a>
-      <h6 class="text-secondary">SHIRT-$14.99</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+         <a class="text-white"><h2>{{$product->name}}</h2></a>
+         <h6 class="text-secondary">SHIRT-${{$product->price / 100}}</h6>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         </p>
+
+      @endforeach
+
       <hr>
 
       <div class="row">
