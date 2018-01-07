@@ -9,8 +9,8 @@
    <div class="col-sm-4">
          <img src="{{ URL::asset('images/shirt.jpg')}}" class="img-fluid" alt="Responsive image">
 
-      <a class="text-white"><h2>JH2 Shirts</h2></a>
-      <h6 class="text-secondary">SHIRT-$14.99</h6>
+      <a class="text-white"><h2>{{ $products->name }}</h2></a>
+      <h6 class="text-secondary">SHIRT-${{ $products -> price / 100}}</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <hr>
@@ -33,8 +33,14 @@
          </div>
       </div><!-- select button div row -->
          <hr>
-         <input class="btn btn-secondary" type="submit" value="Submit">
-
+         <!-- <input class="btn btn-secondary" type="submit" value="Add to Cart"> -->
+         <form action="{{ route('cart.store') }}" method="POST">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value=" {{ $products->id }}">
+            <input type="hidden" name="name" value=" {{ $products->name }}">
+            <input type="hidden" name="price" value=" {{ $products->price }}">
+            <button type="submit" class="btn btn-secondary">Add to Cart</button>
+         </form>
    </div> <!-- col div -->
 
    <div class="col-sm-4">
@@ -77,7 +83,7 @@
          </div>
       </div><!-- select button div row -->
          <hr>
-         <input class="btn btn-secondary" type="submit" value="Submit">
+         <input class="btn btn-secondary" type="submit" value="Add to Cart">
    </div> <!-- col div -->
 
 
@@ -108,7 +114,7 @@
          </div>
       </div><!-- select button div row -->
          <hr>
-         <input class="btn btn-secondary" type="submit" value="Submit">
+         <input class="btn btn-secondary" type="submit" value="Add to Cart">
 
    </div> <!-- col div -->
 </div> <!-- row div -->
