@@ -1,5 +1,7 @@
 <?php
 
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,7 @@
 
 // Forward Facing Pages/routes
 
+App::register('Gloudemans\Shoppingcart\ShoppingcartServiceProvider');
 Route::view('/', 'pages.welcome')->name('welcome');
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/myStory', 'pages.myStory')->name('myStory');
@@ -25,4 +28,9 @@ Route::get('/checkOut', 'PageController@checkOut')->name('Checkout-page');
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::post('/cart', 'CartController@store')->name('cart.store');
 
-Auth::routes();
+Route::get('empty', function () {
+    Cart::destroy();
+});
+
+
+//Auth::routes();

@@ -4,8 +4,28 @@
 
 @section('content')
 
+
+               @if (session()->has('success_message'))
+                   <div class="alert alert-success">
+                       {{ session()->get('success_message') }}
+                   </div>
+               @endif
+
+               @if(count($errors) > 0)
+                   <div class="alert alert-danger">
+                       <ul>
+                           @foreach ($errors->all() as $error)
+                               <li>{{ $error }}</li>
+                           @endforeach
+                       </ul>
+                   </div>
+               @endif
+
+               @if (Cart::count() > 0)
+
+            <h3 class="text-white">{{ Cart::count() }} item(s) in Shopping Cart</h3>
+
 <div class="col-sm-8 offset-2 text-white">
-   <h5>2 Item(s) in Shopping Cart</h5>
 <hr>
    <table class="table">
       <thead class="table-condensed">
@@ -73,6 +93,12 @@
       </div>
    </div>
 </div>
+
+@else
+
+   <h3>No Items in Cart!</h3>
+
+@endif
 
 
 @endsection
