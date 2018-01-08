@@ -58,7 +58,7 @@
                   </form>
                   </div>
             </td>
-            <td>${{ $item->model->price /100}}</td>
+            <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
          </tr>
          @endforeach
 
@@ -70,9 +70,9 @@
          <p>Shipping is currently free, enjoy</p>
       </div>
       <div class="col-sm-5 text-right">
-         <p>Subtotal: ${{ Cart::subtotal() / 100 }} <br>
-            Tax: ${{ Cart::tax() / 100 }} <br>
-            Total: ${{ Cart::total() / 100 }}
+         <p>Subtotal: {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
+            Tax: {{ moneyFormat(Cart::tax()/100, 'USD') }} <br>
+            Total: {{ moneyFormat(Cart::total()/100, 'USD') }}
          </p>
       </div>
    </div>

@@ -6,6 +6,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Validator;
+use Gerardojbaez\Money\Money;
 
 class CartController extends Controller
 {

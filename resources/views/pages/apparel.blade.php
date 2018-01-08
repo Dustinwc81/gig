@@ -10,7 +10,7 @@
          <img src="{{ URL::asset('images/shirt.jpg')}}" class="img-fluid" alt="Responsive image">
 
       <a class="text-white"><h2>{{ $products->name }}</h2></a>
-      <h6 class="text-secondary">SHIRT-${{ $products -> price / 100}}</h6>
+      <h6 class="text-secondary">SHIRT-{{ moneyFormat($products ->price/100, 'USD') }}</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <hr>
@@ -46,7 +46,8 @@
          <img src="{{ URL::asset('images/shirt.jpg')}}" class="img-fluid" alt="Responsive image">
 
          <a class="text-white"><h2>{{ $products->name }}</h2></a>
-         <h6 class="text-secondary">SHIRT-${{ $products -> price / 100}}</h6>
+         <h6 class="text-secondary">SHIRT-
+            {{ moneyFormat($products ->price/100, 'USD') }}</h6>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
          </p>
       <hr>
@@ -96,7 +97,7 @@
          <img src="{{ URL::asset('images/shirt.jpg')}}" class="img-fluid" alt="Responsive image">
 
       <a class="text-white"><h2>{{ $products->name }}</h2></a>
-      <h6 class="text-secondary">SHIRT-${{ $products -> price / 100}}</h6>
+      <h6 class="text-secondary">SHIRT-{{ moneyFormat($products ->price/100, 'USD') }}</h6>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
       <hr>
