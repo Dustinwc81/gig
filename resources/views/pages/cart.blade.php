@@ -41,33 +41,26 @@
 
       <tbody>
 
+         @foreach (Cart::content() as $item)
          <tr>
-            <th scope="row">JH2 Shirt</th>
-            <td class="table-description">Black, Cotton</td>
+            <th scope="row">{{ $item->model->name }}</th>
+            <td class="table-description">{{ $item->model->details }}</td>
             <td>Large</td>
             <td>1</td>
             <td>
                <div class="row">
                   <div class="col-sm-6 offset-sm-3 table-condensed">
-                     <a class="text-white" href="#">Remove</a><br>
+                  {{--   <a class="text-white" href="#">Remove</a><br> --}}
+                  <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
+                     {{ csrf_field() }}
+                     {{ method_field('DELETE') }}
+                     <button type="submit">Remove</button>
+                  </form>
                   </div>
             </td>
-            <td>$14.99</td>
+            <td>${{ $item->model->price /100}}</td>
          </tr>
-
-         <tr>
-            <th scope="row">JH2 SockHat</th>
-            <td class="table-description">Black, Cotton</td>
-            <td></td>
-            <td>1</td>
-            <td>
-               <div class="row">
-                  <div class="col-sm-6 offset-sm-3 table-condensed">
-                     <a class="text-white" href="#">Remove</a><br>
-                  </div>
-            </td>
-            <td>$14.99</td>
-         </tr>
+         @endforeach
 
       </tbody>
    </table>
@@ -96,7 +89,7 @@
 
 @else
 
-   <h3>No Items in Cart!</h3>
+   <h3 class="text-white">No Items in Cart!</h3>
 
 @endif
 
