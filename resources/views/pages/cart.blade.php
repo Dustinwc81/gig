@@ -70,9 +70,9 @@
          <p>Shipping is currently free, enjoy</p>
       </div>
       <div class="col-sm-5 text-right">
-         <p>Subtotal: ${{ Cart::subtotal() }}<br>
-            Tax: ${{ Cart::tax() }} <br>
-            Total: ${{ Cart::total() }}
+         <p>Subtotal: ${{ Cart::subtotal() / 100 }} <br>
+            Tax: ${{ Cart::tax() / 100 }} <br>
+            Total: ${{ Cart::total() / 100 }}
          </p>
       </div>
    </div>
