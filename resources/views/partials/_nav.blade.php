@@ -66,8 +66,12 @@
              </li>
          @endguest
 
-            <a href="/cart" class="btn btn-dark" aria-label="View 3 items in your shopping cart">
-               <i class="fa fa-shopping-cart" aria-hidden="true"> CART</i>
+            <a href="/cart" class="btn btn-link text-white">
+               <i class="fa fa-shopping-cart" aria-hidden="true"> CART<span class="text-bold">
+                  @if ( Cart::instance('default')->count() > 0)
+                     <span> {{ Cart::instance('default')->count() }}</span></span>
+                  @endif
+               </i>
             </a>
            </ul>  <!-- Nav Bar right -->
          </div> <!-- Collapse Div -->

@@ -54,7 +54,7 @@
                   <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
                      {{ csrf_field() }}
                      {{ method_field('DELETE') }}
-                     <button type="submit">Remove</button>
+                     <button type="submit" class="btn btn-link text-white">Remove</button>
                   </form>
                   </div>
             </td>
@@ -89,7 +89,8 @@
 
 @else
 
-   <h3 class="text-white">No Items in Cart!</h3>
+   <h3 class="text-white" style="padding-bottom:20px">No Items in Cart!</h3>
+   <a href="/" class="btn btn-light">Continue Shopping</a>
 
 @endif
 
