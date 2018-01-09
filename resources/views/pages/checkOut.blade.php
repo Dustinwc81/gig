@@ -53,24 +53,18 @@
 
              <h4 style="margin-bottom:20px">Payment Details</h4>
 
-             <div class="form-group">
-                 <label for="name_on_card">Name on Card</label>
-                 <input type="text" class="form-control" id="name_on_card" name="name_on_card" value="">
-             </div>
-
-                <div class="form-row ">
-                   <label for="card-element" style="">
-                     Credit or debit card
-                   </label>
-                   <div id="card-element">
-                     <!-- a Stripe Element will be inserted here. -->
-                   </div>
-
-                   <!-- Used to display form errors -->
-                   <div id="card-errors" role="alert"></div>
-                  </div>
-
-                  <button>Submit Payment</button>
+             <form action="/your-server-side-code" method="POST">
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+              data-amount="2000"
+              data-name="Stripe.com"
+              data-description="2 widgets"
+              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+              data-locale="auto"
+              data-zip-code="true">
+            </script>
+            </form>
       </form>
    </div>
 </div>
