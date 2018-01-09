@@ -28,7 +28,7 @@ $factory->define(App\Thread::class, function(Faker $faker) {
             return factory('App\User')->create()->id;
         },
 
-        'title' => $faker->senetence,
+        'title' => $faker->sentence,
         'body' => $faker->paragraph
     ];
 });
