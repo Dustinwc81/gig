@@ -23,16 +23,13 @@ Route::view('/myStory', 'pages.myStory')->name('myStory');
 Route::resource('gigs', 'GigController');
 Route::resource('apparel', 'ApparelController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
-Route::get('/checkOut', 'PageController@checkOut')->name('Checkout-page');
 
+//shopping cart routes
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::post('/cart', 'CartController@store')->name('cart.store');
 Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
 
+//checkout page routes
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 
-Route::get('empty', function () {
-    Cart::destroy();
-});
-
-
-//Auth::routes();
+Auth::routes();

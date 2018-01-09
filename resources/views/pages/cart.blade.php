@@ -82,7 +82,7 @@
          <a class="btn btn-light" href="/" role="button">Continue Shopping</a>
       </div>
       <div class="col-sm-6">
-         <a class="btn btn-success" href="/checkOut" role="button">Proceed to Checkout</a>
+         <a class="btn btn-success" href="{{ route('checkout.index') }}" role="button">Proceed to Checkout</a>
       </div>
    </div>
 </div>
