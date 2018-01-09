@@ -51,28 +51,26 @@
 
     <div class="spacer"></div>
 
-             <h2>Payment Details</h2>
+             <h4 style="margin-bottom:20px">Payment Details</h4>
 
              <div class="form-group">
                  <label for="name_on_card">Name on Card</label>
                  <input type="text" class="form-control" id="name_on_card" name="name_on_card" value="">
              </div>
 
-             <div class="form-group">
-                 <label for="card-element">
-                   Credit or debit card
-                 </label>
-                 <div id="card-element">
-                   <!-- a Stripe Element will be inserted here. -->
-                 </div>
+                <div class="form-row ">
+                   <label for="card-element" style="">
+                     Credit or debit card
+                   </label>
+                   <div id="card-element">
+                     <!-- a Stripe Element will be inserted here. -->
+                   </div>
 
-                 <!-- Used to display form errors -->
-                 <div id="card-errors" role="alert"></div>
-             </div>
-             <div class="spacer"></div>
+                   <!-- Used to display form errors -->
+                   <div id="card-errors" role="alert"></div>
+                  </div>
 
-             <button type="submit" id="complete-order" class="button-primary full-width">Complete Order</button>
-
+                  <button>Submit Payment</button>
       </form>
    </div>
 </div>
