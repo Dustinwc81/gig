@@ -16,7 +16,7 @@ class ApparelController extends Controller
      */
     public function index()
     {
-        $products = Products::first();
+        $products = Products::get();
 
         return view('pages.apparel')->withProducts($products);
     }
