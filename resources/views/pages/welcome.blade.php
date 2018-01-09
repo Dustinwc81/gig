@@ -17,60 +17,33 @@
       <div class="container-fluid text-center bg-dark" style="padding-bottom: 20px">
          <div class="row">
 
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
-                  <img src="{{ URL::asset('images/threeProng.jpg')}}" width="300" height="175">
+            <div class="col-md-6 offset-3">
+               <a class="navbar-brand" href="/gigs">
+                  <img src="{{ URL::asset('images/threeProng.jpg')}}" width="500" height="250">
                </a>
-               <p class="text-center text-white">Standard 3 prong</br>
-                  $1,000,000 plus shipping
+               <p class="text-center text-white"><u>GIGS</u></br>
+                  Choose Options for Your Custom Gig
                </p>
             </div>
-
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
-                  <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white">Standard 2 prong</br>
-                  $1,000,000 plus shipping
-               </p>
-            </div>
-
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
-                  <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white">JH2 Sock Hat</br>
-                  $1,000,000 plus shipping
-               </p>
-            </div>
-
          </div>
 
          <div class="row">
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
+            <div class="col-md-4 offset-1">
+               <a class="navbar-brand" href="/apparel">
                   <img src="{{ URL::asset('images/hat.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center text-white">Slighly Used Hat</br>
-                  $1,000,000 plus shipping
+               <p class="text-center text-white"><u>Apparel</u></br>
+                  Shop original JH2 Apparel
                </p>
             </div>
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
+            <div class="col-md-4 offset-1">
+               <a class="navbar-brand" href="/forgeYourOwn">
                   <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
                </a>
-               <p class="text-center text-white">Standard 2 prong</br>
-                  $1,000,000 plus shipping</br>
-                  (hair not included)
-               </p>
-            </div>
-            <div class="col-md-2 offset-1">
-               <a class="navbar-brand" href="#">
-                  <img src="{{ URL::asset('images/sockHat.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white">Sock Hat</br>
-                  $1,000,000 plus shipping</br>
-                  (hair not included)
+               <p class="text-center text-white"><u>Forge Your Own</u></br>
+                  Handy with a welder and grinder....</br>
+                  We will ship all available materials to...</br>
+                  Forge Your Own Gig!
                </p>
             </div>
          </div>

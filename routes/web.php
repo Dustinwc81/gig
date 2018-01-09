@@ -1,5 +1,7 @@
 <?php
 
+use Gloudemans\Shoppingcart\Facades\Cart;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,10 +15,21 @@
 
 // Forward Facing Pages/routes
 
-Route::get('/', 'PageController@index')->name('pages.welcome');
-Route::get('/contact', 'PageController@contact')->name('pages.contact');
-Route::get('/myStory', 'PageController@myStory')->name('pages.myStory');
 
+Route::view('/', 'pages.welcome')->name('welcome');
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::view('/myStory', 'pages.myStory')->name('myStory');
 
+Route::resource('gigs', 'GigController');
+Route::resource('apparel', 'ApparelController');
+Route::resource('forgeYourOwn', 'ForgeYourOwnController');
+
+//shopping cart routes
+Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::post('/cart', 'CartController@store')->name('cart.store');
+Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
+
+//checkout page routes
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 
 Auth::routes();
