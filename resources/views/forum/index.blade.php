@@ -19,7 +19,7 @@
                             <h5 class="card-title">
                                 {{ $thread->title }}
                             </h5>
-                            <p class="card-text text-left">{{ substr(strip_tags($thread->body), 0, 150)}}{{ strlen(strip_tags($thread->body)) > 150 ? "&#8230;" : "" }} <a class="card-link" href="">LINK</a></p>
+                            <p class="card-text text-left">{{ substr(strip_tags($thread->body), 0, 150)}}{{ strlen(strip_tags($thread->body)) > 150 ? "&#8230;" : "" }} <a class="card-link" href="">read more</a></p>
 
                         </div>
                     </div>
