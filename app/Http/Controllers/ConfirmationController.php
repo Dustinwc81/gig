@@ -3,13 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Gloudemans\Shoppingcart\Facades\Cart;
-use Gerardojbaez\Money\Money;
-use App\Http\Requests\CheckoutRequest;
-use Cartalyst\Stripe\Laravel\Facades\Stripe;
-use Cartalyst\Stripe\Exception\CardErrorException;
 
-class CheckoutController extends Controller
+class ConfirmationController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,7 +13,11 @@ class CheckoutController extends Controller
      */
     public function index()
     {
-        return view('pages.checkout');
+        // if (! session()->has('success_message')) {
+        //     return redirect('/');
+        // }
+
+        return view('pages.thankyou');
     }
 
     /**
@@ -39,26 +38,7 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
-        try {
-            $charge = Stripe::charges()->create([
-             'amount' => Cart::total() / 100,
-             'currency' => 'USD',
-             'source' => $request->stripeToken,
-             'description' => 'Order',
-             'receipt_email' => $request->email,
-             'metadata' => [
-                //change to Order ID after we start using DB
-                'contents' => $contents,
-                'quantity' => Cart::instance('default')->count(),
-             ],
-          ]);
-
-          // SUCCESSFUL
-          Cart::instance('default')->destroy();
-
-            return redirect()->route('confirmation.index')->with('success_message', 'Thank you!  Your payment has been accepted!');
-        } catch (\Exception $e) {
-        }
+        //
     }
 
     /**

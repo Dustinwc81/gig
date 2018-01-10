@@ -4,11 +4,29 @@
 
 @section('content')
 
+   @if (session() -> has('success_message'))
+      <div class="spacer"></div>
+         <div class="alert alert-success">
+            {{ session()->get('success_message') }}
+         </div>
+         @endif
+
+         @if (count($errors) > 0)
+            <div class="spacer"></div>
+            <div class="alert alert-danger">
+               <ul>
+                  @foreach ($errors->all() as $error)
+                     <li>{{ $error }}</li>
+                  @endforeach
+               </ul>
+            </div>
+         @endif
+
 <h2 class="text-white col-sm-4 offset-sm-1">Checkout</h2>
 <hr>
 <div class="row">
 <div class="col-sm-5 offset-sm-1 text-white">
-      <form class="" action="#" method="POST" id="payment-form">
+      <form class="" action="{{ route('checkout.store') }}" method="POST" id="payment-form">
          {{ csrf_field() }}
          <h4 style="margin-bottom:20px">Billing Details</h4>
 

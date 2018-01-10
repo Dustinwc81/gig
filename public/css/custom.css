@@ -35,3 +35,7 @@
 
 .tab { display:inline-block;
        margin-left: 80px; }
+
+.spacer {
+   margin-bottom: 20px;
+}
