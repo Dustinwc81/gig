@@ -13,6 +13,9 @@ class ConfirmationController extends Controller
      */
     public function index()
     {
+
+      //WHEN SITE IS UP, UNCOMMENT THIS
+
         // if (! session()->has('success_message')) {
         //     return redirect('/');
         // }

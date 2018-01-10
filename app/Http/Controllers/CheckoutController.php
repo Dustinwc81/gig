@@ -39,6 +39,10 @@ class CheckoutController extends Controller
      */
     public function store(Request $request)
     {
+        $contents = Cart::content()->map(function ($item) {
+            return $item->model->slug.', '.$item->qty;
+        })->values()->toJson();
+
         try {
             $charge = Stripe::charges()->create([
              'amount' => Cart::total() / 100,
@@ -57,7 +61,8 @@ class CheckoutController extends Controller
           Cart::instance('default')->destroy();
 
             return redirect()->route('confirmation.index')->with('success_message', 'Thank you!  Your payment has been accepted!');
-        } catch (\Exception $e) {
+        } catch (CardErrorException $e) {
+            return back()->withErrors('Error!' . $e->getMessage());
         }
     }
 

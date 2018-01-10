@@ -85,7 +85,7 @@
 
                     <!-- Used to display form errors -->
                     <div id="card-errors" role="alert"></div>
-                     <button type="submit" class="btn btn-primary btn-block" name="button" style="margin-top:16px">Complete Order</button>
+                     <button type="submit" class="btn btn-primary btn-block" id="complete-order" style="margin-top:16px">Complete Order</button>
              </div>
 
 

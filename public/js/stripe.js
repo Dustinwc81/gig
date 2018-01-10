@@ -48,6 +48,9 @@ var form = document.getElementById('payment-form');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
 
+  //Disable the submit button to prevent repeated clicks
+  document.getElementById('complete-order').disabled = true;
+
   var options = {
      name: document.getElementById('name_on_card').value,
      address_line1: document.getElementById('address').value,
@@ -61,6 +64,9 @@ form.addEventListener('submit', function(event) {
       // Inform the user if there was an error
       var errorElement = document.getElementById('card-errors');
       errorElement.textContent = result.error.message;
+
+      // Enable the submit button
+      document.getElementById('complete-order').disabled = true;
     } else {
       // Send the token to your server
       stripeTokenHandler(result.token);
