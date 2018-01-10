@@ -4,10 +4,10 @@
 
 @section('content')
 
-<h1 class="text-white col-sm-4 offset-sm-1">Checkout</h1>
+<h2 class="text-white col-sm-4 offset-sm-1">Checkout</h2>
 <hr>
+<div class="row">
 <div class="col-sm-4 offset-sm-1 text-white">
-   <div>
       <form class="" action="#" method="POST" id="payment-form">
          {{ csrf_field() }}
          <h4 style="margin-bottom:20px">Billing Details</h4>
@@ -49,7 +49,6 @@
                  </div>
              </div><!-- end half-form -->
 
-    <div class="spacer"></div>
 
              <h4 style="margin-bottom:20px">Payment Details</h4>
 
@@ -66,7 +65,28 @@
             </script>
             </form>
       </form>
-   </div>
+</div> <!-- col-sm-4 offset-sm-1 -->
+
+
+
+@foreach (Cart::content() as $item)
+
+<div class="col-sm-4 offset-sm-1 text-white">
+<h4 style="margin-bottom:20px">Your Order</h4>
+   <table class="table">
+      <tbody>
+         <tr>
+            <td>{{ $item->model->name }}</td>
+            <td>{{ $item->model->details}}</td>
+            <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
+            <td>{{ $item->qty }}</td>
+            <td></td>
+         </tr>
+      </tbody>
+   </table>
+
 </div>
+</div><!-- row -->
+@endforeach
 
 @endsection
