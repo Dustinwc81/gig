@@ -24,6 +24,9 @@ Route::resource('gigs', 'GigController');
 Route::resource('apparel', 'ApparelController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 
+// Threads routes (forum)
+Route::get('forum', 'ThreadController@index')->name('forum.index');
+
 //shopping cart routes
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::post('/cart', 'CartController@store')->name('cart.store');
