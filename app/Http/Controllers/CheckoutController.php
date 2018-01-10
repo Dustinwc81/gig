@@ -37,7 +37,7 @@ class CheckoutController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CheckoutRequest $request)
     {
         $contents = Cart::content()->map(function ($item) {
             return $item->model->slug.', '.$item->qty;
