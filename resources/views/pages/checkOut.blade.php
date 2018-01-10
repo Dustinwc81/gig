@@ -67,7 +67,9 @@
 
                     <!-- Used to display form errors -->
                     <div id="card-errors" role="alert"></div>
+                     <button type="submit" class="btn btn-primary btn-block" name="button" style="margin-top:16px">Complete Order</button>
              </div>
+
 
       </form>
 </div> <!-- col-sm-4 offset-sm-1 -->
