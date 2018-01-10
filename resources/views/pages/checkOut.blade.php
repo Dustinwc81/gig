@@ -69,24 +69,49 @@
 
 
 
-@foreach (Cart::content() as $item)
+
 
 <div class="col-sm-4 offset-sm-1 text-white">
-<h4 style="margin-bottom:20px">Your Order</h4>
-   <table class="table">
-      <tbody>
-         <tr>
-            <td>{{ $item->model->name }}</td>
-            <td>{{ $item->model->details}}</td>
-            <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
-            <td>{{ $item->qty }}</td>
-            <td></td>
-         </tr>
-      </tbody>
-   </table>
+   <h4 style="margin-bottom:20px">Your Order</h4>
+      <table class="table">
+         <thead class="table-condensed">
+            <tr>
+               <th scope="col text-center">Product</th>
+               <th scope="col text-center">Description</th>
+               <th scope="col">Size(if applicable)</th>
+               <th scope="col">Quantity</th>
+               <th scope="col">Price</th>
+            </tr>
+         </thead>
+         <tbody>
+            @foreach (Cart::content() as $item)
+            <tr>
+               <td>{{ $item->model->name }}</td>
+               <td>{{ $item->model->details}}</td>
+               <td>Size</td>
+               <td>{{ $item->qty }}</td>
+               <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
+            </tr>
+            @endforeach
+         </tbody>
+      </table>
+      <hr class"text-white">
 
-</div>
+   <div class="row bg-light text-dark">
+      <div class="col-sm-4 offset-1 text-center">
+            Subtotal: <br>
+            Tax: <br>
+            Total:
+      </div>
+
+      <div class="col-sm-4 offset-1 text-center">
+            {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
+            {{ moneyFormat(Cart::tax()/100, 'USD') }}<br>
+            {{ moneyFormat(Cart::total()/100, 'USD') }}
+      </div>
+   </div>
+   </div><!-- col-sm-4 offset-sm-1 -->
 </div><!-- row -->
-@endforeach
+
 
 @endsection

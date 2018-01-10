@@ -28,3 +28,6 @@
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+
+.tab { display:inline-block;
+       margin-left: 80px; }
