@@ -7,7 +7,7 @@
 <h2 class="text-white col-sm-4 offset-sm-1">Checkout</h2>
 <hr>
 <div class="row">
-<div class="col-sm-4 offset-sm-1 text-white">
+<div class="col-sm-5 offset-sm-1 text-white">
       <form class="" action="#" method="POST" id="payment-form">
          {{ csrf_field() }}
          <h4 style="margin-bottom:20px">Billing Details</h4>
@@ -28,7 +28,7 @@
          </div>
 
          <div class="row form-group">
-                 <div class="col-sm-5 form-group">
+                 <div class="col-sm-5 offset-sm-2 form-group">
                      <label for="city">City</label>
                      <input type="text" class="form-control" id="city" name="city" value="{{ old('city') }}" required>
                  </div>
@@ -39,7 +39,7 @@
          </div> <!-- end row -->
 
              <div class="row form-group">
-                 <div class="col-sm-5 form-group">
+                 <div class="col-sm-5 offset-sm-2 form-group">
                      <label for="zipcode">Zip Code</label>
                      <input type="text" class="form-control" id="zipcode" name="zipcode" value="{{ old('zipcode') }}" required>
                  </div>
@@ -52,18 +52,23 @@
 
              <h4 style="margin-bottom:20px">Payment Details</h4>
 
-             <form action="/your-server-side-code" method="POST">
-            <script
-              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-              data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-              data-amount="2000"
-              data-name="Stripe.com"
-              data-description="2 widgets"
-              data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-              data-locale="auto"
-              data-zip-code="true">
-            </script>
-            </form>
+             <div class="form-control">
+                <label for="name_on_card">Name on Card</label>
+                <input type="text" class="form-control" name="name_on_card" value="">
+             </div>
+
+             <div class="form-group">
+                <label for="card-element">
+                      Credit or debit card
+                    </label>
+                    <div id="card-element">
+                      <!-- a Stripe Element will be inserted here. -->
+                    </div>
+
+                    <!-- Used to display form errors -->
+                    <div id="card-errors" role="alert"></div>
+             </div>
+
       </form>
 </div> <!-- col-sm-4 offset-sm-1 -->
 
