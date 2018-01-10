@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Thread extends Model
 {
+    public function path() {
+        return '/forum/' . $this->id;
+    }
+
     protected function creator()
     {
         return $this->belongsTo(User::class, 'user_id');
