@@ -42,6 +42,7 @@ class CartController extends Controller
             return $cartItem->id === $request->id;
         });
 
+        // TODO: Comment this 'if' out later since I moved quantity and size to the cart!!!
         if ($duplicates->isNotEmpty()) {
             return redirect()->route('cart.index')->with('success_message', 'Item is already in your cart!  Has not been Added!');
         }
@@ -84,7 +85,7 @@ class CartController extends Controller
     public function update(Request $request, $id)
     {
         // ACTIVATE THIS IF WE WANT RESTRICTIONS ON THE AMOUNT SELECTED
-      
+
       //   $validator = Validator::make($request->all(), [
       //    'quantity' => 'required|numeric|between:1,5'
       // ]);
