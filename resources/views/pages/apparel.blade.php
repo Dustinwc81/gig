@@ -17,7 +17,7 @@
          <p>{{ $product->description }}</p>
       <hr>
 
-      <div class="row">
+      {{-- <div class="row">
          <div class="col-sm-6">
             <select class="custom-select" id="inputGroupSelect01">
                <option selected>Select Size</option>
@@ -29,10 +29,10 @@
                <option value="3">XXLarge</option>
                <option value="3">XXXLarge</option>
             </select>
-         </div>
+         </div> --}}
 
-         <div class="col-sm-6">
-            <select class="custom-select" id="inputGroupSelect01">
+         {{-- <div class="col-sm-6">
+            <select class="quantity" id="inputGroupSelect01">
                <option selected>Select Quantity</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -45,7 +45,7 @@
                   <option value="3">9</option>
                   <option value="3">10</option>
             </select>
-         </div>
+         </div> --}}
       </div><!-- select button div row -->
          <hr>
          <form action="{{ route('cart.store') }}" method="POST">
@@ -60,7 +60,5 @@
    @endforeach
 
 </div> <!-- row div -->
-
-
 
 @endsection

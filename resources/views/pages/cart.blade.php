@@ -45,8 +45,31 @@
          <tr>
             <th scope="row">{{ $item->model->name }}</th>
             <td class="table-description">{{ $item->model->details }}</td>
-            <td>Large</td>
-            <td>1</td>
+            <td><select class="custom-select" id="inputGroupSelect01">
+               <option selected>Select Size</option>
+               <option value="1">XSmall</option>
+               <option value="2">Small</option>
+               <option value="3">Medium</option>
+               <option value="1">Large</option>
+               <option value="2">XLarge</option>
+               <option value="3">XXLarge</option>
+               <option value="3">XXXLarge</option>
+            </select>
+            </td>
+            <td><select class="quantity" id="inputGroupSelect01">
+               <option selected>Select Quantity</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="1">4</option>
+                  <option value="2">5</option>
+                  <option value="3">6</option>
+                  <option value="3">7</option>
+                  <option value="2">8</option>
+                  <option value="3">9</option>
+                  <option value="3">10</option>
+            </select>
+            </td>
             <td>
                <div class="row">
                   <div class="col-sm-6 offset-sm-3 table-condensed">

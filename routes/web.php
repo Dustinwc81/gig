@@ -21,8 +21,10 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/myStory', 'pages.myStory')->name('myStory');
 
 Route::resource('gigs', 'GigController');
-Route::resource('apparel', 'ApparelController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
+
+//apparel routes
+Route::resource('apparel', 'ApparelController');
 
 //shopping cart routes
 Route::get('/cart', 'CartController@index')->name('cart.index');
@@ -33,6 +35,7 @@ Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy'
 Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
 Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
+//thank you page.....After completion of a purchase
 Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');
 
 Auth::routes();
