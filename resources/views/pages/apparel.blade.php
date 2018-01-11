@@ -46,7 +46,7 @@
                   <option value="3">10</option>
             </select>
          </div> --}}
-      </div><!-- select button div row -->
+      <!--</div> select button div row -->
          <hr>
          <form action="{{ route('cart.store') }}" method="POST">
             {{ csrf_field() }}

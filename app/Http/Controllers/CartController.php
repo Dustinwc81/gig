@@ -83,7 +83,21 @@ class CartController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // ACTIVATE THIS IF WE WANT RESTRICTIONS ON THE AMOUNT SELECTED
+      
+      //   $validator = Validator::make($request->all(), [
+      //    'quantity' => 'required|numeric|between:1,5'
+      // ]);
+      //
+      //   if ($validator->fails()) {
+      //       session()->flash('errors', collect(['Quantity must be 1 to 10.']));
+      //       return response()->json(['success' => false], 400);
+      //   }
+
+        Cart::update($id, $request->quantity);
+
+        session()->flash('success_message', 'Quantity was updated successfully!');
+        return response()->json(['success' => true]);
     }
 
     /**

@@ -115,7 +115,7 @@
                <td>{{ $item->model->details}}</td>
                <td>Size</td>
                <td>{{ $item->qty }}</td>
-               <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
+               <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>
             @endforeach
          </tbody>

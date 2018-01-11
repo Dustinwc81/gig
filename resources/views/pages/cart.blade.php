@@ -56,19 +56,14 @@
                <option value="3">XXXLarge</option>
             </select>
             </td>
-            <td><select class="quantity" id="inputGroupSelect01">
-               <option selected>Select Quantity</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="1">4</option>
-                  <option value="2">5</option>
-                  <option value="3">6</option>
-                  <option value="3">7</option>
-                  <option value="2">8</option>
-                  <option value="3">9</option>
-                  <option value="3">10</option>
-            </select>
+            <td>
+
+               <select class="quantity" data-id="{{ $item->rowId }}">
+                  @for ($i=1; $i < 10 + 1; $i++)
+                     <option {{ $item->qty == $i ? 'selected' : ''}}>{{ $i }}</option>
+                  @endfor
+               </select>
+               
             </td>
             <td>
                <div class="row">
@@ -81,7 +76,7 @@
                   </form>
                   </div>
             </td>
-            <td>{{ moneyFormat($item->model->price/100, 'USD') }}</td>
+            <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
          </tr>
          @endforeach
 

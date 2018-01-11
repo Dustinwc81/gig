@@ -30,6 +30,7 @@ Route::resource('apparel', 'ApparelController');
 Route::get('/cart', 'CartController@index')->name('cart.index');
 Route::post('/cart', 'CartController@store')->name('cart.store');
 Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
+Route::patch('/cart/{product}', 'CartController@update')->name('cart.update');
 
 //checkout page routes
 Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
