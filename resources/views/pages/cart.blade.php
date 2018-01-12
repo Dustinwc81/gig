@@ -112,6 +112,8 @@
 
 @endif
 
+{{-- JS for updating the Quantity in the Cart --}}
+
 <script>
     (function(){
         const classname = document.querySelectorAll('.quantity')
@@ -133,6 +135,8 @@
         })
     })();
 </script>
+
+{{-- JS for updating the Shirt sizes --}}
 
 {{-- <script>
    (function(){

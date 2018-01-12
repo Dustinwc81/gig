@@ -54,6 +54,7 @@ class CheckoutController extends Controller
                 //change to Order ID after we start using DB
                 'contents' => $contents,
                 'quantity' => Cart::instance('default')->count(),
+                'size' => Cart::instance('default'),
              ],
           ]);
 
