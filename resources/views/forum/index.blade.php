@@ -6,7 +6,7 @@
 
     <div class="row">
         <div class="col-md-8 offset-md-2">
-            <div class="border border-white margin-bottom-20">
+            <div class="margin-bottom-20">
                 <h1 class="text-white">FORUM</h1>
             </div>
         </div>
@@ -19,7 +19,7 @@
                             <h5 class="card-title">
                                 {{ $thread->title }}
                             </h5>
-                            <p class="card-text text-left">{{ substr(strip_tags($thread->body), 0, 150)}}{{ strlen(strip_tags($thread->body)) > 150 ? "&#8230;" : "" }} <a class="card-link" href="">read more</a></p>
+                            <p class="card-text text-left">{{ substr(strip_tags($thread->body), 0, 150)}}{{ strlen(strip_tags($thread->body)) > 150 ? "&#8230;" : "" }} <a class="card-link" href="{{ $thread->path() }}">read more</a></p>
 
                         </div>
                     </div>

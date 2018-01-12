@@ -6,8 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Thread extends Model
 {
+    protected $gaurded = [];
+
     public function path() {
-        return '/forum/' . $this->id;
+        return "/forum/{$this->id}";
     }
 
     protected function creator()
@@ -19,4 +21,9 @@ class Thread extends Model
     {
         return $this->hasMany(Reply::class);
     }
+
+    public function addReply($reply)
+        {
+            $this->replies()->create($reply);
+        }
 }
