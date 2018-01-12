@@ -27,7 +27,7 @@
 
 <div class="col-sm-8 offset-2 text-white">
 <hr>
-   <table class="table">
+   <table class="table text-white">
       <thead class="table-condensed">
          <tr>
             <th scope="col text-center">Product</th>
@@ -45,7 +45,8 @@
          <tr>
             <th scope="row">{{ $item->model->name }}</th>
             <td class="table-description">{{ $item->model->details }}</td>
-            <td><select class="custom-select" id="inputGroupSelect01">
+
+            <td><select class="size">
                <option selected>Select Size</option>
                <option value="1">XSmall</option>
                <option value="2">Small</option>
@@ -63,18 +64,15 @@
                      <option {{ $item->qty == $i ? 'selected' : ''}}>{{ $i }}</option>
                   @endfor
                </select>
-               
+
             </td>
             <td>
-               <div class="row">
-                  <div class="col-sm-6 offset-sm-3 table-condensed">
-                  {{--   <a class="text-white" href="#">Remove</a><br> --}}
-                  <form action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
+                  <form class="text-center" action="{{ route('cart.destroy', $item->rowId) }}" method="POST">
                      {{ csrf_field() }}
                      {{ method_field('DELETE') }}
                      <button type="submit" class="btn btn-link text-white">Remove</button>
                   </form>
-                  </div>
+
             </td>
             <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
          </tr>
@@ -112,5 +110,26 @@
 
 @endif
 
+<script>
+    (function(){
+        const classname = document.querySelectorAll('.quantity')
+        Array.from(classname).forEach(function(element) {
+            element.addEventListener('change', function() {
+                const id = element.getAttribute('data-id')
+                axios.patch(`/cart/${id}`, {
+                    quantity: this.value
+                })
+                .then(function (response) {
+                    // console.log(response);
+                    window.location.href = '{{ route('cart.index') }}'
+                })
+                .catch(function (error) {
+                    // console.log(error);
+                    window.location.href = '{{ route('cart.index') }}'
+                });
+            })
+        })
+    })();
+</script>
 
 @endsection
