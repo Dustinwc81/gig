@@ -27,6 +27,7 @@ Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 // Forum routes
 Route::get('forum', 'ThreadController@index')->name('forum.index');
 Route::get('forum/{thread}', 'ThreadController@show')->name('forum.show');
+Route::post('/forum', 'ThreadController@store');
 Route::post('forum/{thread}/replies', 'ReplyController@store');
 
 //shopping cart routes

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class ThreadController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->only('store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -38,7 +43,20 @@ class ThreadController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // validate the request 
+        $this->validate(request(), [
+            'title' => 'required|max:255',
+            'body' => 'required'
+        ]);
+
+        // store data from a form
+        $thread = Thread::create([
+            'title' => request('title'),
+            'body' => request('body'),
+            'user_id' => auth()->id()
+        ]);
+
+        return redirect($thread->path());
     }
 
     /**

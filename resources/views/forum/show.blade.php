@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header text-left">
                         {{ $thread->creator->name }} Posted: <strong>{{ $thread->title }}</strong>
                     </div>
                     <div class="card-body text-left">
