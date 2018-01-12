@@ -46,22 +46,22 @@
          </div>
 
          <div class="row form-group">
-                 <div class="col-sm-5 offset-sm-2 form-group">
+                 <div class="col-sm-4 offset-1">
                      <label for="city">City</label>
                      <input type="text" class="form-control" id="city" name="city" value="{{ old('city') }}" required>
-                 </div>
-                 <div class="form-group">
+                  </div>
+                  <div class="col-sm-4 offset-1">
                      <label for="state">State</label>
                      <input type="text" class="form-control" id="state" name="state" value="{{ old('state') }}" required>
-                 </div>
+                  </div>
          </div> <!-- end row -->
 
              <div class="row form-group">
-                 <div class="col-sm-5 offset-sm-2 form-group">
+                 <div class="col-sm-4 offset-1">
                      <label for="zipcode">Zip Code</label>
                      <input type="text" class="form-control" id="zipcode" name="zipcode" value="{{ old('zipcode') }}" required>
                  </div>
-                 <div class="form-group">
+                 <div class="col-sm-4 offset-1">
                      <label for="phone">Phone</label>
                      <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
                  </div>
@@ -113,7 +113,7 @@
             <tr>
                <td>{{ $item->model->name }}</td>
                <td>{{ $item->model->details}}</td>
-               <td>Size</td>
+               <td>{{ $item->size }}</td>
                <td>{{ $item->qty }}</td>
                <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>
@@ -140,7 +140,6 @@
 
 
 <script type="text/javascript">
-
 
 (function(){
 

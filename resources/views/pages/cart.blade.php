@@ -43,22 +43,24 @@
 
          @foreach (Cart::content() as $item)
          <tr>
-            <th scope="row">{{ $item->model->name }}</th>
-            <td class="table-description">{{ $item->model->details }}</td>
+            <td>{{ $item->model->name }}</td>
+            <td>{{ $item->model->details }}</td>
 
-            <td><select class="size">
-               <option selected>Select Size</option>
-               <option value="1">XSmall</option>
-               <option value="2">Small</option>
-               <option value="3">Medium</option>
-               <option value="1">Large</option>
-               <option value="2">XLarge</option>
-               <option value="3">XXLarge</option>
-               <option value="3">XXXLarge</option>
-            </select>
-            </td>
             <td>
 
+               <select class="size" shirt-id="{{ $item->rowId }}">
+                  <option selected>Size</option>
+                  <option> XSmall </option>
+                  <option>Small</option>
+                  <option>Medium</option>
+                  <option>Large</option>
+                  <option>XLarge</option>
+                  <option>XXLarge</option>
+                  <option>XXXLarge</option>
+               </select>
+            </td>
+
+            <td>
                <select class="quantity" data-id="{{ $item->rowId }}">
                   @for ($i=1; $i < 10 + 1; $i++)
                      <option {{ $item->qty == $i ? 'selected' : ''}}>{{ $i }}</option>
@@ -131,5 +133,28 @@
         })
     })();
 </script>
+
+{{-- <script>
+   (function(){
+      const classname = document.querySelectorAll('.size')
+      Array.from(classname).forEach(function(element) {
+         element.addEventListener('change', function() {
+
+            const id = element.getAttribute('shirt-id')
+            axios.patch(`/cart/${id}`, {
+                size: this.value
+              })
+              .then(function (response) {
+                console.log(response);
+                 window.location.href = '{{ route('cart.index') }}'
+              })
+              .catch(function (error) {
+                console.log(error);
+                 window.location.href = '{{ route('cart.index') }}'
+              });
+         })
+      })
+   })();
+</script> --}}
 
 @endsection
