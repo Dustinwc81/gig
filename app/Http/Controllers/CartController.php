@@ -102,10 +102,10 @@ class CartController extends Controller
 
 
         // attempting to update size in cart
-        Cart::update($id, $request->size);
-        //
-        // session()->flash('success_message', 'Size was updated successfully!');
-        return response()->json(['success' => true]);
+ // TODO        Cart::update($id, $request->size);
+ //        //
+ //        session()->flash('success_message', 'Size was updated successfully!');
+ //        return response()->json(['success' => true]);
     }
 
     /**

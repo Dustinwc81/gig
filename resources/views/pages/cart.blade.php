@@ -48,7 +48,7 @@
 
             <td>
 
-               <select class="size" shirt-id="{{ $item->rowId }}">
+{{--TODO --}}     <select class="size" shirt-id="{{ $item->rowId }}">
                   <option selected>Size</option>
                   <option> XSmall </option>
                   <option>Small</option>

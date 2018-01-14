@@ -113,7 +113,7 @@
             <tr>
                <td>{{ $item->model->name }}</td>
                <td>{{ $item->model->details}}</td>
-               <td>{{ $item->size }}</td>
+{{--TODO --}} <td>{{ $item->size }}</td> 
                <td>{{ $item->qty }}</td>
                <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>
@@ -184,10 +184,10 @@
       } else {
          displayError.textContent = '';
       }
-     });
+});
 
      // Handle form submission
-     var form = document.getElementById('payment-form');
+   var form = document.getElementById('payment-form');
      form.addEventListener('submit', function(event) {
       event.preventDefault();
 
