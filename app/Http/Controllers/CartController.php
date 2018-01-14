@@ -99,13 +99,6 @@ class CartController extends Controller
 
         session()->flash('success_message', 'Quantity was updated successfully!');
         return response()->json(['success' => true]);
-
-
-        // attempting to update size in cart
- // TODO        Cart::update($id, $request->size);
- //        //
- //        session()->flash('success_message', 'Size was updated successfully!');
- //        return response()->json(['success' => true]);
     }
 
     /**

@@ -113,7 +113,7 @@
             <tr>
                <td>{{ $item->model->name }}</td>
                <td>{{ $item->model->details}}</td>
-{{--TODO --}} <td>{{ $item->size }}</td> 
+{{--TODO --}} <td>{{ $item->size }}</td>
                <td>{{ $item->qty }}</td>
                <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>

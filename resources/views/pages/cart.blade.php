@@ -48,8 +48,8 @@
 
             <td>
 
-{{--TODO --}}     <select class="size" shirt-id="{{ $item->rowId }}">
-                  <option selected>Size</option>
+{{--TODO --}}     <select class="size" name="size" id="size">
+                  <option disabled selected>Size</option>
                   <option> XSmall </option>
                   <option>Small</option>
                   <option>Medium</option>
@@ -136,29 +136,5 @@
     })();
 </script>
 
-{{-- JS for updating the Shirt sizes --}}
-
-{{-- <script>
-   (function(){
-      const classname = document.querySelectorAll('.size')
-      Array.from(classname).forEach(function(element) {
-         element.addEventListener('change', function() {
-
-            const id = element.getAttribute('shirt-id')
-            axios.patch(`/cart/${id}`, {
-                size: this.value
-              })
-              .then(function (response) {
-                console.log(response);
-                 window.location.href = '{{ route('cart.index') }}'
-              })
-              .catch(function (error) {
-                console.log(error);
-                 window.location.href = '{{ route('cart.index') }}'
-              });
-         })
-      })
-   })();
-</script> --}}
 
 @endsection
