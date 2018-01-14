@@ -24,7 +24,7 @@ Route::resource('gigs', 'GigController');
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 
 //Gigging tournament routes
-Route::get('/tournament', 'TournamentController@index')->name('tournament.index');
+Route::resource('tournament', 'TournamentController');
 
 //apparel routes
 Route::resource('apparel', 'ApparelController');
