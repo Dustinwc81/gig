@@ -171,7 +171,7 @@
                There was a scoring error that wasn't found until after the trophies had been presented and as a result Junior Mason & Wayne Henson were awarded 9th place and that bumped Dees & Henderson to 10th and Rogers & Maynard to 11th.  However everyone was allowed to keep their original trophies.
 
          </p>
-      </div>
+      </div><!--End of col div-->
    </div> <!--End of row div-->
 
 @endsection
