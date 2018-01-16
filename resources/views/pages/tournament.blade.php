@@ -22,8 +22,10 @@
    </div>
 
    <div class="row text-white" style="padding-bottom:30px">
-      <div class="col-sm-5">
-         <h6>1973  1st Annual NGCGT</h6>
+
+      @foreach ($tournaments as $tournament)
+      <div class="col-sm-4">
+         <h6>{{ $tournament->year }}  1st Annual NGCGT</h6>
          <table class="table table-condensed">
                <thead>
                   <tr>
@@ -35,7 +37,7 @@
                <tbody>
                   <tr>
                      <td>1st</td>
-                     <td>Red Martin & Ralph Henderson</td>
+                     <td>a;lsdjf;lajsd</td>
                      <td>158</td>
                   </tr>
                   <tr>
@@ -96,8 +98,8 @@
             Prize for 10th was a set of Boat trailer tires from Robertson Tire in Tulsa.
          </p>
       </div><!--End of col div-->
-
-      <div class="col-sm-5">
+@endforeach
+      {{-- <div class="col-sm-5">
          <h6>1974  2nd Annual NGCGT</h6>
          <table class="table table-condensed">
                <thead>
@@ -171,7 +173,7 @@
                There was a scoring error that wasn't found until after the trophies had been presented and as a result Junior Mason & Wayne Henson were awarded 9th place and that bumped Dees & Henderson to 10th and Rogers & Maynard to 11th.  However everyone was allowed to keep their original trophies.
 
          </p>
-      </div><!--End of col div-->
+      </div><!--End of col div--> --}}
    </div> <!--End of row div-->
 
 @endsection

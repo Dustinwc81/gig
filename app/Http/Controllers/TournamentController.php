@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Tournaments;
+use Gloudemans\Shoppingcart\Facades\Cart;
+use Gerardojbaez\Money\Money;
 
 class TournamentController extends Controller
 {
@@ -13,7 +16,8 @@ class TournamentController extends Controller
      */
     public function index()
     {
-        return view('pages.tournament');
+        $tournaments = Tournaments::get();
+        return view('pages.tournament')->withTournaments($tournaments);
     }
 
     /**
@@ -45,7 +49,8 @@ class TournamentController extends Controller
      */
     public function show($id)
     {
-        //
+        $tournaments = Tournaments::find($id);
+        return view('pages.tournament')->withTournaments($tournaments);
     }
 
     /**
