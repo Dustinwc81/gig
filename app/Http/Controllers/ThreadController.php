@@ -20,7 +20,7 @@ class ThreadController extends Controller
     public function index()
     {
         // pull threads from the database from the most recently created
-        $threads = Thread::latest()->get();
+        $threads = Thread::latest()->Paginate(10);
 
         return view('forum.index')->withThreads($threads);
     }

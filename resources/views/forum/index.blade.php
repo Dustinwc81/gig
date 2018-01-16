@@ -29,5 +29,8 @@
                     </div>
             @endforeach
         </div>
+        <div class="col-md-6 offset-md-3">
+            {{ $threads->links() }}
+        </div>
     </div>
 @stop
