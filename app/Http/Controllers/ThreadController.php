@@ -32,7 +32,7 @@ class ThreadController extends Controller
      */
     public function create()
     {
-        //
+        return view('forum.create');
     }
 
     /**
@@ -43,7 +43,7 @@ class ThreadController extends Controller
      */
     public function store(Request $request)
     {
-        // validate the request 
+        // validate the request
         $this->validate(request(), [
             'title' => 'required|max:255',
             'body' => 'required'
