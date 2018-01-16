@@ -23,10 +23,20 @@
 
    <div class="row text-white" style="padding-bottom:30px">
 
+@foreach ($tournaments as $tournament)
+
 
       <div class="col-sm-4">
-
-         <h6>1972  1st Annual NGCGT</h6>
+         <h6>{{ $tournament->year }}  @if ($tournament->id==1)
+         {{ $tournament->id }}st
+      @elseif ($tournament->id==2)
+            {{ $tournament->id }}nd
+         @elseif ($tournament->id==3)
+               {{ $tournament->id }}rd
+               @else
+                  {{ $tournament->id }}th
+         @endif
+         Annual NGCGT</h6>
          <table class="table table-condensed">
                <thead>
                   <tr>
@@ -38,69 +48,66 @@
                <tbody>
                   <tr>
                      <td>1st</td>
-                     <td>a;lsdjf;lajsd</td>
-                     <td>158</td>
+                     <td>{{ $tournament->firstPlace }}</td>
+                     <td>{{ $tournament->firstPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>2nd</td>
-                     <td>Roy Hughes Jr. & Louis Bryant</td>
-                     <td>90</td>
+                     <td>{{ $tournament->secondPlace }}</td>
+                     <td>{{ $tournament->secondPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>3rd</td>
-                     <td>Floyd Midget & Gary Bogle</td>
-                     <td>83</td>
+                     <td>{{ $tournament->thirdPlace }}</td>
+                     <td>{{ $tournament->thirdPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>4th</td>
-                     <td>Kenneth Robertson & Billie Robertson</td>
-                     <td></td>
+                     <td>{{ $tournament->fourthPlace }}</td>
+                     <td>{{ $tournament->fourthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>5th</td>
-                     <td>Leon Cochran & Charles Smith</td>
-                     <td></td>
+                     <td>{{ $tournament->fifthPlace }}</td>
+                     <td>{{ $tournament->fifthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>6th</td>
-                     <td>Vaughn Williams & Glen Wiese</td>
-                     <td></td>
+                     <td>{{ $tournament->sixthPlace }}</td>
+                     <td>{{ $tournament->sixthPlacepoints }}</td>
                   </tr>
                   <tr>
                      <td>7th</td>
-                     <td>Leonard Tuder & Woody Wilson</td>
-                     <td></td>
+                     <td>{{ $tournament->seventhPlace }}</td>
+                     <td>{{ $tournament->seventhPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>8th</td>
-                     <td>Jerry Maynard & Bob Cearly</td>
-                     <td></td>
+                     <td>{{ $tournament->eighthPlace }}</td>
+                     <td>{{ $tournament->eighthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>9th</td>
-                     <td>Bunny Ross & William Chumwalooky</td>
-                     <td></td>
+                     <td>{{ $tournament->ninthPlace }}</td>
+                     <td>{{ $tournament->ninthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>10th</td>
-                     <td>Manford Long & John Phillips</td>
-                     <td></td>
+                     <td>{{ $tournament->tenthPlace }}</td>
+                     <td>{{ $tournament->tenthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>Big Fish</td>
-                     <td>Leonard Tuder & Woody Wilson</td>
-                     <td>15.5 lb. Carp</td>
+                     <td>{{ $tournament->bigFish }}</td>
+                     <td>{{ $tournament->bigFishPoints }}</td>
                   </tr>
                </tbody>
             </table>
-            <p>NOTES:  47 Teams, Heavy rains & tough conditions.  1,099 lbs. of fish weighed in. <br>
-            Golden Gig Award Winner-Chuck Robers, Tulsa<br>
-            Only gave out trophies for top three and big fish, rest got prizes, <br>
-            Prize for 10th was a set of Boat trailer tires from Robertson Tire in Tulsa.
+            <p>{{ $tournament->notes }}
          </p>
-      
-      </div><!--End of col div-->
 
+      </div><!--End of col div-->
+@endforeach
       {{-- <div class="col-sm-5">
          <h6>1974  2nd Annual NGCGT</h6>
          <table class="table table-condensed">
