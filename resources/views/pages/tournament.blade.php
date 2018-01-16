@@ -13,11 +13,16 @@
    <div class="row text-white" style="padding-bottom: 30px">
       <div class="col-md-8 offset-2">
          <h2>National Gigging Tournament Championship</h2><br>
-         <h5>1973-Present Top Ten + Big Fish Winners</h5><br>
+         <h5>Present to 1973 Top Ten + Big Fish Winners</h5><br>
          <p>5 pts. per lb. - Red Horse Suckers<br>
             4 pts. per lb. - Spotted, White and Hog Suckers<br>
             3 pts. per lb. - White and Sand Bass<br>
             1 pt. per lb. - Carp, Drum, Perch, Shad and Flathead Catfish </p>
+            <div class="spacer">
+               <p>** In an effort to keep all results as accurate as possible, if you have any information regarding missing results, inaccurate results, or great stories to add to the notes,  please contact: <br>
+               John Henry Ward:  Phone Number:  918-964-9725 Email: jhward@ridgerunners.net
+               </p>
+            </div>
       </div>
    </div>
 
@@ -27,12 +32,15 @@
 
 
       <div class="col-sm-4">
-         <h6>{{ $tournament->year }}  @if ($tournament->id==1)
+         <h6>{{ $tournament->year }}  @if ($tournament->id==1 || $tournament->id==21 || $tournament->id==31 || $tournament->id==41 || $tournament->id==51 || $tournament->id==61 || $tournament->id==71 || $tournament->id==81 || $tournament->id==91)
          {{ $tournament->id }}st
-      @elseif ($tournament->id==2)
+
+      @elseif ($tournament->id==2 || $tournament->id==22 || $tournament->id==32 || $tournament->id==42 || $tournament->id==52 || $tournament->id==62 || $tournament->id==72 || $tournament->id==82 || $tournament->id==92)
             {{ $tournament->id }}nd
-         @elseif ($tournament->id==3)
+
+         @elseif ($tournament->id==3 || $tournament->id==23 || $tournament->id==33 || $tournament->id==43 || $tournament->id==53 || $tournament->id==63 || $tournament->id==73 || $tournament->id==83 || $tournament->id==93)
                {{ $tournament->id }}rd
+
                @else
                   {{ $tournament->id }}th
          @endif
@@ -74,7 +82,7 @@
                   <tr>
                      <td>6th</td>
                      <td>{{ $tournament->sixthPlace }}</td>
-                     <td>{{ $tournament->sixthPlacepoints }}</td>
+                     <td>{{ $tournament->sixthPlacePoints }}</td>
                   </tr>
                   <tr>
                      <td>7th</td>
