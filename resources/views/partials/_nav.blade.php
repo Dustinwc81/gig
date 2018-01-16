@@ -15,6 +15,17 @@
             <!-- Right justified navbar -->
 
             <ul class="nav navbar-nav navbar-right">
+               <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gigging Tournament
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="#">About the Gigging Tournament</a>
+                 <a class="dropdown-item" href="/tournament">Results Through the Years</a>
+                <a class="dropdown-item" href="#">Youth Tournament Results</a>
+                <a class="dropdown-item" href="#">Facts and Stats</a>
+              </div>
+            </li>
                <li class="nav-item">
                  <a class="nav-link" href="/myStory">My Story</a>
                </li>

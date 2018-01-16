@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Tournaments;
 use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
-use Illuminate\Support\Facades\Validator;
 use Gerardojbaez\Money\Money;
 
-class CartController extends Controller
+class TournamentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +16,8 @@ class CartController extends Controller
      */
     public function index()
     {
-        return view('pages.cart');
+        $tournaments = Tournaments::get();
+        return view('pages.tournament')->withTournaments($tournaments);
     }
 
     /**
@@ -38,19 +38,7 @@ class CartController extends Controller
      */
     public function store(Request $request)
     {
-        $duplicates = Cart::search(function ($cartItem, $rowId) use ($request) {
-            return $cartItem->id === $request->id;
-        });
-
-        // TODO: Comment this 'if' out later since I moved quantity and size to the cart!!!
-        if ($duplicates->isNotEmpty()) {
-            return redirect()->route('cart.index')->with('success_message', 'Item is already in your cart!  Has not been Added!');
-        }
-
-        Cart::add($request->id, $request->name, 1, $request->price)
-            ->associate('App\Products');
-
-        return redirect()->route('cart.store')->with('success_message', 'Item was added to you Cart!');
+        //
     }
 
     /**
@@ -61,7 +49,8 @@ class CartController extends Controller
      */
     public function show($id)
     {
-        //
+        $tournaments = Tournaments::find($id);
+        return view('pages.tournament')->withTournaments($tournaments);
     }
 
     /**
@@ -84,21 +73,7 @@ class CartController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // ACTIVATE THIS IF WE WANT RESTRICTIONS ON THE AMOUNT SELECTED
-
-      //   $validator = Validator::make($request->all(), [
-      //    'quantity' => 'required|numeric|between:1,5'
-      // ]);
-      //
-      //   if ($validator->fails()) {
-      //       session()->flash('errors', collect(['Quantity must be 1 to 10.']));
-      //       return response()->json(['success' => false], 400);
-      //   }
-
-        Cart::update($id, $request->quantity);
-
-        session()->flash('success_message', 'Quantity was updated successfully!');
-        return response()->json(['success' => true]);
+        //
     }
 
     /**
@@ -109,8 +84,6 @@ class CartController extends Controller
      */
     public function destroy($id)
     {
-        Cart::remove($id);
-
-        return back()->with('success_message', 'Item has been removed!');
+        //
     }
 }
