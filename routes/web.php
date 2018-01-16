@@ -33,6 +33,9 @@ Route::post('forum/{thread}/replies', 'ReplyController@store');
 //Gigging tournament routes
 Route::resource('tournament', 'TournamentController');
 
+//Youth tournament routes
+Route::resource('youthTournament', 'YouthTournamentController');
+
 //apparel routes
 Route::resource('apparel', 'ApparelController');
 

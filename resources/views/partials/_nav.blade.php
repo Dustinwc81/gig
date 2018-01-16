@@ -22,7 +22,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="#">About the Gigging Tournament</a>
                  <a class="dropdown-item" href="/tournament">Results Through the Years</a>
-                <a class="dropdown-item" href="#">Youth Tournament Results</a>
+                <a class="dropdown-item" href="/youthTournament">Youth Tournament Results</a>
                 <a class="dropdown-item" href="#">Facts and Stats</a>
               </div>
             </li>
