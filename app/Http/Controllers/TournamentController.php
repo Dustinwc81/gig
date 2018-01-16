@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Tournaments;
+use Illuminate\Http\Request;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Gerardojbaez\Money\Money;
 

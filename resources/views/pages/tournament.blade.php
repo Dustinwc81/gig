@@ -23,9 +23,10 @@
 
    <div class="row text-white" style="padding-bottom:30px">
 
-      @foreach ($tournaments as $tournament)
+
       <div class="col-sm-4">
-         <h6>{{ $tournament->year }}  1st Annual NGCGT</h6>
+
+         <h6>1972  1st Annual NGCGT</h6>
          <table class="table table-condensed">
                <thead>
                   <tr>
@@ -97,8 +98,9 @@
             Only gave out trophies for top three and big fish, rest got prizes, <br>
             Prize for 10th was a set of Boat trailer tires from Robertson Tire in Tulsa.
          </p>
+      
       </div><!--End of col div-->
-@endforeach
+
       {{-- <div class="col-sm-5">
          <h6>1974  2nd Annual NGCGT</h6>
          <table class="table table-condensed">
