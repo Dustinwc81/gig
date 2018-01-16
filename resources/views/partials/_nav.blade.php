@@ -38,6 +38,9 @@
                <li class="nav-item">
                  <a class="nav-link" href="/apparel">Apparel</a>
                </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
+               </li>
 
                <!-- Auth check, not logged in-->
                @guest
