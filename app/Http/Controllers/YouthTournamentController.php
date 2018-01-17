@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\YouthTournamentResults;
 use Illuminate\Http\Request;
+use Gloudemans\Shoppingcart\Facades\Cart;
+use Gerardojbaez\Money\Money;
 
 class YouthTournamentController extends Controller
 {
@@ -13,7 +16,11 @@ class YouthTournamentController extends Controller
      */
     public function index()
     {
-        return view('pages.youthTournament');
+        $youths = YouthTournamentResults::orderby('year', 'desc')->get();
+        return view('pages.youthTournament', compact('youths'));
+
+        // $tournaments = Tournaments::orderby('year', 'desc')->get();
+        // return view('pages.tournament')->withTournaments($tournaments);
     }
 
     /**
@@ -45,7 +52,8 @@ class YouthTournamentController extends Controller
      */
     public function show($id)
     {
-        //
+        $youths = YouthTournamentResults::find($id);
+        return view('pages.youthTournament')->withYouthTournamentResults($youths);
     }
 
     /**
