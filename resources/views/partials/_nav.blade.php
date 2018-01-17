@@ -21,23 +21,27 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="#">About the Gigging Tournament</a>
-                 <a class="dropdown-item" href="/tournament">Results Through the Years</a>
-                <a class="dropdown-item" href="#">Youth Tournament Results</a>
-                <a class="dropdown-item" href="#">Facts and Stats</a>
+                 <a class="dropdown-item" href="/tournament">Gigging Tournament Results</a>
+                <a class="dropdown-item" href="/youthTournament">Youth Tournament Results</a>
+                <a class="dropdown-item" href="/facts">Facts and Statistics</a>
               </div>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/gigs">Gigs</a>
+                 <a class="dropdown-item" href="/forgeYourOwn">Forge Your Own</a>
+                <a class="dropdown-item" href="/apparel">Apparel</a>
+              </div>
+            </li>
+
                <li class="nav-item">
                  <a class="nav-link" href="/myStory">My Story</a>
                </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/gigs">Gigs</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/forgeYourOwn">Forge Your Own</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/apparel">Apparel</a>
-               </li>
+
                <li class="nav-item">
                  <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
                </li>
