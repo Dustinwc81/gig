@@ -24,10 +24,10 @@
    </div>
 
    <div class="row text-white">
-      <!--Most Championships, Largest/Smallest winning points, Consecutive top 10, big fish -->
+      <!--Most Championships, Largest/Smallest margin winning points, Consecutive top 10, big fish -->
       <div class="col-sm-6">
          <table class="table table-condensed">
-            <h6 style="padding-top:40px">Most Championships Won</h6>
+            <h6>Most Championships Won</h6>
                <thead>
                   <tr>
                      <th></th>
@@ -478,7 +478,7 @@
             </table>
       </div> <!-- end of col-sm-6 -->
 
-      <!-- Father/sons, Brothers, different Teammates, back to back Championships and big trophy, Father and son Big fish -->
+      <!-- Father/sons, Brothers, different Teammates, back to back Championships and big trophy, Father and son Big fish, largest/smallest fish, youngest/oldest Individual/team champs -->
       <div class="col-sm-4 offset-1">
          <h6>Fathers/Sons who won Championships as a team</h6>
          <ul>
@@ -522,6 +522,15 @@
             <li>Steve Lane- 2000 & 2001</li>
             <li>Ralph Henderson- 1974 & 1975</li>
          </ul>
+         <h6 style="padding-top:40px">Father and Sons who both won Championships</h6>
+         <ul>
+            <li>Red Martin- 1973 & Choogie Martin- 2000</li>
+            <li>Wayne Tuder- 1978, 79, 83, 85, 90, 93 & Chance Tuder- 2015</li>
+            <li>Bacon Summerfield- 1996, 2009 & Stetson Summerfield- 2011 (youth)</li>
+            <li>Eddie Tuder- 1984 & Lucas Tuder- 2012 (youth 10 & under), 2014, 17 (youth 11-15)</li>
+            <li>Nate Williams- 2001 & Eyan Williams- 2013, 2014 (youth 10 & under), 2016 (youth 11-15)</li>
+            <li>Jared Davis- 2012, 16 & Hayden Davis- 2016</li>
+         </ul>
          <h6 style="padding-top:40px">Father and Sons who both won Big Fish Trophies</h6>
          <ul>
             <li>Woody Wilson- 1973 & Steve Wilson- 2012, 17 and Greg Wilson- 2012, 17</li>
@@ -530,7 +539,116 @@
             <li>Jimmy Tagg-1986, 1996 & Jimmy Tagg Jr.- 1996</li>
             <li>Joel McGough- 2009 & Bill McGough- 2009</li>
          </ul>
+         <h6 style="padding-top:40px">Highest Winning Point Total</h6>
+         <ol>
+            <li> 2020 pts.- Cornell & Cornell- 2002 ????</li>
+            <li>1604.4 pts.- Rogers & Tuder- 1993</li>
+            <li> 1117 pts.- Summerfield & Rogers- 1996</li>
+            <li>1009.8 pts.- Ward & Lane- 1995</li>
+            <li> 987.75 pts.- Wilson & Wilson- 1994</li>
+            <li>944 pts.- Wilson & Wilson- 2005</li>
+            <li>851 pts.- Smith & Smith- 1998 ????</li>
+            <li> 802 pts.- Ward & Lane- 1999</li>
+            <li>800 pts.- Barton & Carter- 1977</li>
+            <li>768 pts.- Davis & Campbell- 2012</li>
+         </ol>
+         <h6 style="padding-top:40px">Lowest Winning Point Total</h6>
+         <ol>
+            <li>106 pts.- Spencer & Hawkins- 1976</li>
+            <li>158 pts.- Martin & Henderson- 1973</li>
+            <li>164.4 pts.- Collins & Price- 2008</li>
+            <li>208 pts.- Rogers & Tuder- 1978</li>
+            <li>230 pts.- Wilson & Wilson- 2006 ????</li>
+            <li>232 pts.- Wilson & Wilson- 2007 ????</li>
+            <li>232 pts.- Wilson & Shuck- 1981 ????</li>
+            <li>245. 64 pts.- Spencer & Hawkins- 1982</li>
+            <li>287.18 pts - Crites & Crites- 2017</li>
+            <li>322.18 pts- Davis & Davis- 2016</li>
+         </ol>
+         <h6 style="padding-top:40px">Largest Big Fish</h6>
+         <ol>
+            <li> 34.9 lbs.- Smith & Smith- 2002 ????</li>
+            <li>34.7 lbs.- Chamberlain & Glenn- 1992</li>
+            <li>33.5 lbs.- Glover & Tanner- 1995</li>
+            <li>31.5 lbs.- Ward & Lane- 2000</li>
+            <li>30.5 lbs.- Harmon & Law- 1994</li>
+            <li>30.4 lbs.- Spencer & Hawkins- 1983</li>
+            <li>29.4 lbs.- Luper & King- 1999</li>
+            <li>29.3 lbs.- Wiese & Wiese- 2008</li>
+            <li>29.07 lbs.- Sixkiller & Wilkins- 2014</li>
+            <li>28.3 lbs.- Studie & Proctor- 2006</li>
+         </ol>
+         <h6 style="padding-top:40px">Smallest Big Fish</h6>
+         <ol>
+            <li>12.2 lbs.- Dees & Henderson- 1974</li>
+            <li>12.7 lbs.- McGough & McGough- 2009</li>
+            <li> 13.0 lbs.- Williams & Welch- 2007</li>
+            <li>15.5 lbs.- Tuder & Wilson- 1973</li>
+            <li>16.0 lbs.- Henderson & Parrott- 1975</li>
+            <li>17 lbs.- Whiteside & Sharp- 1977</li>
+            <li>18.4 lbs.- Cochran & Cochran- 1978</li>
+            <li>18.6 lbs.- Proctor & Summerfield- 2010</li>
+            <li>19.15 lbs.- Kingfisher & Spencer- 1982</li>
+            <li>19.3 lbs.- Ward & Postoak- 2011</li>
+         </ol>
+         <h6 style="padding-top:40px">Youngest Champs (Individual)</h6>
+         <ol>
+            <li>Rodney Shuck- 1981- 15 yrs. 4 mos.</li>
+            <li>Thomas Tate- 2001- 18 yrs. 2 mos.</li>
+            <li>Hayden Davis- 2016- 18 yrs. 9 mos.</li>
+            <li>Steve Wilson- 1981- 18 yrs. 11 mos.</li>
+            <li>Wayne Tuder- 1978- 19 yrs. 9 mos.</li>
+            <li>John H. Ward II- 1995- 20 yrs. 2 mos.</li>
+            <li>Nate Williams- 2001- 20 yrs. 6 mos.</li>
+            <li>Robbin Rogers- 1978- 20 yrs. 6 mos. + 3 days</li>
+            <li>Levi Price- 2008- 21 yrs 11 mos.</li>
+            <li> Mark Tuder- 1984- 22 yrs. 4 mos.</li>
+         </ol>
+         <h6 style="padding-top:40px">Youngest Champs (Team)</h6>
+         <ol>
+            <li>Steve Wilson & Rodney Shuck- 1981- 34 yrs. 3 mos.</li>
+            <li>Nate Williams & Thomas Tate- 2001- 38 yrs. 8 mos.</li>
+            <li>Robbin Rogers & Wayne Tuder- 1978- 40 yrs. 3 mos.</li>
+            <li>Robbin Rogers & Wayne Tuder- 1978- 42 yrs. 3 mos.</li>
+            <li>John H. Ward II & Steve Lane- 1995- 44 yrs. 4 mos.</li>
+            <li>Blayne Collins & Levi Price- 2008- 44 yrs. 10 mos.</li>
+            <li>Bacon Summerfield & Bert Rogers- 1996- 48 yrs. 0 mos.</li>
+            <li>Tim Reno & Don Reno- 1986- 48 yrs. 1 mo.</li>
+            <li>Mark Tuder & Eddie Tuder- 1984- 49 yrs. 1 mo.</li>
+            <li>Robbin Rogers & Wayne Tuder- 1983- 50 yrs. 3 mos.</li>
+         </ol>
+         <h6 style="padding-top:40px">Oldest Champs (Individual)</h6>
+         <ol>
+            <li> Steve Wilson- 2013- 50 yrs. 11 mos.</li>
+            <li>Steve Wilson- 2010- 47 yrs. 11 mos.</li>
+            <li>Greg Wilson- 2013- 45 yrs. 10 mos.</li>
+            <li>Steve Wilson- 2007- 44 yrs. 11 mos.</li>
+            <li>Steve Wilson- 2006- 43 yrs. 11 mos.</li>
+            <li>Jake Barnes- 1980- 43 yrs. 5  mos.</li>
+            <li>Everett Dick- 1974- 43 yrs. 2 mos.</li>
+            <li>Mannford Long- 1974- 43 yrs. 0 mos.</li>
+            <li>Steve Wilson- 2005- 42 yrs. 11 mos.</li>
+            <li>Greg Wilson- 2010- 42 yrs. 10 mos.</li>
+            <li>Jared Davis- 2016- 42 yrs. 9 mos.</li>
+            <li>Troy Crites- 2017- 42 yrs. 7 mos.</li>
+         </ol>
+         <h6 style="padding-top:40px">Oldest Champs (Team)</h6>
+         <ol>
+            <li>Steve Wilson & Greg Wilson- 2013- 96 yrs. 9 mos.</li>
+            <li>Steve Wilson & Greg Wilson- 2010- 90 yrs. 9 mos.</li>
+            <li>Mannford Long & Everett Dick- 1974- 86 yrs. 2 mos.</li>
+            <li> Steve Wilson & Greg Wilson- 2007- 84 yrs. 9 mos.</li>
+            <li>Steve Wilson & Greg Wilson- 2006- 82 yrs. 9 mos.</li>
+            <li>Darrell Ross & Jake Barnes- 1980- 80 yrs. 11 mos.</li>
+            <li>Steve Wilson & Greg Wilson- 2005- 80 yrs. 9 mos.</li>
+            <li> Steve Wilson & Greg Wilson- 2004- 78 yrs. 9 mos.</li>
+            <li>John H. Ward II & Doug Postoak- 2014- 77 yrs. 7 mos.</li>
+            <li>Bud Bohall & Ken Douthit- 2003- 76 yrs. 5 mos.</li>
+            <li>Jared Davis & John Campbell- 2012- 72 yrs. 10 mos.</li>
+            <li>John H. Ward II & Doug Postoak- 2011- 71 yrs. 7 mos.</li>
+         </ol>
       </div> <!-- end of col-sm-4 offset-1 div -->
+
    </div><!-- end of row div -->
 
 

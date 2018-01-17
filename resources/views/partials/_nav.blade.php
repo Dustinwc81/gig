@@ -26,18 +26,22 @@
                 <a class="dropdown-item" href="/facts">Facts and Statistics</a>
               </div>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="/gigs">Gigs</a>
+                 <a class="dropdown-item" href="/forgeYourOwn">Forge Your Own</a>
+                <a class="dropdown-item" href="/apparel">Apparel</a>
+              </div>
+            </li>
+
                <li class="nav-item">
                  <a class="nav-link" href="/myStory">My Story</a>
                </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/gigs">Gigs</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/forgeYourOwn">Forge Your Own</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="/apparel">Apparel</a>
-               </li>
+
                <li class="nav-item">
                  <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
                </li>
