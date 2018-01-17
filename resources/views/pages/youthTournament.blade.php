@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Gigging Tournament')
+@section('title', '|  Youth Gigging Tournament')
 
 @section('content')
 

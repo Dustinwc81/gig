@@ -23,7 +23,7 @@
                  <a class="dropdown-item" href="#">About the Gigging Tournament</a>
                  <a class="dropdown-item" href="/tournament">Gigging Tournament Results</a>
                 <a class="dropdown-item" href="/youthTournament">Youth Tournament Results</a>
-                <a class="dropdown-item" href="#">Facts and Stats</a>
+                <a class="dropdown-item" href="/facts">Facts and Statistics</a>
               </div>
             </li>
                <li class="nav-item">

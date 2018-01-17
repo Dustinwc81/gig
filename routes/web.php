@@ -36,6 +36,9 @@ Route::resource('tournament', 'TournamentController');
 //Youth tournament routes
 Route::resource('youthTournament', 'YouthTournamentController');
 
+//Facts and Stats routes
+Route::resource('facts', 'FactsController');
+
 //apparel routes
 Route::resource('apparel', 'ApparelController');
 
