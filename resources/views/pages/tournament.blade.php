@@ -5,8 +5,14 @@
 @section('content')
 
    <div class="row" style="padding-bottom:30px">
-      <div class="col-md-10 offset-1">
+      <div class="col-md-3">
+            <img src="{{ URL::asset('images/greenBadge.png')}}" width="150" height="150">
+      </div>
+      <div class="col-md-6">
             <img src="{{ URL::asset('images/sucker.png')}}" width="300" height="350">
+      </div>
+      <div class="col-md-3">
+            <img src="{{ URL::asset('images/oldBadge.png')}}" width="150" height="150">
       </div>
    </div>
 
