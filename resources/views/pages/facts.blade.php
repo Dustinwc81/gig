@@ -27,7 +27,7 @@
       <!--Most Championships, Largest/Smallest winning points, Consecutive top 10, big fish -->
       <div class="col-sm-6">
          <table class="table table-condensed">
-            <h6>Most Championships Won</h6>
+            <h6 style="padding-top:40px">Most Championships Won</h6>
                <thead>
                   <tr>
                      <th></th>
@@ -136,7 +136,7 @@
                </tbody>
             </table>
             <table class="table table-condensed">
-               <h6>Largest Winning Point Margin</h6>
+               <h6 style="padding-top:40px">Largest Winning Point Margin</h6>
                <thead>
                   <tr>
                      <th></th>
@@ -209,7 +209,7 @@
                </tbody>
             </table>
             <table class="table table-condensed">
-               <h6>Smallest Winning Point Margin</h6>
+               <h6 style="padding-top:40px">Smallest Winning Point Margin</h6>
                <thead>
                   <tr>
                      <th></th>
@@ -282,13 +282,14 @@
                </tbody>
             </table>
             <table class="table table-condensed">
-               <h6>Most Consecutive Top 10 Finishes</h6>
+               <h6 style="padding-top:40px">Most Consecutive Top 10 Finishes</h6>
                <thead>
                   <tr>
                      <th></th>
                      <th># Years</th>
                      <th>Giggers</th>
                      <th>Years</th>
+                     <th>Placing</th>
                   </tr>
                </thead>
                <tbody>
@@ -297,77 +298,89 @@
                      <td>17</td>
                      <td>Steve Wilson & Greg Wilson</td>
                      <td>1991-2007</td>
+                     <td>1, 5, 2, 1, 5, 2, 1, 3, 3, 5, 3, 2, 2, 1, 1, 1, 1 </td>
                   </tr>
                   <tr>
                      <td>2</td>
                      <td>16</td>
                      <td>Robbin Rogers & Wayne Tuder</td>
                      <td>1983-1998</td>
+                     <td>1, 3, 1, 2, 2, 3, 3, 1, 6, 4, 1, 3, 3, 3, 2, 8</td>
                   </tr>
                   <tr>
                      <td>3</td>
                      <td>9</td>
                      <td>John Campbell</td>
                      <td>2007-2015</td>
+                     <td>3, 6, 7, 2, 2, 1, 3, 3, 5</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>9</td>
                      <td>Nate Williams</td>
                      <td>2006-2014</td>
+                     <td>7, 2, 4, 6, 4, 5, 5, 7, 6</td>
                   </tr>
                   <tr>
                      <td>5</td>
                      <td>8</td>
                      <td>Cale Wiese</td>
                      <td>2010-Present</td>
+                     <td>6, 9, 6, 2, 9, 2, 6, 4</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>8</td>
                      <td>Jared Davis</td>
                      <td>2007-2014</td>
+                     <td>3, 6, 7, 2, 2, 1, 3, 4</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>8</td>
                      <td>Blayne Collins & Levi Price</td>
                      <td>2005-2012</td>
+                     <td>10, 6, 5, 1, 8, 3, 4, 9</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>8</td>
                      <td>Jason Cornell & Travis Cornell</td>
                      <td>1996-2003</td>
+                     <td>5, 4, 5, 8, 3, 4, 1, 8</td>
                   </tr>
                   <tr>
                      <td>9</td>
                      <td>7</td>
                      <td>Larry Carter & Melvin Barton</td>
                      <td>1974-1980</td>
+                     <td>3, 1, 8, 1, 3, 3, 7</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>7</td>
                      <td>Mannford Long</td>
                      <td>1973-1979</td>
+                     <td>10, 1, 6, 10, 4, 6, 5</td>
                   </tr>
                   <tr>
                      <td>11</td>
                      <td>6</td>
                      <td>Dave Chamberlain & Larry Glenn</td>
                      <td>1988-1993</td>
+                     <td>1, 1, 2, 3, 1, 3</td>
                   </tr>
                   <tr>
                      <td></td>
                      <td>6</td>
                      <td>Everett Dick</td>
                      <td>1974-1979</td>
+                     <td>1, 6, 10, 4, 6, 5</td>
                   </tr>
                </tbody>
             </table>
             <table class="table table-condensed">
-               <h6>Most Big Fish Trophies</h6>
+               <h6 style="padding-top:40px">Most Big Fish Trophies</h6>
                <thead>
                   <tr>
                      <th></th>
@@ -465,7 +478,7 @@
             </table>
       </div> <!-- end of col-sm-6 -->
 
-      <!-- Father/sons, Brothers, different Teammates -->
+      <!-- Father/sons, Brothers, different Teammates, back to back Championships and big trophy, Father and son Big fish -->
       <div class="col-sm-4 offset-1">
          <h6>Fathers/Sons who won Championships as a team</h6>
          <ul>
@@ -487,7 +500,37 @@
             <li>Steve Wilson- 1981 w/Rodney Shuck, 91,94,97,04,05,06,07,10,13 w/Greg Wilson</li>
             <li>Jared Davis- 2012 w/John Campbell, 2016 w/Hayden Davis</li>
          </ul>
-      </div>
+         <h6 style="padding-top:40px">Teams that won Championship and Big Fish Trophy in same Year</h6>
+         <ul>
+            <li>John H. Ward II & Doug Postoak-2011</li>
+            <li>Bud Bohall & Ken Douthit-2003</li>
+            <li>Dave Chamberlain & Larry Glenn-1992</li>
+         </ul>
+         <h6 style="padding-top:40px">Back to Back Championships</h6>
+         <ul>
+            <li>Robbin Rogers & Wayne Tuder-1978 & 1979</li>
+            <li>Dave Chamberlain & Larry Glenn- 1988 & 1989</li>
+            <li>Steve Wilson & Greg Wilson- 2004 & 2005</li>
+            <li>Steve Wilson & Greg Wilson-2005 & 2006</li>
+            <li>Steve Wilson & Greg Wilson- 2006 & 2007</li>
+         </ul>.
+         <h6 style="padding-top:40px">Back to Back Big Fish Trophies</h6>
+         <ul>
+            <li>Claude Sixkiller & Bryan Wilkins- 2014 & 2015</li>
+            <li>John H. Ward II- 2004 & 2005</li>
+            <li>John H. Ward II- 2000 & 2001</li>
+            <li>Steve Lane- 2000 & 2001</li>
+            <li>Ralph Henderson- 1974 & 1975</li>
+         </ul>
+         <h6 style="padding-top:40px">Father and Sons who both won Big Fish Trophies</h6>
+         <ul>
+            <li>Woody Wilson- 1973 & Steve Wilson- 2012, 17 and Greg Wilson- 2012, 17</li>
+            <li>Ralph Henderson- 1974, 1975 & Ralph Henderson Jr.- 1979</li>
+            <li>John Ward- 1984, 1991 & John Ward II- 2000, 2001, 2004, 2005, 2011</li>
+            <li>Jimmy Tagg-1986, 1996 & Jimmy Tagg Jr.- 1996</li>
+            <li>Joel McGough- 2009 & Bill McGough- 2009</li>
+         </ul>
+      </div> <!-- end of col-sm-4 offset-1 div -->
    </div><!-- end of row div -->
 
 
