@@ -9,44 +9,40 @@
         <div class="row">
             <div class="hero">
                <div class="hero-image">
-                   <img src="{{ URL::asset('images/water.jpg') }}" alt="" class="water-image">
+                   <img src="{{ URL::asset('images/water-600.jpg') }}" alt="water" class="water-image">
                </div>
                 <h1 class="hero-title">JH2 GIGS</h1>
             </div>
         </div>
 
       <!--BODY and start of product placements-->
-      <div class="container-fluid text-center bg-dark" style="padding-bottom: 20px">
          <div class="row">
-
-            <div class="col-md-6 offset-3">
-               <a class="navbar-brand" href="/gigs">
-                  <img src="{{ URL::asset('images/threeProng.jpg')}}" width="500" height="250">
-               </a>
-               <p class="text-center text-white"><u>GIGS</u></br>
-                  Choose Options for Your Custom Gig
-               </p>
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-white top-spacer-80 spacer">Gig Gear</h1>
             </div>
-         </div>
-
-         <div class="row">
-            <div class="col-md-4 offset-1">
-               <a class="navbar-brand" href="/apparel">
-                  <img src="{{ URL::asset('images/hat.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white"><u>Apparel</u></br>
-                  Shop original JH2 Apparel
-               </p>
+        </div>
+        <div class="row top-spacer-60">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img gig-merch-container" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Last updated 3 mins ago</p>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card gig-merch-container">
+                            <img class="card-img" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 offset-1">
-               <a class="navbar-brand" href="/forgeYourOwn">
-                  <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white"><u>Forge Your Own</u></br>
-                  Handy with a welder and grinder....</br>
-                  We will ship all available materials to...</br>
-                  Forge Your Own Gig!
-               </p>
+            <div class="col-sm-6">
+                <div class="box"></div>
             </div>
          </div>
       </div>
