@@ -34,7 +34,7 @@
                     </div>
                     <div class="col">
                         <div class="card gig-merch-container">
-                            <img class="card-img" src="{{ URL::asset('images/twoProng.jpg')}}" alt="Card image">
+                            <img class="card-img" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
                         </div>
                     </div>
                 </div>
