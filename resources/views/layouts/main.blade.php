@@ -21,7 +21,6 @@
 
       @include('partials._javascript')
 
-
 </body>
 
 </html>

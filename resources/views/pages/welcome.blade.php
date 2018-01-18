@@ -25,26 +25,36 @@
             <div class="col-sm-6">
                 <div class="row">
                     <div class="col">
-                        <div class="card">
-                            <img class="card-img gig-merch-container" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                        <div class="card gig-merch-container">
+                            <img class="card-img " src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Three Prong">
+                            <div class="card-img-overlay" id="card1">
+
                              </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card gig-merch-container">
-                            <img class="card-img" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
+                            <img class="card-img" src="{{ URL::asset('images/twoProng.jpg')}}" alt="Card image">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col top-spacer-60">
+                        <div class="card gig-merch-container">
+                            <img class="card-img" src="{{ URL::asset('images/USA_Oklahoma_location_map.svg')}}" alt="Card image">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="box"></div>
+                <div class="card gig-merch-container">
+                    <img class="card-img large-merch-container" src="{{ URL::asset('images/hat-600.jpg')}}" alt="hat">
+                    <div class="card-img-overlay" id="">
+
+                     </div>
+                </div>
             </div>
          </div>
       </div>
-
+    <script src="{{ URL::asset("js/welcome.js")}}"></script>
 @endsection

@@ -94,12 +94,18 @@
 }
 
 .box {
-    height: 200px;
-    width: 1005;
+    height: auto;
     border: solid red thick;
     background-color: pink;
 }
 
 .gig-merch-container {
     border: none;
+}
+
+.large-merch-container {
+    height: 700px;
+}
+.card-img-overlay {
+
 }
