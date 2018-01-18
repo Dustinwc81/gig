@@ -11,7 +11,7 @@
 
       @include('partials._nav') <!-- navigation partial -->
 
-   <div class="container-fluid text-center bg-dark" style="padding-bottom:100px">
+   <div class="container-fluid text-center bg-dark">
 
       @yield('content') <!-- this is where the new content comes in -->
 

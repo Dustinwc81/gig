@@ -6,12 +6,14 @@
 
 @section('content')  <!-- pulls from main.blade.php -->
 
-
-      <div class="row" style="padding-bottom:100px">
-         <div class="col-md-10 offset-1">
-               <img src="{{ URL::asset('images/sizeMatters.png')}}" width="600" height="350">
-         </div>
-      </div>
+        <div class="row">
+            <div class="hero">
+               <div class="hero-image">
+                   <img src="{{ URL::asset('images/water.jpg') }}" alt="" class="water-image">
+               </div>
+                <h1 class="hero-title">JH2 GIGS</h1>
+            </div>
+        </div>
 
       <!--BODY and start of product placements-->
       <div class="container-fluid text-center bg-dark" style="padding-bottom: 20px">
