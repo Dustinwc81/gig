@@ -5,9 +5,12 @@
 @section('content')
 
 <div class="row spacer">
-   <div class="col-md-8 offset-2">
-      <img src="{{ URL::asset('images/blotchlogo.png')}}" width="200" height="300">
-   </div>
+      <div class="col-md-4 offset-md-4">
+         <img src="{{ URL::asset('images/blotchlogo.png')}}" width="200" height="300">
+      </div>
+      <div class="col-md-4">
+         <img src="{{ URL::asset('images/sizeMatters.png')}}" width="400" height="300">
+      </div>
 </div>
 
 <div class="row spacer">
