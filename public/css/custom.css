@@ -37,5 +37,6 @@
        margin-left: 80px; }
 
 .spacer {
-   margin-bottom: 20px;
+   padding-bottom: 50px;
+   padding-top: 20px;
 }
