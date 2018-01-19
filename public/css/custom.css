@@ -101,11 +101,33 @@
 
 .gig-merch-container {
     border: none;
+    height: 300px;
 }
 
 .large-merch-container {
-    height: 700px;
+    height: 900px;
 }
 .card-img-overlay {
 
+}
+
+/* products-container */
+
+.products-container {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.products-container img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+img {
+    image-orientation: from-image;
 }
