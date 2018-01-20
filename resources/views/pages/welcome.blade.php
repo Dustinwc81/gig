@@ -21,38 +21,42 @@
                 <h1 class="text-white top-spacer-80 spacer">Gig Gear</h1>
             </div>
         </div>
-        <div class="products-container">
+        <div class="products-container top-spacer-60">
             <div class="row top-spacer-60">
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col">
-                            <div class="card gig-merch-container">
-                                <img class="card-img image-fill" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="Three Prong">
+                            <div class="card">
+                                <img class="img-fluid" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="Three Prong">
                                 <div class="card-img-overlay" id="card1">
 
                                  </div>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card gig-merch-container">
-                                <img class="card-img" src="{{ URL::asset('images/three-prong-200.jpg')}}" alt="Card image">
+                            <div class="card ">
+                                <img class="img-fluid" src="{{ URL::asset('images/sizeMatters.png')}}" alt="Card image">
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <div class="card gig-merch-container">
-                                <img class="card-img" src="{{ URL::asset('images/USA_Oklahoma_location_map.svg')}}" alt="Card image">
+                            <div class="card top-spacer-20">
+                                <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_3895.jpg')}}" alt="Card image">
+
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card gig-merch-container">
-                        <img class="card-img large-merch-container" src="{{ URL::asset('images/hat-600.jpg')}}" alt="hat">
-                        <div class="card-img-overlay" id="">
-
-                         </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_2073.JPG')}}" alt="">
+                    </div>
+                    <div class="center top-spacer-80">
+                        <h1 class="text-white">
+                            High Performance Fishing Equipment
+                        </h1>
                     </div>
                 </div>
             </div>

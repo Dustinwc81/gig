@@ -40,6 +40,10 @@
    margin-bottom: 20px;
 }
 
+.top-spacer-20 {
+    margin-top: 20px;
+}
+
 .top-spacer-60 {
     margin-top: 60px;
 }
@@ -48,6 +52,11 @@
     margin-top: 80px;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* main page */
 /* hero section */
 .hero {
@@ -93,41 +102,14 @@
   }
 }
 
-.box {
-    height: auto;
-    border: solid red thick;
-    background-color: pink;
-}
-
-.gig-merch-container {
+.card {
     border: none;
-    height: 300px;
 }
-
-.large-merch-container {
-    height: 900px;
-}
-.card-img-overlay {
-
-}
-
-/* products-container */
-
-.products-container {
-    height: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.products-container img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 
 img {
     image-orientation: from-image;
+}
+
+.card {
+    overflow: hidden;
 }
