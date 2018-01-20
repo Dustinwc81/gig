@@ -55,7 +55,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="/register">Register</a>
                 <a class="dropdown-item" href="/login">Login</a>
-                <a class="dropdown-item" href="#">Admin Login</a>
+                {{-- <a class="dropdown-item" href="#">Admin Login</a> --}}
               </div>
             </li>
 
@@ -82,13 +82,13 @@
              </li>
          @endguest
 
-            <a href="/cart" class="btn btn-link text-white">
+            {{-- <a href="/cart" class="btn btn-link text-white">
                <i class="fa fa-shopping-cart" aria-hidden="true"> CART<span class="text-bold">
                   @if ( Cart::instance('default')->count() > 0)
                      <span> {{ Cart::instance('default')->count() }}</span></span>
                   @endif
                </i>
-            </a>
+            </a> --}}
            </ul>  <!-- Nav Bar right -->
          </div> <!-- Collapse Div -->
         </div> <!-- Container Div -->
