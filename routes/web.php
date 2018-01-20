@@ -30,6 +30,7 @@ Route::get('forum/{thread}', 'ThreadController@show')->name('forum.show');
 Route::post('/forum', 'ThreadController@store')->name('threads.store');
 Route::post('forum/{thread}/replies', 'ReplyController@store');
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 //Gigging tournament routes
 Route::resource('tournament', 'TournamentController');
@@ -42,6 +43,8 @@ Route::resource('facts', 'FactsController');
 
 //apparel routes
 Route::resource('apparel', 'ApparelController');
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
