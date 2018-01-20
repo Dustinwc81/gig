@@ -37,7 +37,7 @@
 @foreach ($tournaments as $tournament)
 
 
-      <div class="col-sm-4">
+      <div class="col-sm-4 spacer">
          <h6>{{ $tournament->year }}  @if ($tournament->id==1 || $tournament->id==21 || $tournament->id==31 || $tournament->id==41 || $tournament->id==51 || $tournament->id==61 || $tournament->id==71 || $tournament->id==81 || $tournament->id==91)
          {{ $tournament->id }}st
 

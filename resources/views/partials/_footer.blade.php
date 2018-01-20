@@ -9,13 +9,11 @@
             <!--First column-->
             <div class="col-md-4 offset-1">
                 <h5 class="title text-muted">GET IN TOUCH</h5>
-                <p>This is handmade quality shit we are talking about!!!!<br/>
+                <p>We would love to hear from you!!<br/>
                    <br/>
-                   (555)867-5309<br/>
+                   (918) 964-9725<br/>
                    <br/>
-                    JH2 GIGS<br/>
-                    1000 HUN LN<br/>
-                    GROVE, OK 74344</p>
+                   Email:  bighenry71@gmail.com</p>
             </div>
             <!--/.First column-->
 
