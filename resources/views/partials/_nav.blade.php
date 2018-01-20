@@ -34,7 +34,7 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="/gigs">Gigs</a>
                  <a class="dropdown-item" href="/forgeYourOwn">Forge Your Own</a>
-                <a class="dropdown-item" href="/apparel">Apparel</a>
+                {{-- <a class="dropdown-item" href="/apparel">Apparel</a> --}}
               </div>
             </li>
 
