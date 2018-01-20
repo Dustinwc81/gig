@@ -27,31 +27,26 @@
                     <div class="row">
                         <div class="col">
                             <div class="card">
-                                <img class="img-fluid" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="Three Prong">
-                                <div class="card-img-overlay" id="card1">
-
-                                 </div>
+                                <a href="{{ route('gigs.index')}}"><img class="img-fluid" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="gigs"></a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card ">
-                                <img class="img-fluid" src="{{ URL::asset('images/sizeMatters.png')}}" alt="Card image">
-
+                                <a href="{{route('gigs.index')}}"><img class="img-fluid" src="{{ URL::asset('images/sizeMatters.png')}}" alt="size matters"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="card top-spacer-20">
-                                <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_3895.jpg')}}" alt="Card image">
-
+                                <a href="{{route('gigs.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_3895.jpg')}}" alt="gigs"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
-                        <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_2073.JPG')}}" alt="">
+                        <a href="{{route('gigs.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_2073.JPG')}}" alt="gigs"></a>
                     </div>
                     <div class="center top-spacer-80">
                         <h1 class="text-white">
@@ -61,6 +56,4 @@
                 </div>
             </div>
         </div>
-
-    <script src="{{ URL::asset("js/welcome.js")}}"></script>
 @endsection
