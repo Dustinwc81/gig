@@ -6,47 +6,61 @@
 
 @section('content')  <!-- pulls from main.blade.php -->
 
-
-      <div class="row" style="padding-bottom:100px">
-         <div class="col-md-10 offset-1">
-               <img src="{{ URL::asset('images/sizeMatters.png')}}" width="600" height="350">
-         </div>
-      </div>
+        <div class="row">
+            <div class="hero">
+               <div class="hero-image">
+                   <img src="{{ URL::asset('images/IMG_3757.jpg') }}" alt="water" class="water-image">
+               </div>
+                <h1 class="hero-title">JH2 GIGS</h1>
+            </div>
+        </div>
 
       <!--BODY and start of product placements-->
-      <div class="container-fluid text-center bg-dark" style="padding-bottom: 20px">
          <div class="row">
-
-            <div class="col-md-6 offset-3">
-               <a class="navbar-brand" href="/gigs">
-                  <img src="{{ URL::asset('images/threeProng.jpg')}}" width="500" height="250">
-               </a>
-               <p class="text-center text-white"><u>GIGS</u></br>
-                  Choose Options for Your Custom Gig
-               </p>
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-white top-spacer-80 spacer">Gig Gear</h1>
             </div>
-         </div>
+        </div>
+        <div class="products-container top-spacer-60">
+            <div class="row top-spacer-60">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <img class="img-fluid" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="Three Prong">
+                                <div class="card-img-overlay" id="card1">
 
-         <div class="row">
-            <div class="col-md-4 offset-1">
-               <a class="navbar-brand" href="/apparel">
-                  <img src="{{ URL::asset('images/hat.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white"><u>Apparel</u></br>
-                  Shop original JH2 Apparel
-               </p>
-            </div>
-            <div class="col-md-4 offset-1">
-               <a class="navbar-brand" href="/forgeYourOwn">
-                  <img src="{{ URL::asset('images/twoProng.jpg')}}" width="300" height="175">
-               </a>
-               <p class="text-center text-white"><u>Forge Your Own</u></br>
-                  Handy with a welder and grinder....</br>
-                  We will ship all available materials to...</br>
-                  Forge Your Own Gig!
-               </p>
-            </div>
-         </div>
-      </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card ">
+                                <img class="img-fluid" src="{{ URL::asset('images/sizeMatters.png')}}" alt="Card image">
 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card top-spacer-20">
+                                <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_3895.jpg')}}" alt="Card image">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_2073.JPG')}}" alt="">
+                    </div>
+                    <div class="center top-spacer-80">
+                        <h1 class="text-white">
+                            High Performance Fishing Equipment
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="{{ URL::asset("js/welcome.js")}}"></script>
 @endsection
