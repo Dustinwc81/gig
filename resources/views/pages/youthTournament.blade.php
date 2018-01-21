@@ -4,9 +4,9 @@
 
 @section('content')
 
-   <div class="row" style="padding-bottom:30px">
-      <div class="col-md-10 offset-1">
-            <img src="{{ URL::asset('images/sucker.png')}}" width="300" height="350">
+   <div class="row text-center" style="padding-bottom:30px">
+      <div class="col-md-6 offset-3">
+            <img class="img-center center-block" src="{{ URL::asset('images/greenBadge.png')}}" width="300" height="350">
       </div>
    </div>
 
@@ -121,7 +121,7 @@
 
       @elseif ($youth->ageGroup==3)  <!-- group 10 and under years old -->
 
-         <div class="col-sm-4 offset-1">
+         <div class="col-sm-4 offset-1 spacer">
             <h6>{{ $youth->year }}
                @if ($youth->year - 2010 ==1 || $youth->year - 2010 ==21 || $youth->year - 2010 ==31 || $youth->year - 2010 ==41 || $youth->year - 2010 ==51 || $youth->year - 2010 ==61 || $youth->year - 2010 ==71)
          {{ $youth->year - 2010  }}st
@@ -210,7 +210,7 @@
 
          @else
 
-            <div class="col-sm-4 offset-1">
+            <div class="col-sm-4 offset-1 spacer">
                <h6>{{ $youth->year }}
                   @if ($youth->year - 2010 ==1 || $youth->year - 2010 ==21 || $youth->year - 2010 ==31 || $youth->year - 2010 ==41 || $youth->year - 2010 ==51 || $youth->year - 2010 ==61 || $youth->year - 2010 ==71)
             {{ $youth->year - 2010  }}st
