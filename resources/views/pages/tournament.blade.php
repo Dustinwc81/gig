@@ -4,15 +4,9 @@
 
 @section('content')
 
-   <div class="row text-center" style="padding-bottom:30px">
-      <div class="col-md-3" style="padding-left: 30px">
-            <img class="img-center center-block" src="{{ URL::asset('images/greenBadge.png')}}" width="250" height="250">
-      </div>
-      <div class="col-md-6">
+   <div class="row text-center" style="padding-bottom:30px">      
+      <div class="col-md-6 offset-3">
             <img class="img-center center-block" src="{{ URL::asset('images/sucker.png')}}" width="300" height="350">
-      </div>
-      <div class="col-md-3" style="padding-right: 100px">
-            <img class="img-center center-block" src="{{ URL::asset('images/oldBadge.png')}}" width="250" height="250">
       </div>
    </div>
 
