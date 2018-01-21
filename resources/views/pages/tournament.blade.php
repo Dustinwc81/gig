@@ -4,14 +4,14 @@
 
 @section('content')
 
-   <div class="row text-center" style="padding-bottom:30px">      
-      <div class="col-md-6 offset-3">
+   <div class="row text-center" style="padding-bottom:30px">
+      <div class="col-md-12">
             <img class="img-center center-block" src="{{ URL::asset('images/sucker.png')}}" width="300" height="350">
       </div>
    </div>
 
    <div class="row text-white" style="padding-bottom: 30px">
-      <div class="col-md-8 offset-2">
+      <div class="col-md-12">
          <h2>National Gigging Tournament Championship</h2><br>
          <h5>1973 to Present Top Ten + Big Fish Winners</h5><br>
          <p>5 pts. per lb. - Red Horse Suckers<br>
