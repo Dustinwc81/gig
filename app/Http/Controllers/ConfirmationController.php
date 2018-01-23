@@ -16,9 +16,9 @@ class ConfirmationController extends Controller
 
       //WHEN SITE IS UP, UNCOMMENT THIS
 
-        // if (! session()->has('success_message')) {
-        //     return redirect('/');
-        // }
+        if (! session()->has('success_message')) {
+            return redirect('/');
+        }
 
         return view('pages.thankyou');
     }

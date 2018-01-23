@@ -1,6 +1,6 @@
 @extends('layouts.main')  <!-- tells where the file is -->
 
-@section('title', '| Homepage')
+@section('title', '|   Homepage')
 
    <!--BODY and start of product placements-->
 

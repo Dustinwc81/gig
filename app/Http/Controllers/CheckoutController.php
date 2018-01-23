@@ -40,7 +40,7 @@ class CheckoutController extends Controller
     public function store(CheckoutRequest $request)
     {
         $contents = Cart::content()->map(function ($item) {
-            /*TODO*/             return $item->model->slug.', '.$item->qty;
+            return $item->model->slug.', '.$item->qty;
         })->values()->toJson();
 
         try {
@@ -54,7 +54,7 @@ class CheckoutController extends Controller
                 //change to Order ID after we start using DB
                 'contents' => $contents,
                 'quantity' => Cart::instance('default')->count(),
-/*TODO*/             'size' => Cart::instance('default'),
+
              ],
           ]);
 
