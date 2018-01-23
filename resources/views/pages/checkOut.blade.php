@@ -25,9 +25,10 @@
 <h2 class="text-white col-sm-4 offset-sm-1">Checkout</h2>
 <hr>
 <div class="row">
-<div class="col-sm-5 offset-sm-1 text-white">
+<div class="col-sm-5 text-center text-white">
       <form class="" action="{{ route('checkout.store') }}" method="POST" id="payment-form">
          {{ csrf_field() }}
+
          <h4 style="margin-bottom:20px">Billing Details</h4>
 
          <div class="form-group">
@@ -70,10 +71,11 @@
 
              <h4 style="margin-bottom:20px">Payment Details</h4>
 
-             <div class="form-control">
+             <div class="form-group">
                 <label for="name_on_card">Name on Card</label>
-                <input type="text" class="form-control" name="name_on_card" value="">
+                <input type="text" class="form-control" id="name_on_card" name="name_on_card" value="">
              </div>
+
 
              <div class="form-group">
                 <label for="card-element">
@@ -85,8 +87,8 @@
 
                     <!-- Used to display form errors -->
                     <div id="card-errors" role="alert"></div>
-                     <button type="submit" class="btn btn-primary btn-block" id="complete-order" style="margin-top:16px">Complete Order</button>
              </div>
+                     <button type="submit" class="btn btn-primary btn-block" id="complete-order" style="margin-top:16px">Complete Order</button>
 
 
       </form>
@@ -139,11 +141,11 @@
 </div><!-- row -->
 
 
-<script type="text/javascript">
+<script>
 
 (function(){
 
-     var stripe = Stripe('pk_test_7ZJr4WvdwiqowC7bOH6hd8IX'); //enter my key from stripe
+     var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN'); //enter my key from stripe
 
      // Create an instance of Elements
      var elements = stripe.elements();
@@ -199,7 +201,7 @@
           address_line1: document.getElementById('address').value,
           address_city: document.getElementById('city').value,
           address_state: document.getElementById('state').value,
-          address_zip: document.getElementById('zipcode').value
+          address_zip: document.getElementById('zipcode').value,
       }
 
       stripe.createToken(card, options).then(function(result) {

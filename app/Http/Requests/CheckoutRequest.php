@@ -30,7 +30,7 @@ class CheckoutRequest extends FormRequest
             'city' => 'required',
             'state' => 'required',
             'zipcode' => 'required'
-            'phone' => 'required',
+            // 'phone' => 'required',
         ];
     }
 }

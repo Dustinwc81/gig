@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
 @section('title', '|  Gigging Tournament')
+@section('description', 'Gigging Tournament Results on Lake Eucha')
+@section('keywords', 'gigging, gigging tournament, lake eucha, jay oklahoma')
 
 @section('content')
 

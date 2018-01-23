@@ -33,6 +33,10 @@
   background-color: #fefde5 !important;
 }
 
+.card-error {
+   color: #fa755a;
+}
+
 .tab { display:inline-block;
        margin-left: 80px; }
 
