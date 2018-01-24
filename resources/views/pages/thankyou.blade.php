@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="col-md-12 text-center">
+<div class="col-md-12 text-center text-white">
    <h1>Thank you for Your Order!!</h1> <br>
    <h4 class="spacer">A confirmation email was sent</h4>
 

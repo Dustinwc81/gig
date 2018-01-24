@@ -22,10 +22,9 @@
             </div>
          @endif
 
-<h2 class="text-white col-sm-4 offset-sm-1">Checkout</h2>
-<hr>
 <div class="row">
 <div class="col-sm-5 text-center text-white">
+   <h2 class="spacer">Checkout</h2>
       <form class="" action="{{ route('checkout.store') }}" method="POST" id="payment-form">
          {{ csrf_field() }}
 
@@ -47,22 +46,22 @@
          </div>
 
          <div class="row form-group">
-                 <div class="col-sm-4 offset-1">
+                 <div class="col-sm-4 offset-sm-1">
                      <label for="city">City</label>
                      <input type="text" class="form-control" id="city" name="city" value="{{ old('city') }}" required>
                   </div>
-                  <div class="col-sm-4 offset-1">
+                  <div class="col-sm-4 offset-sm-1">
                      <label for="state">State</label>
                      <input type="text" class="form-control" id="state" name="state" value="{{ old('state') }}" required>
                   </div>
          </div> <!-- end row -->
 
              <div class="row form-group">
-                 <div class="col-sm-4 offset-1">
+                 <div class="col-sm-4 offset-sm-1">
                      <label for="zipcode">Zip Code</label>
                      <input type="text" class="form-control" id="zipcode" name="zipcode" value="{{ old('zipcode') }}" required>
                  </div>
-                 <div class="col-sm-4 offset-1">
+                 <div class="col-sm-4 offset-sm-1">
                      <label for="phone">Phone</label>
                      <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
                  </div>
@@ -98,8 +97,8 @@
 
 
 
-<div class="col-sm-4 offset-sm-1 text-white">
-   <h4 style="margin-bottom:20px">Your Order</h4>
+<div class="col-sm-5 offset-sm-1 text-white">
+   <h4 class="spacer">Your Order</h4>
       <table class="table text-white">
          <thead class="table-condensed">
             <tr>
@@ -125,13 +124,13 @@
       <hr class"text-white">
 
    <div class="row bg-light text-dark">
-      <div class="col-sm-4 offset-1 text-center">
+      <div class="col-sm-1">
             Subtotal: <br>
             Tax: <br>
             Total:
       </div>
 
-      <div class="col-sm-4 offset-1 text-center">
+      <div class="col-sm-10">
             {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
             {{ moneyFormat(Cart::tax()/100, 'USD') }}<br>
             {{ moneyFormat(Cart::total()/100, 'USD') }}
