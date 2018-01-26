@@ -132,7 +132,7 @@
    <p class="pull-right">{{ moneyFormat(Cart::tax()/100, 'USD') }}</p>
 </div>
 <div class="clearfix">
-   <p class="pull-left">Total:</p>
+   <p class="pull-left h4">Total:</p>
    <p class="pull-right">{{ moneyFormat(Cart::total()/100, 'USD') }}</p>
 </div>
 
