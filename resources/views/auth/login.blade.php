@@ -5,9 +5,9 @@
 @section('content')
 
     <div class="row text-white">
-        <div class="col-md-6 offset-3">
+        <div class="col-sm-6 offset-sm-3">
            <h1 class="bg-dark text-white">Login</h1>
-          <hr>
+          <div class="spacer"> </div>
 
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
