@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use App\Products;
+use Gloudemans\Shoppingcart\Facades\Cart;
+use Gerardojbaez\Money\Money;
 
 class GigController extends Controller
 {
