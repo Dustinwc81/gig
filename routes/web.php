@@ -20,7 +20,10 @@ Route::view('/', 'pages.welcome')->name('welcome');
 Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/myStory', 'pages.myStory')->name('myStory');
 
+// Gig Product routes
 Route::resource('gigs', 'GigController');
+
+// Custom Gig product routes
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 
 // Forum routes
