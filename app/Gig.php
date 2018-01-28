@@ -7,5 +7,5 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 
 class Gig extends Model
 {
-    //
+    // public $table = "gigs";
 }

@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Gig;
 use Illuminate\Http\Request;
-// use App\Products;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Gerardojbaez\Money\Money;
 
@@ -16,7 +16,9 @@ class GigController extends Controller
      */
     public function index()
     {
-        return view('pages.gigs');
+        $gigs = Gig::get();
+        
+        return view('pages.gigs')->withGigs($gigs);
     }
 
     /**
@@ -48,7 +50,8 @@ class GigController extends Controller
      */
     public function show($id)
     {
-        //
+        $gigs = Gig::find($id);
+        return view('pages.gigs')->withGigs($gigs);
     }
 
     /**
