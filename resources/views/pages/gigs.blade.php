@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  2 & 3 Prong Gigs, Spears')
+@section('title', '|  2 & 3 Prong Custom Gigs and Spears')
 
 @section('content')
 

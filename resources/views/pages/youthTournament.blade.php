@@ -48,7 +48,7 @@
                      {{ $youth->year - 2010 }}th
             @endif Annual NYGCGT</h6>
             <h6>11-15 Year Old Age Group</h6>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                   <thead>
                      <tr>
                         <th>Place</th>
@@ -137,7 +137,7 @@
                   {{ $youth->year - 2010 }}th
          @endif Annual NYGCGT</h6>
             <h6>10 and Under Year Old Age Group</h6>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                   <thead>
                      <tr>
                         <th>Place</th>
@@ -226,7 +226,7 @@
                      {{ $youth->year - 2010 }}th
             @endif Annual NYGCGT</h6>
                <h6>15 and Under Year Old Age Group</h6>
-               <table class="table table-condensed">
+               <table class="table table-condensed table-hover">
                      <thead>
                         <tr>
                            <th>Place</th>

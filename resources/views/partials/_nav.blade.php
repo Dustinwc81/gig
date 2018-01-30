@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">
                 <a class="navbar-brand active" href="/">
-                   <img src="{{ URL::asset('images/whiteLogo.png')}}" width="300" height="175">
+                   <img src="{{ URL::asset('images/whiteLogo.png')}}" data-toggle="tooltip" data-placement="bottom" title="Home Page" width="300" height="175">
                 </a>
             </ul>
 

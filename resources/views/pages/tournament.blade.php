@@ -46,7 +46,7 @@
                   {{ $tournament->id }}th
          @endif
          Annual NGCGT</h6>
-         <table class="table table-condensed">
+         <table class="table table-condensed table-hover">
                <thead>
                   <tr>
                      <th>Place</th>

@@ -8,7 +8,7 @@
 
 
          <div class="row">
-            <div class="col-md-6 offset-3">
+            <div class="col-md-6 offset-md-3">
                <h1 class="bg-dark text-white">Contact Me</h1>
                <hr>
                <div class="form-group text-white">

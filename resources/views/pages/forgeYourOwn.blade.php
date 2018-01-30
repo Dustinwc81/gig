@@ -6,7 +6,7 @@
 
 <div class="row text-white">
    <div class="col-md-12">
-      <h4>COMING SOON!!</h4>
+      <h4>Soon You Will Be Able to Request Custom Features and Sizes!!</h4>
    </div>
 </div>
 
