@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  My Story')
+@section('title', '|  JH2 Bio and History')
 
       @section('content')
 

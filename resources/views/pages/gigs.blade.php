@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Gigs')
+@section('title', '|  2 & 3 Prong Gigs, Spears')
 
 @section('content')
 
@@ -15,7 +15,7 @@
    @foreach ($gigs as $gig)
 
    <div class="col-sm-4" style="padding-top:20px">
-         <img src="{{ URL::asset('images/multi.jpg')}}" class="img-fluid" alt="Responsive image">
+         <img src=" {{ asset('images/'.$gig->slug.'.jpg') }}" class="img-fluid" alt="Responsive image">
 
          <a class="text-white"><h2>{{ $gig->name }}</h2></a>
          <h6 class="text-secondary">

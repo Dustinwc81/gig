@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Facts and Statistics')
+@section('title', '|  Facts and Statistics about the National Gigging Tournament')
 @section('description', 'Gigging Tournament Results and Statistics on Lake Eucha')
 @section('keywords', 'gigging, gigging tournament, lake eucha, jay oklahoma')
 

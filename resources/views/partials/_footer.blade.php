@@ -9,7 +9,7 @@
             <!--First column-->
             <div class="col-md-4 offset-1">
                 <h5 class="title text-muted">GET IN TOUCH</h5>
-                <p>We would love to hear from you!!  The Site is still under construction, thank you for your patience.<br/>
+                <p>We would love to hear from you. The Site is still under construction, thank you for your patience.<br/>
                    <br/>
                    (918) 964-9725<br/>
                    <br/>

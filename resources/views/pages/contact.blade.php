@@ -1,6 +1,6 @@
    @extends('layouts.main')
 
-   @section('title', '|  Contact')
+   @section('title', '|  Contact JH2')
 
       <!--Contact form-->
 
