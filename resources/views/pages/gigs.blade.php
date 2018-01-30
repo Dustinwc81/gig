@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  2 & 3 Prong Custom Gigs and Spears')
+@section('title', '|  2 & 3 Prong Hand Forged Gigs and Spears')
+@section('description', 'Hand forged gigs.  Spears, 2 prong, and 3 prong gigs.')
 
 @section('content')
 
