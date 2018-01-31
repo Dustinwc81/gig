@@ -17,7 +17,7 @@ class GigController extends Controller
     public function index()
     {
         $gigs = Gig::get();
-        
+
         return view('pages.gigs')->withGigs($gigs);
     }
 
