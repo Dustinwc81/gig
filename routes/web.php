@@ -17,8 +17,12 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 
 
 Route::view('/', 'pages.welcome')->name('welcome');
-Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/myStory', 'pages.myStory')->name('myStory');
+
+// Contact form routes
+Route::view('/contact', 'pages.contact')->name('contact');
+Route::get('/contact', 'ContactController@index')->name('contact.index');
+Route::post('/contact', 'ContactController@store')->name('contact.store');
 
 // Gig Product routes
 Route::resource('gigs', 'GigController');
