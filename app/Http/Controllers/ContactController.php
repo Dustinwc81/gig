@@ -17,18 +17,6 @@ class ContactController extends Controller
         return view('pages.contact');
     }
 
-    // public function contactPost(Request $request)
-    // {
-    //     $this->validate($request, [
-    //        'name' => 'required',
-    //        'email' => 'required|email',
-    //        'message' => 'required'
-    //   ]);
-    //
-    //     Contact::create($request->all());
-    //
-    //     return back()->with('success', 'Thanks for contacting us!');
-    // }
 
     /**
      * Show the form for creating a new resource.
@@ -56,7 +44,7 @@ class ContactController extends Controller
 
         Contact::create($request->all());
 
-        return back()->with('success_message', 'Thanks for contacting us!');
+        return back()->with('success_message', 'Thank you for contacting us!');
     }
 
     /**

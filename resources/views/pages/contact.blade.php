@@ -15,7 +15,7 @@
 
          <div class="row">
             <div class="col-md-6 offset-md-3">
-               <h1 class="bg-dark text-white">Contact Me</h1>
+               <h1 class="bg-dark text-white">Contact Us</h1>
 
                <form class="" action="{{ route('contact.store') }}" method="POST">
                   {{ csrf_field() }}
