@@ -50,14 +50,14 @@ Route::resource('facts', 'FactsController');
 Route::resource('apparel', 'ApparelController');
 
 //shopping cart routes
-Route::get('/cart', 'CartController@index')->name('cart.index');
-Route::post('/cart', 'CartController@store')->name('cart.store');
-Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
-Route::patch('/cart/{products}', 'CartController@update')->name('cart.update');
+// Route::get('/cart', 'CartController@index')->name('cart.index');
+   Route::post('/cart', 'CartController@store')->name('cart.store');
+// Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
+// Route::patch('/cart/{products}', 'CartController@update')->name('cart.update');
 
 //checkout page routes
-Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
-Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
+// Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
+// Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 //thank you page.....After completion of a purchase
 Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');

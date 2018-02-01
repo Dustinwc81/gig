@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  2 & 3 Prong Hand Forged Gigs and Spears')
-@section('description', 'Hand forged gigs.  Spears, 2 prong, and 3 prong gigs.')
+@section('title', '|  2 & 3 Prong Hand Made Gigs and Spears')
+@section('description', 'Hand made gigs.  Spears, 2 prong, and 3 prong gigs.')
 
 @section('content')
 
@@ -28,7 +28,7 @@
             <input type="hidden" name="id" value=" {{ $gig->id }}">
             <input type="hidden" name="name" value=" {{ $gig->name }}">
             <input type="hidden" name="price" value=" {{ $gig->price }}">
-            <button type="submit" class="btn btn-secondary">Add to Cart</button>
+            {{-- <button type="submit" class="btn btn-secondary">Add to Cart</button> --}}
          </form>
    </div> <!-- col div -->
 
