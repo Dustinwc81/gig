@@ -9,7 +9,7 @@
             <!--First column-->
             <div class="col-md-4 offset-1">
                 <h5 class="title text-muted">GET IN TOUCH</h5>
-                <p>We would love to hear from you!!  The Site is still under construction, thank you for your patience.<br/>
+                <p>We would love to hear from you. The Site is still under construction, thank you for your patience.<br/>
                    <br/>
                    (918) 964-9725<br/>
                    <br/>
@@ -22,9 +22,9 @@
                 <h5 class="title text-muted">EXPLORE</h5>
                 <ul>
                     <a class="text-white" href="/myStory">MY STORY</a><br/>
-                    <a class="text-white" href="#!">SERVICES</a><br/>
+                    <a class="text-white" href="/gigs">MY GIGS</a><br/>
                     <a class="text-white" href="/contact">CONTACT</a><br/>
-                    <a class="text-white" href="#!">STAY CONNECTED</a><br/>
+                    {{-- <a class="text-white" href="#!">STAY CONNECTED</a><br/> --}}
                 </ul>
             </div>
             <!--/.Second column-->
@@ -37,7 +37,7 @@
         <div class="container-fluid">
            <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
            <a class="text-white "href="https://www.JH2Gigs.com"> <u>JH2Gigs.com</u> </a>
-           Copyright &#169; JH2 GIGS 2018&hellip;Coming Soon!!  All Rights Reserved
+           Copyright &#169; JH2 GIGS 2018&hellip; All Rights Reserved
 
         </div>
     </div>

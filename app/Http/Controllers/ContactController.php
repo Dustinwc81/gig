@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Gig;
 use Illuminate\Http\Request;
-use Gloudemans\Shoppingcart\Facades\Cart;
-use Gerardojbaez\Money\Money;
+use App\Contact;
 
-class GigController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +14,9 @@ class GigController extends Controller
      */
     public function index()
     {
-        $gigs = Gig::get();
-
-        return view('pages.gigs')->withGigs($gigs);
+        return view('pages.contact');
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -39,7 +36,15 @@ class GigController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+        'name' => 'required',
+        'email' => 'required|email',
+        'message' => 'required'
+   ]);
+
+        Contact::create($request->all());
+
+        return back()->with('success_message', 'Thank you for contacting us!');
     }
 
     /**
@@ -50,8 +55,7 @@ class GigController extends Controller
      */
     public function show($id)
     {
-        $gigs = Gig::find($id);
-        return view('pages.gigs')->withGigs($gigs);
+        //
     }
 
     /**

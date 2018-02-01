@@ -65,7 +65,7 @@
                      <label for="phone">Phone</label>
                      <input type="text" class="form-control" id="phone" name="phone" value="{{ old('phone') }}" required>
                  </div>
-             </div><!-- end half-form -->
+             </div><!-- end row -->
 
 
              <h4 style="margin-bottom:20px">Payment Details</h4>
@@ -97,14 +97,14 @@
 
 
 
-<div class="col-sm-5 offset-sm-1 text-white">
+<div class="col-sm-6 offset-sm-1 text-white table-responsive">
    <h4 class="spacer">Your Order</h4>
       <table class="table text-white">
          <thead class="table-condensed">
             <tr>
                <th scope="col text-center">Product</th>
                <th scope="col text-center">Description</th>
-               <th scope="col">Size(if applicable)</th>
+               {{-- <th scope="col">Size(if applicable)</th> --}}
                <th scope="col">Quantity</th>
                <th scope="col">Price</th>
             </tr>
@@ -114,30 +114,52 @@
             <tr>
                <td>{{ $item->model->name }}</td>
                <td>{{ $item->model->details}}</td>
-{{--TODO --}} <td>{{ $item->size }}</td>
+               {{-- <td>{{ $item->size }}</td> --}}
                <td>{{ $item->qty }}</td>
                <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>
             @endforeach
          </tbody>
       </table>
-      <hr class"text-white">
+      <div class="top-spacer-60"></div>
 
-   <div class="row bg-light text-dark">
-      <div class="col-sm-1">
+<div class="clearfix">
+   <p class="pull-left">Subtotal:</p>
+   <p class="pull-right">{{ moneyFormat(Cart::subtotal()/100, 'USD') }}</p>
+</div>
+<div class="clearfix">
+   <p class="pull-left">Tax:</p>
+   <p class="pull-right">{{ moneyFormat(Cart::tax()/100, 'USD') }}</p>
+</div>
+<div class="clearfix">
+   <p class="pull-left h4">Total:</p>
+   <p class="pull-right">{{ moneyFormat(Cart::total()/100, 'USD') }}</p>
+</div>
+
+
+
+
+{{-- <div class="rowId">
+
+
+   <div class="bg-light text-dark">
+      <div class="col-sm-4 offset-sm">
+         <strong>
             Subtotal: <br>
             Tax: <br>
             Total:
+          </strong>
       </div>
 
-      <div class="col-sm-10">
+      <div class="col-sm-2 offset-sm-8">
             {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
             {{ moneyFormat(Cart::tax()/100, 'USD') }}<br>
             {{ moneyFormat(Cart::total()/100, 'USD') }}
       </div>
    </div>
-   </div><!-- col-sm-4 offset-sm-1 -->
-</div><!-- row -->
+</div> --}}
+</div>
+
 
 
 <script>

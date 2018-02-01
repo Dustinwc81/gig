@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  Facts and Statistics')
-@section('description', 'Gigging Tournament Results and Statistics on Lake Eucha')
-@section('keywords', 'gigging, gigging tournament, lake eucha, jay oklahoma')
+@section('title', '|  Facts and Statistics about the National Gigging Tournament')
+@section('description', 'Interesting facts and Statistics about the National Gigging Tournament')
 
 @section('content')
 
@@ -28,7 +27,7 @@
    <div class="row text-white">
       <!--Most Championships, Largest/Smallest margin winning points, Consecutive top 10, big fish -->
       <div class="col-sm-6">
-         <table class="table table-condensed">
+         <table class="table table-condensed table-hover">
             <h6>Most Championships Won</h6>
                <thead>
                   <tr>
@@ -137,7 +136,7 @@
                   </tr>
                </tbody>
             </table>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                <h6 style="padding-top:40px">Largest Winning Point Margin</h6>
                <thead>
                   <tr>
@@ -210,7 +209,7 @@
                   </tr>
                </tbody>
             </table>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                <h6 style="padding-top:40px">Smallest Winning Point Margin</h6>
                <thead>
                   <tr>
@@ -283,7 +282,7 @@
                   </tr>
                </tbody>
             </table>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                <h6 style="padding-top:40px">Most Consecutive Top 10 Finishes</h6>
                <thead>
                   <tr>
@@ -381,7 +380,7 @@
                   </tr>
                </tbody>
             </table>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                <h6 style="padding-top:40px">Most Big Fish Trophies</h6>
                <thead>
                   <tr>

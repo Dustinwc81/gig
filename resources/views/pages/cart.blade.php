@@ -25,14 +25,15 @@
 
             <h3 class="text-white">{{ Cart::count() }} item(s) in Shopping Cart</h3>
 
-<div class="col-sm-8 offset-2 text-white">
+<div class="row">
+<div class="col-sm-8 offset-sm-2 text-white table-responsive">
 <hr>
    <table class="table text-white">
       <thead class="table-condensed">
          <tr>
             <th scope="col text-center">Product</th>
             <th scope="col text-center">Description</th>
-            <th scope="col">Size(if applicable)</th>
+            {{-- <th scope="col">Size(if applicable)</th> --}}
             <th scope="col">Quantity</th>
             <th scope="col">Remove Item</th>
             <th scope="col">Unit Price</th>
@@ -46,9 +47,9 @@
             <td>{{ $item->model->name }}</td>
             <td>{{ $item->model->details }}</td>
 
-            <td>
+            {{-- <td>
 
-{{--TODO --}}     <select class="size" name="size" id="size">
+               <select class="size" name="size" id="size">
                   <option disabled selected>Size</option>
                   <option> XSmall </option>
                   <option>Small</option>
@@ -58,7 +59,7 @@
                   <option>XXLarge</option>
                   <option>XXXLarge</option>
                </select>
-            </td>
+            </td> --}}
 
             <td>
                <select class="quantity" data-id="{{ $item->rowId }}">
@@ -95,19 +96,20 @@
       </div>
    </div>
 
-   <div class="row" style="padding-top:50px">
-      <div class="col-sm-6">
+   <div class="row">
+      <div class="col-sm-6" style="padding-top:10px">
          <a class="btn btn-light" href="/" role="button">Continue Shopping</a>
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 spacer" style="padding-top:10px">
          <a class="btn btn-success" href="{{ route('checkout.index') }}" role="button">Proceed to Checkout</a>
       </div>
    </div>
 </div>
+</div>
 
 @else
 
-   <h3 class="text-white" style="padding-bottom:20px">No Items in Cart!</h3>
+   <h3 class="text-white spacer">No Items in Cart!</h3>
    <a href="/" class="btn btn-light">Continue Shopping</a>
 
 @endif

@@ -1,6 +1,7 @@
 @extends('layouts.main')  <!-- tells where the file is -->
 
-@section('title', '|   Homepage')
+@section('title', '|   High Performance Gigging Equipment')
+@section('description', 'Purchase hand forged gigs made for fishing or frogging.  View the National Gigging Tournament Results, also view the National Youth Tournament Results.  Connect with fellow giggers through the forum.')
 
    <!--BODY and start of product placements-->
 

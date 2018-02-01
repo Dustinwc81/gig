@@ -1,8 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  Youth Gigging Tournament')
+@section('title', '| National Youth Gigging Tournament Results')
 @section('description', 'Youth Gigging Tournament Results on Lake Eucha')
-@section('keywords', 'gigging, gigging tournament, lake eucha, jay oklahoma')
 
 @section('content')
 
@@ -49,7 +48,7 @@
                      {{ $youth->year - 2010 }}th
             @endif Annual NYGCGT</h6>
             <h6>11-15 Year Old Age Group</h6>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                   <thead>
                      <tr>
                         <th>Place</th>
@@ -138,7 +137,7 @@
                   {{ $youth->year - 2010 }}th
          @endif Annual NYGCGT</h6>
             <h6>10 and Under Year Old Age Group</h6>
-            <table class="table table-condensed">
+            <table class="table table-condensed table-hover">
                   <thead>
                      <tr>
                         <th>Place</th>
@@ -227,7 +226,7 @@
                      {{ $youth->year - 2010 }}th
             @endif Annual NYGCGT</h6>
                <h6>15 and Under Year Old Age Group</h6>
-               <table class="table table-condensed">
+               <table class="table table-condensed table-hover">
                      <thead>
                         <tr>
                            <th>Place</th>

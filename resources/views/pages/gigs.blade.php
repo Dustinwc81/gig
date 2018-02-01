@@ -1,36 +1,42 @@
 @extends('layouts.main')
 
-@section('title', '|  Gigs')
+@section('title', '|  2 & 3 Prong Hand Made Gigs and Spears')
+@section('description', 'Hand made gigs.  Spears, 2 prong, and 3 prong gigs.')
 
 @section('content')
 
 <div class="row spacer">
       <div class="col-md-4 offset-md-4">
-         <img src="{{ URL::asset('images/blotchlogo.png')}}" width="200" height="300">
+         <img src="{{ URL::asset('images/blacklogo.png')}}" width="200" height="300">
       </div>
 </div>
 
-<div class="row spacer">
-   <div class="col-md-4">
-      <img src="{{ URL::asset('images/single.JPG')}}" class="img-thumbnail">
-   </div>
-   <div class="col-md-4">
-      <img src="{{ URL::asset('images/multi.jpg')}}" class="img-thumbnail">
-   </div>
-   <div class="col-md-4">
-      <img src="{{ URL::asset('images/mounted3.jpg')}}" class="img-thumbnail">
-   </div>
+<div class="row spacer text-white">
+
+   @foreach ($gigs as $gig)
+
+   <div class="col-sm-4" style="padding-top:20px">
+         <img src=" {{ asset('images/'.$gig->slug.'.jpg') }}" class="img-fluid" alt="Responsive image">
+
+         <a class="text-white"><h2>{{ $gig->name }}</h2></a>
+         <h6 class="text-secondary">
+            {{ moneyFormat($gig ->price/100, 'USD') }}</h6>
+         <p>{{ $gig->description }}</p>
+
+         <form action="{{ route('cart.store') }}" method="POST">
+            {{ csrf_field() }}
+            <input type="hidden" name="id" value=" {{ $gig->id }}">
+            <input type="hidden" name="name" value=" {{ $gig->name }}">
+            <input type="hidden" name="price" value=" {{ $gig->price }}">
+            {{-- <button type="submit" class="btn btn-secondary">Add to Cart</button> --}}
+         </form>
+   </div> <!-- col div -->
+
+   @endforeach
+
 </div>
 
-   <div class="row text-white">
-      <div class="col-md-6 offset-3">
-         <h2>To Place an Order:</h2>
-         <h4>Contact:  John Henry Ward</h4>
-         <h5>Phone:  (918) 964-9725</h5>
-         <h5>Email:  bighenry71@gmail.com</h5>
-      </div>
-   </div>
 
-</div>
+
 
 @endsection

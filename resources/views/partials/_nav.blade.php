@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
              <ul class="navbar-nav mr-auto">
                 <a class="navbar-brand active" href="/">
-                   <img src="{{ URL::asset('images/whiteLogo.png')}}" width="300" height="175">
+                   <img src="{{ URL::asset('images/whiteLogo.png')}}" data-toggle="tooltip" data-placement="bottom" title="Home Page" width="300" height="175">
                 </a>
             </ul>
 
@@ -82,13 +82,16 @@
              </li>
          @endguest
 
-            <a href="/cart" class="btn btn-link text-white">
+
+            {{-- shopping cart in nav --}}
+
+            {{-- <a href="/cart" class="btn btn-link text-white">
                <i class="fa fa-shopping-cart" aria-hidden="true"> CART<span class="text-bold">
                   @if ( Cart::instance('default')->count() > 0)
                      <span> {{ Cart::instance('default')->count() }}</span></span>
                   @endif
                </i>
-            </a>
+            </a> --}}
            </ul>  <!-- Nav Bar right -->
          </div> <!-- Collapse Div -->
         </div> <!-- Container Div -->
