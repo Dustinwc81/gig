@@ -104,7 +104,7 @@
             <tr>
                <th scope="col text-center">Product</th>
                <th scope="col text-center">Description</th>
-               <th scope="col">Size(if applicable)</th>
+               {{-- <th scope="col">Size(if applicable)</th> --}}
                <th scope="col">Quantity</th>
                <th scope="col">Price</th>
             </tr>
@@ -114,7 +114,7 @@
             <tr>
                <td>{{ $item->model->name }}</td>
                <td>{{ $item->model->details}}</td>
-{{--TODO --}} <td>{{ $item->size }}</td>
+               {{-- <td>{{ $item->size }}</td> --}}
                <td>{{ $item->qty }}</td>
                <td>{{ moneyFormat($item->subtotal/100, 'USD') }}</td>
             </tr>
