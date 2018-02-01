@@ -121,7 +121,7 @@
             @endforeach
          </tbody>
       </table>
-      <hr class"text-white">
+      <div class="top-spacer-60"></div>
 
 <div class="clearfix">
    <p class="pull-left">Subtotal:</p>

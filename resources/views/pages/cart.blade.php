@@ -26,7 +26,7 @@
             <h3 class="text-white">{{ Cart::count() }} item(s) in Shopping Cart</h3>
 
 <div class="row">
-<div class="col-sm-10 offset-sm-1 text-white table-responsive">
+<div class="col-sm-8 offset-sm-2 text-white table-responsive">
 <hr>
    <table class="table text-white">
       <thead class="table-condensed">
@@ -90,7 +90,7 @@
       </div>
       <div class="col-sm-5 text-right">
          <p>Subtotal: {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
-            Tax (8%): {{ moneyFormat(Cart::tax()/100, 'USD') }} <br>
+            Tax (9%): {{ moneyFormat(Cart::tax()/100, 'USD') }} <br>
             Total: {{ moneyFormat(Cart::total()/100, 'USD') }}
          </p>
       </div>
