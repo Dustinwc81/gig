@@ -90,7 +90,7 @@
       </div>
       <div class="col-sm-5 text-right">
          <p>Subtotal: {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
-            Tax (9%): {{ moneyFormat(Cart::tax()/100, 'USD') }} <br>
+            Tax (8%): {{ moneyFormat(Cart::tax()/100, 'USD') }} <br>
             Total: {{ moneyFormat(Cart::total()/100, 'USD') }}
          </p>
       </div>
