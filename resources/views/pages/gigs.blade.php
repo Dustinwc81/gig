@@ -19,9 +19,10 @@
          <img src=" {{ asset('images/'.$gig->slug.'.jpg') }}" class="img-fluid" alt="Responsive image">
 
          <a class="text-white"><h2>{{ $gig->name }}</h2></a>
-         <h6 class="text-secondary">
-            {{ moneyFormat($gig ->price/100, 'USD') }}</h6>
+         <p>{{ $gig->details }}</p>
          <p>{{ $gig->description }}</p>
+         <h5 class="text-secondary">
+            {{ moneyFormat($gig ->price/100, 'USD') }}</h5>
 
          <form action="{{ route('cart.store') }}" method="POST">
             {{ csrf_field() }}
