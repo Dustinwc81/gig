@@ -31,13 +31,14 @@
             {{-- <button type="submit" class="btn btn-secondary">Add to Cart</button> --}}
          </form>
 
-         <h4 class="text-white">To place an order contact: <br>
-                                 John Henry Ward <br>
-                                 Phone:  918-964-9725<br>
-                                 Email: jhward@ridgerunners.net</h4>
    </div> <!-- col div -->
 
    @endforeach
+
+   <h4 class="text-white">To place an order contact: <br>
+                           John Henry Ward <br>
+                           Phone:  918-964-9725<br>
+                           Email: jhward@ridgerunners.net</h4>
 
 </div>
 
