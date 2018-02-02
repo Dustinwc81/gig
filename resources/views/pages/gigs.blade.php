@@ -28,7 +28,7 @@
             <input type="hidden" name="id" value=" {{ $gig->id }}">
             <input type="hidden" name="name" value=" {{ $gig->name }}">
             <input type="hidden" name="price" value=" {{ $gig->price }}">
-            {{-- <button type="submit" class="btn btn-secondary">Add to Cart</button> --}}
+            <button type="submit" class="btn btn-secondary">Add to Cart</button>
          </form>
 
    </div> <!-- col div -->
@@ -37,13 +37,13 @@
 
 </div>
 
-<div class="row">
+{{-- <div class="row">
    <div class="col-md-6 offset-md-3">
       <h4 class="text-white">To place an order contact: <br>
                               John Henry Ward <br>
                               Phone:  918-964-9725<br>
                               Email: jhward@ridgerunners.net</h4>
-   </div>
+   </div> --}}
 
 </div>
 
