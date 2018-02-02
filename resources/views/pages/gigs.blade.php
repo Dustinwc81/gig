@@ -11,6 +11,13 @@
       </div>
 </div>
 
+<div class="row">
+   <div class="col-md-6 offset-md-3">
+      <h6 class="text-white"><strong>Currently Checkout is in test mode.  If you would like to place an order, contact JH2 directly or by the CONTACT form at the bottom of the page.  Thank You for your patience!</strong></h6>
+   </div>
+
+</div>
+
 <div class="row spacer text-white">
 
    @foreach ($gigs as $gig)
@@ -38,13 +45,13 @@
 
 </div>
 
-{{-- <div class="row">
+<div class="row">
    <div class="col-md-6 offset-md-3">
       <h4 class="text-white">To place an order contact: <br>
                               John Henry Ward <br>
                               Phone:  918-964-9725<br>
                               Email: jhward@ridgerunners.net</h4>
-   </div> --}}
+   </div>
 
 </div>
 
