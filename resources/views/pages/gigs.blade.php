@@ -35,10 +35,15 @@
 
    @endforeach
 
-   <h4 class="text-white">To place an order contact: <br>
-                           John Henry Ward <br>
-                           Phone:  918-964-9725<br>
-                           Email: jhward@ridgerunners.net</h4>
+</div>
+
+<div class="row">
+   <div class="col-md-6 offset-md-3">
+      <h4 class="text-white">To place an order contact: <br>
+                              John Henry Ward <br>
+                              Phone:  918-964-9725<br>
+                              Email: jhward@ridgerunners.net</h4>
+   </div>
 
 </div>
 
