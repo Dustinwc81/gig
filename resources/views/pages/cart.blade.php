@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Shopping Cart')
+@section('title', 'JH2 Gigs |  Shopping Cart')
 
 @section('content')
 

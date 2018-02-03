@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title','|  Checkout')
+@section('title','JH2 Gigs |  Checkout')
 
 @section('content')
 

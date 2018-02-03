@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '| Create')
+@section('title', 'JH2 Gigs | Create')
 
 @section('content')
 
