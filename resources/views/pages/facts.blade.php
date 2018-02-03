@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  Facts and Statistics about the National Gigging Tournament')
-@section('description', 'Interesting facts and Statistics about the National Gigging Tournament')
+@section('title', 'Facts and Statistics about the National Gigging Tournament')
+@section('description', 'Interesting facts and Statistics about the National Gigging Tournament held on Lake Eucha in Jay, OK')
 
 @section('content')
 

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Create Custom Gigs')
+@section('title', 'Create Custom Gigs')
 
 @section('content')
 

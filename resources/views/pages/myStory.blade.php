@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', '|  JH2 Bio and History')
-@section('description', 'My story of how my gigs came to be')
+@section('title', 'JH2 GIGS Bio and History')
+@section('description', 'Story of how my gig making came to be.  Hand made spears, 2 prong gigs, 3 prong gigs')
 
       @section('content')
 

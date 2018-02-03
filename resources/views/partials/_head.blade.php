@@ -8,7 +8,7 @@
 <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" type="text/css">
 <link href="{{ asset('css/custom.css') }}" rel="stylesheet" type="text/css">
 <script src="https://js.stripe.com/v3/"></script>
-<title>JH2 GIGS @yield('title')</title> <!-- Change this title for each page -->
+<title>@yield('title')</title> <!-- Change this title for each page -->
 <link rel="icon" href="{!! asset('images/blacklogo.png') !!}"/>
 <meta name="description" content="@yield( 'description' )">
 <meta name="keywords" content="@yield( 'keywords' )">
