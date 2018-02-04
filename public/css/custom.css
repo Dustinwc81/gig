@@ -118,3 +118,7 @@ img {
 .card {
     overflow: hidden;
 }
+
+.product-description {
+   font-size: small;
+}

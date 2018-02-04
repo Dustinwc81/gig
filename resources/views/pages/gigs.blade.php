@@ -22,12 +22,14 @@
 
    @foreach ($gigs as $gig)
 
-   <div class="col-sm-4" style="padding-top:20px">
+   <div class="col-sm-4 offset-sm-1" style="padding-top:40px">
          <img src=" {{ asset('images/'.$gig->slug.'.jpg') }}" class="img-fluid" alt="Responsive image">
+   </div> <!-- col div -->
 
-         <a class="text-white"><h2>{{ $gig->name }}</h2></a>
+   <div class="col-sm-5 spacer">
+         <a class="text-white"><h3><strong>{{ $gig->name }}</strong></h3></a>
          <p>{{ $gig->details }}</p>
-         <p>{{ $gig->description }}</p>
+         <p class="product-description">{{ $gig->description }}</p>
          <h5 class="text-secondary">
             {{ moneyFormat($gig ->price/100, 'USD') }}</h5>
 
@@ -38,8 +40,8 @@
             <input type="hidden" name="price" value=" {{ $gig->price }}">
             <button type="submit" class="btn btn-secondary">Add to Cart</button>
          </form>
+   </div>
 
-   </div> <!-- col div -->
 
    @endforeach
 
