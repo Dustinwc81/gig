@@ -166,7 +166,7 @@
 
 (function(){
 
-     var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN'); //enter my key from stripe
+     var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o'); //enter my key from stripe
 
      // Create an instance of Elements
      var elements = stripe.elements();
