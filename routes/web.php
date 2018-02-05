@@ -14,8 +14,6 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 */
 
 // Forward Facing Pages/routes
-
-
 Route::view('/', 'pages.welcome')->name('welcome');
 Route::view('/myStory', 'pages.myStory')->name('myStory');
 
@@ -45,6 +43,9 @@ Route::resource('youthTournament', 'YouthTournamentController');
 
 //Facts and Stats routes
 Route::resource('facts', 'FactsController');
+
+//About Gigging Tournament Routes
+Route::resource('giggingTournament', 'GiggingTournamentController');
 
 //apparel routes
 Route::resource('apparel', 'ApparelController');

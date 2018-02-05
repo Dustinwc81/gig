@@ -20,7 +20,7 @@
                 Gigging Tournament
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="#">About the Gigging Tournament</a>
+                 <a class="dropdown-item" href="/giggingTournament">About the Gigging Tournament</a>
                  <a class="dropdown-item" href="/tournament">Gigging Tournament Results</a>
                 <a class="dropdown-item" href="/youthTournament">Youth Tournament Results</a>
                 <a class="dropdown-item" href="/facts">Facts and Statistics</a>
