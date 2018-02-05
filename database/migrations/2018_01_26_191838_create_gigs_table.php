@@ -16,7 +16,7 @@ class CreateGigsTable extends Migration
         Schema::create('gigs', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
-            $table->string('slug')->unique();
+            $table->string('slug');  //change this back to unique once we have pictures for everything
             $table->string('details')->nullable();
             $table->integer('price');
             $table->text('description');

@@ -46,7 +46,7 @@
                   hand in the same shop almost the same way I did in the beginning. The only difference is I use a new
                   welder and I’ve learned a few things that save a little bit of time when making them.  Each gig takes
                   about 2 hours to make and I take great pride in building each one.  I think if you take the time to
-                  pick one up you will be quite happy you did.<br>
+                  gitpick one up you will be quite happy you did.<br>
                <br>
 
                <a href="/gigs" class="text-success">John Henry Ward II <br>
