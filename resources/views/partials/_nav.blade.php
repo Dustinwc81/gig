@@ -32,9 +32,8 @@
                 Shop
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a class="dropdown-item" href="/gigs">My Gigs</a>
+                 <a class="dropdown-item" href="{{ route('shop.index') }}">My Gigs</a>
                  <a class="dropdown-item" href="/forgeYourOwn">Forge Your Own</a>
-                {{-- <a class="dropdown-item" href="/apparel">Apparel</a> --}}
               </div>
             </li>
 

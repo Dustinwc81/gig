@@ -28,26 +28,30 @@
                     <div class="row">
                         <div class="col">
                             <div class="card">
-                                <a href="{{ route('gigs.index')}}"><img class="img-fluid" src="{{ URL::asset('images/IMG_1558.JPG')}}" alt="gigs"></a>
+                                <a href="{{ route('shop.index')}}"><img class="img-fluid" src="{{ URL::asset
+                                ('images/IMG_1558.JPG')}}" alt="gigs"></a>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card ">
-                                <a href="{{route('gigs.index')}}"><img class="img-fluid" src="{{ URL::asset('images/sizeMatters.png')}}" alt="size matters"></a>
+                                <a href="{{route('shop.index')}}"><img class="img-fluid" src="{{ URL::asset
+                                ('images/sizeMatters.png')}}" alt="size matters"></a>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <div class="card top-spacer-20">
-                                <a href="{{route('gigs.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_3895.jpg')}}" alt="gigs"></a>
+                                <a href="{{route('shop.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset
+                                ('images/IMG_3895.jpg')}}" alt="gigs"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
-                        <a href="{{route('gigs.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset('images/IMG_2073.JPG')}}" alt="gigs"></a>
+                        <a href="{{route('shop.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset
+                        ('images/IMG_2073.JPG')}}" alt="gigs"></a>
                     </div>
                     <div class="center top-spacer-80">
                         <h1 class="text-white">

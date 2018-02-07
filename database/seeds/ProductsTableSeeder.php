@@ -1,6 +1,6 @@
 <?php
 
-use App\Products;
+use App\Product;
 use Illuminate\Database\Seeder;
 
 class ProductsTableSeeder extends Seeder
@@ -12,7 +12,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        Products::create([
+        Product::create([
         'name' => 'JH2 Shirt',
         'slug' => 'black shirt',
         'details' => 'Black, Green JH2 Emblem, Cotton',
@@ -20,7 +20,7 @@ class ProductsTableSeeder extends Seeder
         'description' => 'Lorem Ipsum',
      ]);
 
-        Products::create([
+        Product::create([
         'name' => 'JH2 Shirt White',
         'slug' => 'white shirt',
         'details' => 'White, Green JH2 Emblem, Cotton',
@@ -28,7 +28,7 @@ class ProductsTableSeeder extends Seeder
         'description' => 'Lorem Ipsum',
     ]);
 
-        Products::create([
+        Product::create([
        'name' => 'JH2 Shirt Green',
        'slug' => 'greeen shirt',
        'details' => 'Green, Green JH2 Emblem, Cotton',
