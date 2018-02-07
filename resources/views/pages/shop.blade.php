@@ -19,7 +19,8 @@
      <div class="col-sm-3 spacer">
          <a href="{{ route('shop.show', $product->slug) }}"><img src=" {{ asset('images/'.$product->slug.'.jpg') }}" alt="Responsive
          image" class="product-image"></a>
-         <a href="{{ route('shop.show', $product->slug) }}" class="text-white"><h6>{{ $product->name }}</h6></a>
+         <a href="{{ route('shop.show', $product->slug) }}" class="text-white"><h5 class="top-spacer-20">{{
+         $product->name }}</h5></a>
          <p class="text-secondary">{{ moneyFormat($product->price/100, 'USD') }}</p>
 
      </div>

@@ -123,50 +123,29 @@
       </table>
       <div class="top-spacer-60"></div>
 
-<div class="clearfix">
-   <p class="pull-left">Subtotal:</p>
-   <p class="pull-right">{{ moneyFormat(Cart::subtotal()/100, 'USD') }}</p>
-</div>
-<div class="clearfix">
-   <p class="pull-left">Tax:</p>
-   <p class="pull-right">{{ moneyFormat(Cart::tax()/100, 'USD') }}</p>
-</div>
-<div class="clearfix">
-   <p class="pull-left h4">Total:</p>
-   <p class="pull-right">{{ moneyFormat(Cart::total()/100, 'USD') }}</p>
-</div>
+    <div class="clearfix">
+        <p class="pull-left">Subtotal:</p>
+        <p class="pull-right">{{ moneyFormat(Cart::subtotal()/100, 'USD') }}</p>
+    </div>
+    <div class="clearfix">
+        <p class="pull-left">Tax:</p>
+        <p class="pull-right">{{ moneyFormat(Cart::tax()/100, 'USD') }}</p>
+    </div>
+    <div class="clearfix">
+        <p class="pull-left h4">Total:</p>
+        <p class="pull-right">{{ moneyFormat(Cart::total()/100, 'USD') }}</p>
+    </div>
 
-
-
-
-{{-- <div class="rowId">
-
-
-   <div class="bg-light text-dark">
-      <div class="col-sm-4 offset-sm">
-         <strong>
-            Subtotal: <br>
-            Tax: <br>
-            Total:
-          </strong>
-      </div>
-
-      <div class="col-sm-2 offset-sm-8">
-            {{ moneyFormat(Cart::subtotal()/100, 'USD') }} <br>
-            {{ moneyFormat(Cart::tax()/100, 'USD') }}<br>
-            {{ moneyFormat(Cart::total()/100, 'USD') }}
-      </div>
-   </div>
-</div> --}}
 </div>
 
+</div>
 
 
 <script>
 
 (function(){
 
-     var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o'); //enter my key from stripe
+     var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN'); //enter my key from stripe
 
      // Create an instance of Elements
      var elements = stripe.elements();

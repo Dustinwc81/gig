@@ -22,7 +22,7 @@
                 <h5 class="title text-muted">EXPLORE</h5>
                 <ul>
                     <a class="text-white" href="/myStory">MY STORY</a><br/>
-                    <a class="text-white" href="/gigs">MY GIGS</a><br/>
+                    <a class="text-white" href="/gigs">JH2 EQUIPMENT</a><br/>
                     <a class="text-white" href="/contact">CONTACT</a><br/>
                     {{-- <a class="text-white" href="#!">STAY CONNECTED</a><br/> --}}
                 </ul>
@@ -35,7 +35,7 @@
     <!--Copyright-->
     <div class="footer-copyright text-center">
         <div class="container-fluid">
-           <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"</a>
+           <a href="/"><img class="top-margin logo-small" src="{{ URL::asset('images/whiteLogo.png') }}" width="75" height="75"></a>
            <a class="text-white "href="https://www.JH2Gigs.com"> <u>JH2Gigs.com</u> </a>
            Copyright &#169; JH2 GIGS 2018&hellip; All Rights Reserved
 
