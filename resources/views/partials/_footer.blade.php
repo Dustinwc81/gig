@@ -22,7 +22,7 @@
                 <h5 class="title text-muted">EXPLORE</h5>
                 <ul>
                     <a class="text-white" href="/myStory">MY STORY</a><br/>
-                    <a class="text-white" href="/gigs">JH2 EQUIPMENT</a><br/>
+                    <a class="text-white" href="{{ route('shop.index') }}">JH2 EQUIPMENT</a><br/>
                     <a class="text-white" href="/contact">CONTACT</a><br/>
                     {{-- <a class="text-white" href="#!">STAY CONNECTED</a><br/> --}}
                 </ul>
