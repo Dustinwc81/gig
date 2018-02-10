@@ -22,7 +22,7 @@ class Product extends AbstractWidget
     public function run()
     {
         $count = \App\Product::count();
-        $string = 'Contact Inquiries';
+        $string = 'Products';
 
         return view('voyager::dimmer', array_merge($this->config, [
             'icon'   => 'voyager-treasure',
@@ -30,7 +30,7 @@ class Product extends AbstractWidget
             'text'   => __('voyager.dimmer.post_text', ['count' => $count, 'string' => Str::lower($string)]),
             'button' => [
                 'text' => 'View All Products',
-                'link' => route('voyager.product.index'),
+                'link' => route('voyager.products.index'),
             ],
             'image' => 'images/paul-gilmore-325220.jpg',
         ]));
