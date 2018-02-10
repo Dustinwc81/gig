@@ -170,6 +170,7 @@ return [
             // 'TCG\\Voyager\\Widgets\\PostDimmer',
             // 'TCG\\Voyager\\Widgets\\PageDimmer',
             'App\\Widgets\\Contact',
+            'App\\Widgets\\Product',
         ],
 
     ],
