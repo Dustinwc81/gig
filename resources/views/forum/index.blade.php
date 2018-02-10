@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-md-8 offset-md-2">
             @foreach ($threads as $thread)
-                    <div class="card margin-ten">
+                    <div class="card margin-ten-around">
                         <div class="card-header">
                             <h5 class="card-title">
                                 {{ $thread->title }}
@@ -23,13 +23,13 @@
                         <div class="card-body">
                             <p class="card-text text-left">{{ substr(strip_tags($thread->body), 0, 150)}}{{ strlen(strip_tags($thread->body)) > 150 ? "&#8230;" : "" }} <a class="card-link" href="{{ $thread->path() }}">read more</a></p>
                         </div>
-                        <div class="card-footer text-muted">
+                        <div class="card-footer text-light">
                             {{ $thread->creator->name }}
                         </div>
                     </div>
             @endforeach
         </div>
-        <div class="col-md-6 offset-md-3">
+        <div class="col-md-6 offset-md-5">
             {{ $threads->links() }}
         </div>
     </div>

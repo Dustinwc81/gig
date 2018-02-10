@@ -57,6 +57,10 @@
     margin-top: 80px;
 }
 
+.margin-ten-around {
+    margin: 1rem;
+}
+
 .center {
     display: flex;
     justify-content: center;
