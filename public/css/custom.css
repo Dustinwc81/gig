@@ -126,3 +126,8 @@ img {
 .product-description {
    font-size: small;
 }
+
+.product-image {
+    width: 150px;
+    height: 150px;
+}

@@ -8,7 +8,7 @@
 
     <div class="row">
         <div class="col-md-12 text-white">
-            <p>COMING SOON!!</p>
+            <p>Coming Soon!!</p>
         </div>
     </div>
 

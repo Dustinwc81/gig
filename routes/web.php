@@ -22,8 +22,9 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::get('/contact', 'ContactController@index')->name('contact.index');
 Route::post('/contact', 'ContactController@store')->name('contact.store');
 
-// Gig Product routes
-Route::resource('gigs', 'GigController');
+// Gig & Product routes
+Route::get('/shop', 'ShopController@index')->name('shop.index');
+Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 
 // Custom Gig product routes
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
@@ -47,21 +48,18 @@ Route::resource('facts', 'FactsController');
 //About Gigging Tournament Routes
 Route::resource('giggingTournament', 'GiggingTournamentController');
 
-//apparel routes
-Route::resource('apparel', 'ApparelController');
-
 //shopping cart routes
-   Route::get('/cart', 'CartController@index')->name('cart.index');
-   Route::post('/cart', 'CartController@store')->name('cart.store');
-   Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
-   Route::patch('/cart/{products}', 'CartController@update')->name('cart.update');
+Route::get('/cart', 'CartController@index')->name('cart.index');
+Route::post('/cart', 'CartController@store')->name('cart.store');
+Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy');
+Route::patch('/cart/{products}', 'CartController@update')->name('cart.update');
 
 //checkout page routes
-   Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
-   Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
+Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 //thank you page.....After completion of a purchase
-   Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');
+Route::get('/thankyou', 'ConfirmationController@index')->name('confirmation.index');
 
    Auth::routes();
 
