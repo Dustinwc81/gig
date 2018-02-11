@@ -1,6 +1,8 @@
 @extends('layouts.main')
 
-@section('title', 'JH2 Gigs | Forum')
+@section('title', $thread->title)
+
+@section('description', $thread->body)
 
 @section('content')
 

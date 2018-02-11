@@ -28,9 +28,9 @@
       <form class="" action="{{ route('checkout.store') }}" method="POST" id="payment-form">
          {{ csrf_field() }}
 
-         <h4 style="margin-bottom:20px">Billing Details</h4>
+         <h4>Billing Details</h4>
 
-         <div class="form-group">
+         <div class="form-group top-spacer-20">
             <label for="email">Email Address</label>
             <input type="email" class="form-control" name="email" id="email" value="{{ old('email') }}" required>
          </div>
@@ -68,9 +68,9 @@
              </div><!-- end row -->
 
 
-             <h4 style="margin-bottom:20px">Payment Details</h4>
+             <h4 class="top-spacer-20">Payment Details</h4>
 
-             <div class="form-group">
+             <div class="form-group top-spacer-20">
                 <label for="name_on_card">Name on Card</label>
                 <input type="text" class="form-control" id="name_on_card" name="name_on_card" value="">
              </div>

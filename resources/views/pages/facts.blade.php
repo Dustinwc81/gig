@@ -5,13 +5,13 @@
 
 @section('content')
 
-   <div class="row text-center" style="padding-bottom:30px">
+   <div class="row text-center">
       <div class="col-md-12">
             <img class="img-center center-block" src="{{ URL::asset('images/oldBadge.png')}}" width="300" height="350">
       </div>
    </div>
 
-   <div class="row text-white" style="padding-bottom: 30px">
+   <div class="row text-white">
       <div class="col-md-12">
          <h2>National Gigging Tournament Championship</h2>
          <h3>Facts and Statistics</h3>

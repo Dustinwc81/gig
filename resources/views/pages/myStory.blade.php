@@ -5,13 +5,12 @@
 
       @section('content')
 
-         {{--<div class="row">--}}
-             {{--<div class="col-sm-3">--}}
-                 {{--<img src="{{ URL::asset('images/Henry.jpg') }}" class="aboutMe-image">--}}
-             {{--</div>--}}
-            <div class="col-sm-10 offset-sm-1 aboutMe-image">
-               <h1 class="text-white spacer"><strong>Where It All Began</strong></h1>
-               <p class="text-white text-left "><i>Why it all Started: </i>Back in 1998
+      <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="aboutMe-image">
+               <h1 class="hero-title spacer">JH2</h1>
+
+               <p class="text-white text-left"><i>Why it all Started: </i>Back in 1998
                    I had lost one of my best gigs in Elk River. It broke off
                   the handle and we could not find it after looking for almost an hour.  I had several other gigs that
                   I inherited from my dad but they were pretty worn out from many years of use and in need of some
@@ -25,7 +24,7 @@
                   I couldn’t imagine not being able to go because I didn’t have a good gig.<br>
                <br>
                When I was in my early 20's I had helped my cousin build a couple gigs that ended up winning the
-                  <a class="text-secondary" href="/tournament"><u>National Gigging Tournament</u></a> for us.  I started
+                  <a class="text-secondary underline" href="/tournament">National Gigging Tournament</a> for us.  I started
                   thinking about how awesome it would be if I could build a gig myself.  I had some welding experience
                   so I created a gig design I liked.  However, I had no idea where to begin on making the ferrule and
                   attaching it to the gig.  I knew there was basically one person I could talk to who could tell me
@@ -37,10 +36,10 @@
                Over the next couple of years I made about 25 gigs out of about any type of spring steel I could find.
                   My earliest gigs were made out old plow points. They were really good gigs but they took a while to
                   make because I had to cut and grind the outsides of the gig also.  Nowadays I make them all out of
-                  5160 Spring Steel. <a class="text-secondary" href="/facts"><u>Greg Wilson</u></a> owns most of the
+                  5160 Spring Steel. <a class="text-secondary underline" href="/facts">Greg Wilson</a> owns most of the
                   first gigs I made. If anyone gets any credit for helping my gig making career take off it would have
                   to go to him. He was one of the first people to buy my gigs and tell other people about them.  Greg
-                  and his brother <a class="text-secondary" href="/facts"><u>Steve Wilson</u></a> won 4 consecutive
+                  and his brother <a class="text-secondary underline" href="/facts">Steve Wilson</a> won 4 consecutive
                   National Gigging Titles with my gigs in the early 2000's. That is when people began to notice more and
                   more that my gigs held fish well and were built to last.  <br>
                <br>
@@ -56,7 +55,8 @@
                <a href="/gigs" class="text-success">John Henry Ward II <br>
                   JH2 Gigs</a>
                </p>
+               </div>
             </div>
-         {{--</div>--}}
+         </div>
 
       @endsection
