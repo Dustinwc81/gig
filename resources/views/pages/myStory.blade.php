@@ -5,10 +5,14 @@
 
       @section('content')
 
-         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-               <h1 class="text-white spacer"><strong>JH2's Story</strong></h1>
-               <p class="text-white text-left">Back in 1998 I had lost one of my best gigs in Elk River. It broke off
+         {{--<div class="row">--}}
+             {{--<div class="col-sm-3">--}}
+                 {{--<img src="{{ URL::asset('images/Henry.jpg') }}" class="aboutMe-image">--}}
+             {{--</div>--}}
+            <div class="col-sm-10 offset-sm-1 aboutMe-image">
+               <h1 class="text-white spacer"><strong>Where It All Began</strong></h1>
+               <p class="text-white text-left "><i>Why it all Started: </i>Back in 1998
+                   I had lost one of my best gigs in Elk River. It broke off
                   the handle and we could not find it after looking for almost an hour.  I had several other gigs that
                   I inherited from my dad but they were pretty worn out from many years of use and in need of some
                   repair.  Most of them were identified by the name of the people that had made them: Scroggins, Sissom,
@@ -51,9 +55,8 @@
 
                <a href="/gigs" class="text-success">John Henry Ward II <br>
                   JH2 Gigs</a>
-
                </p>
             </div>
-         </div>
+         {{--</div>--}}
 
       @endsection

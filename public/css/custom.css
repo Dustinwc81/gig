@@ -131,3 +131,20 @@ img {
     width: 150px;
     height: 150px;
 }
+
+.aboutMe-image {
+    /*-webkit-filter: grayscale();*/
+    background-image: url('../images/Henry.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+    /*width: 265px;*/
+    /*height: 650px;*/
+    /*padding-top: 300px;*/
+}
+
+body, html {
+    height: 100%;
+}
