@@ -4,7 +4,7 @@
 
     <!--Footer Links-->
     <div class="container-fluid">
-        <div class="row" style="padding-top:20px">
+        <div class="row top-spacer-20" style="">
 
             <!--First column-->
             <div class="col-md-4 offset-1">
@@ -20,10 +20,10 @@
             <!--Second column-->
             <div class="col-md-4 left-justified offset-1">
                 <h5 class="title text-muted">EXPLORE</h5>
-                <ul>
-                    <a class="text-white" href="/myStory">MY STORY</a><br/>
-                    <a class="text-white" href="{{ route('shop.index') }}">JH2 EQUIPMENT</a><br/>
-                    <a class="text-white" href="/contact">CONTACT</a><br/>
+                <ul class="list-unstyled">
+                    <li> <a class="text-white" href="/myStory">MY STORY</a></li>
+                    <li> <a class="text-white" href="{{ route('shop.index') }}">JH2 EQUIPMENT</a></li>
+                    <li> <a class="text-white" href="/contact">CONTACT</a> </li>
                     {{-- <a class="text-white" href="#!">STAY CONNECTED</a><br/> --}}
                 </ul>
             </div>

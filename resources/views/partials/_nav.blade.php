@@ -54,7 +54,6 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                  <a class="dropdown-item" href="/register">Register</a>
                 <a class="dropdown-item" href="/login">Login</a>
-                {{-- <a class="dropdown-item" href="#">Admin Login</a> --}}
               </div>
             </li>
 
@@ -64,11 +63,8 @@
                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Welcome {{ Auth::user()->name }}
                  </a>
-
-                 <ul class="dropdown-menu text-center">
-                     <li>
-                         <div class="dropdown-divider"></div>
-                         <a class="text-dark" href="{{ route('logout') }}"
+                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="text-dark dropdown-item text-center" href="{{ route('logout') }}"
                              onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
                              Logout
@@ -76,8 +72,8 @@
                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                              {{ csrf_field() }}
                          </form>
-                     </li>
-                 </ul>
+                 </div>
+
              </li>
          @endguest
 
