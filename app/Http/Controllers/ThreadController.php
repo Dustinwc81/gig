@@ -65,9 +65,10 @@ class ThreadController extends Controller
      * @param  \App\Thread  $thread
      * @return \Illuminate\Http\Response
      */
-    public function show(Thread $thread)
+    public function show($title)
     {
-        return view('forum.show', compact('thread'));
+        $thread = Thread::where('title', $title)->firstOrFail();
+        return view('forum.show')->with('thread', $thread);
     }
 
     /**

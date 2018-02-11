@@ -9,7 +9,7 @@ class Thread extends Model
     protected $gaurded = [];
 
     public function path() {
-        return "/forum/{$this->id}";
+        return "/forum/{$this->title}";
     }
 
     protected function creator()
