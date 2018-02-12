@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reply extends Model
 {
-    protected $gauarded = [];
+    protected $guarded = [];
 
     // Need this to make the fields assignable, if not here, error thrown
     protected $fillable = ['body', 'user_id'];

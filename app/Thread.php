@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Thread extends Model
 {
-    protected $gaurded = [];
+    protected $guarded = [];
 
     public function path() {
         return "/forum/{$this->title}";
