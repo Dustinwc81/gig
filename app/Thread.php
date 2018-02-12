@@ -8,6 +8,8 @@ class Thread extends Model
 {
     protected $gaurded = [];
 
+    protected $fillable =['title', 'body', 'user_id'];
+
     public function path() {
         return "/forum/{$this->id}";
     }
@@ -26,4 +28,9 @@ class Thread extends Model
         {
             $this->replies()->create($reply);
         }
+
+    public function channel()
+    {
+        return $this->belongsTo(Channel::class);
+    }
 }
