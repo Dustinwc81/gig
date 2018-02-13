@@ -19,7 +19,7 @@
       <!--BODY and start of product placements-->
          <div class="row">
             <div class="col welcome-title-section">
-                <h1 class="top-spacer-80 spacer font-weight-light text-light">High Performance Fishing Equipment</h1>
+                <h1 class="top-spacer-80 spacer font-weight-light text-light">High <span class="font-italic">Performance</span> Fishing Equipment</h1>
             </div>
         </div>
         <div class="products-container padding-bottom-60 top-spacer-60">
