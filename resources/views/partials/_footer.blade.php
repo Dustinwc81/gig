@@ -1,6 +1,6 @@
 <!-- Footer -->
 
-<footer class="page-footer center-on-small-only bg-dark text-white" style="padding-top:50px">
+<footer class="page-footer center-on-small-only bg-green text-white" style="padding-top:50px">
 
     <!--Footer Links-->
     <div class="container-fluid">
