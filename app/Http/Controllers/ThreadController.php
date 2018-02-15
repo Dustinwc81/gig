@@ -55,6 +55,7 @@ class ThreadController extends Controller
             'title' => request('title'),
             'body' => request('body'),
             'user_id' => auth()->id(),
+            'slug' => str_slug(request('title')),
 
         ]);
 
@@ -67,9 +68,9 @@ class ThreadController extends Controller
      * @param  \App\Thread  $title
      * @return \Illuminate\Http\Response
      */
-    public function show($slug)
+    public function show(Thread $thread)
     {
-        $thread = Thread::where('slug', $slug)->firstOrFail();
+        // $thread = Thread::where('slug', $slug)->firstOrFail();
         return view('forum.show')->with('thread', $thread);
     }
 

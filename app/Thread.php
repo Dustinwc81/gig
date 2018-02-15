@@ -28,6 +28,7 @@ class Thread extends Model
     public function addReply($reply)
         {
             $this->replies()->create($reply);
+
         }
 
     public function channel()
@@ -35,15 +36,9 @@ class Thread extends Model
         return $this->belongsTo(Channel::class);
     }
 
-    // generate a unique slug for every thread
-    public static function boot()
-    {
-        parent::boot();
+    public function getRouteKeyName() {
 
-        static::saving(function($model) {
-            $model->slug = str_slug($model->title);
+        return 'slug';
 
-            return true;
-        });
     }
 }
