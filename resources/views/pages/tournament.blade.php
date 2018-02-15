@@ -25,14 +25,24 @@
                </p>
             </div>
       </div>
+
    </div>
+
+   {{--<label>Select Year</label>--}}
+   {{--<select name="tournament" id="tournament" onchange="getSelectValue()">--}}
+       {{--@foreach($tournaments as $tournament)--}}
+           {{--<option value="{{ $tournament->id }}">--}}
+               {{--{{ $tournament->year }}--}}
+           {{--</option>--}}
+       {{--@endforeach--}}
+   {{--</select>--}}
 
    <div class="row text-white">
 
-@foreach ($tournaments as $tournament)
-
+   @foreach ($tournaments as $tournament)
 
       <div class="col-sm-4 spacer">
+
          <h6>{{ $tournament->year }}  @if ($tournament->id==1 || $tournament->id==21 || $tournament->id==31 || $tournament->id==41 || $tournament->id==51 || $tournament->id==61 || $tournament->id==71 || $tournament->id==81 || $tournament->id==91)
          {{ $tournament->id }}st
 
@@ -46,7 +56,7 @@
                   {{ $tournament->id }}th
          @endif
          Annual NGCGT</h6>
-         <table class="table table-condensed table-hover">
+         <table class="table table-condensed table-hover"  id="result">
                <thead>
                   <tr>
                      <th>Place</th>
@@ -117,8 +127,9 @@
 
       </div><!--End of col div-->
 
-@endforeach
+    @endforeach
 
    </div> <!--End of row div-->
+
 
 @endsection

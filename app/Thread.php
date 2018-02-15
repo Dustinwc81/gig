@@ -10,8 +10,9 @@ class Thread extends Model
 
     protected $fillable =['title', 'body', 'user_id'];
 
+
     public function path() {
-        return "/forum/{$this->title}";
+        return "/forum/{$this->slug}";
     }
 
     protected function creator()
@@ -32,5 +33,17 @@ class Thread extends Model
     public function channel()
     {
         return $this->belongsTo(Channel::class);
+    }
+
+    // generate a unique slug for every thread
+    public static function boot()
+    {
+        parent::boot();
+
+        static::saving(function($model) {
+            $model->slug = str_slug($model->title);
+
+            return true;
+        });
     }
 }

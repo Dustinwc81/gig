@@ -34,7 +34,7 @@ Route::get('forum', 'ThreadController@index')->name('forum.index');
 Route::get('forum/create', 'ThreadController@create')->name('forum.create');
 Route::get('forum/{thread}', 'ThreadController@show')->name('forum.show');
 Route::post('/forum', 'ThreadController@store')->name('threads.store');
-Route::post('forum/{thread}/replies', 'ReplyController@store');
+Route::post('forum/{slug}/replies', 'ReplyController@store');
 
 //Gigging tournament routes
 Route::resource('tournament', 'TournamentController');

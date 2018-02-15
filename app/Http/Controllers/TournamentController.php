@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Tournaments;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Gerardojbaez\Money\Money;
 

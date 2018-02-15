@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Thread;
 use Illuminate\Http\Request;
+use Psy\Util\Str;
 
 class ThreadController extends Controller
 {
@@ -53,7 +54,8 @@ class ThreadController extends Controller
         $thread = Thread::create([
             'title' => request('title'),
             'body' => request('body'),
-            'user_id' => auth()->id()
+            'user_id' => auth()->id(),
+
         ]);
 
         return redirect($thread->path());
@@ -65,11 +67,12 @@ class ThreadController extends Controller
      * @param  \App\Thread  $title
      * @return \Illuminate\Http\Response
      */
-    public function show($title)
+    public function show($slug)
     {
-        $thread = Thread::where('title', $title)->firstOrFail();
+        $thread = Thread::where('slug', $slug)->firstOrFail();
         return view('forum.show')->with('thread', $thread);
     }
+
 
     /**
      * Show the form for editing the specified resource.
