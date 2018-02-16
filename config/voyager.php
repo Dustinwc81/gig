@@ -169,6 +169,7 @@ return [
             'TCG\\Voyager\\Widgets\\UserDimmer',
             'App\\Widgets\\Contact',
             'App\\Widgets\\Product',
+            'App\\Widgets\\Thread',
         ],
 
     ],
