@@ -8,7 +8,7 @@ class Thread extends Model
 {
     protected $guarded = [];
 
-    protected $fillable =['title', 'body', 'user_id'];
+    protected $fillable =['title', 'body', 'user_id', 'slug'];
 
 
     public function path() {

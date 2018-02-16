@@ -21,7 +21,7 @@ class ThreadController extends Controller
     public function index()
     {
         // pull threads from the database from the most recently created
-        $threads = Thread::latest()->Paginate(10);
+        $threads = Thread::latest()->simplePaginate(10);
 
         return view('forum.index')->withThreads($threads);
     }
@@ -70,7 +70,6 @@ class ThreadController extends Controller
      */
     public function show(Thread $thread)
     {
-        // $thread = Thread::where('slug', $slug)->firstOrFail();
         return view('forum.show')->with('thread', $thread);
     }
 

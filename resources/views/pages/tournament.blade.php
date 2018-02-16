@@ -28,15 +28,6 @@
 
    </div>
 
-   {{--<label>Select Year</label>--}}
-   {{--<select name="tournament" id="tournament" onchange="getSelectValue()">--}}
-       {{--@foreach($tournaments as $tournament)--}}
-           {{--<option value="{{ $tournament->id }}">--}}
-               {{--{{ $tournament->year }}--}}
-           {{--</option>--}}
-       {{--@endforeach--}}
-   {{--</select>--}}
-
    <div class="row text-white">
 
    @foreach ($tournaments as $tournament)
