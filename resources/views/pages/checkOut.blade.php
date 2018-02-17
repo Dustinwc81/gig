@@ -32,7 +32,8 @@
 
          <div class="form-group top-spacer-20">
             <label for="email">Email Address</label>
-            <input type="email" class="form-control" name="email" id="email" value="{{ old('email') }}" required>
+                    <input type="email" class="form-control" name="email" id="email" value="{{ auth()->user()->email }}"
+                   readonly>
          </div>
 
          <div class="form-group">
@@ -145,8 +146,8 @@
 
 (function(){
 
-     var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o');//Live
-     // var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN');//Test
+     // var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o');//Live
+     var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN');//Test
 
      // Create an instance of Elements
      var elements = stripe.elements();

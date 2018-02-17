@@ -56,7 +56,7 @@ Route::delete('/cart/{products}', 'CartController@destroy')->name('cart.destroy'
 Route::patch('/cart/{products}', 'CartController@update')->name('cart.update');
 
 //checkout page routes
-Route::get('/checkout', 'CheckoutController@index')->name('checkout.index');
+Route::get('/checkout', 'CheckoutController@index')->name('checkout.index')->middleware('auth');
 Route::post('/checkout', 'CheckoutController@store')->name('checkout.store');
 
 //thank you page.....After completion of a purchase
