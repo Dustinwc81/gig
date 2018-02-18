@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Spears, 2 Prong Gigs, 3 Prong Gigs')
+@section('title', '3 Prong Gigs, 2 Prong Gigs, Spears For Sale')
 @section('description', 'Hand made fishing gigs, frogging gigs, and flounder gigs.  Spears, 2 prong gigs, and 3 prong gigs.')
 
 @section('content')
