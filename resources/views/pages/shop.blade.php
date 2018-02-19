@@ -22,7 +22,6 @@
          <a href="{{ route('shop.show', $product->slug) }}" class="text-white"><h5 class="top-spacer-20">{{
          $product->name }}</h5></a>
          <p class="text-secondary">{{ moneyFormat($product->price/100, 'USD') }}</p>
-
      </div>
    @endforeach
 

@@ -56,7 +56,6 @@ class ThreadController extends Controller
             'body' => request('body'),
             'user_id' => auth()->id(),
             'slug' => str_slug(request('title')),
-
         ]);
 
         return redirect($thread->path());
@@ -65,7 +64,7 @@ class ThreadController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Thread  $title
+     * @param  \App\Thread  $thread
      * @return \Illuminate\Http\Response
      */
     public function show(Thread $thread)
