@@ -10,7 +10,7 @@
         <div class="row">
             <div class="hero">
                <div class="hero-image">
-                   <img src="{{ URL::asset('images/IMG_3757.jpg') }}" alt="water" class="water-image">
+                   <img src="{{ URL::asset('images/multi.jpg') }}" alt="water" class="water-image">
                </div>
                 <h1 class="hero-title">JH2 GIGS</h1>
             </div>
@@ -29,7 +29,7 @@
                         <div class="col">
                             <div class="card">
                                 <a href="{{ route('shop.index')}}"><img class="img-fluid" src="{{ URL::asset
-                                ('images/IMG_1558.JPG')}}" alt="gigs"></a>
+                                ('images/many.JPG')}}" alt="gigs"></a>
                             </div>
                         </div>
                         <div class="col">
@@ -43,7 +43,7 @@
                         <div class="col">
                             <div class="card top-spacer-20">
                                 <a href="{{route('shop.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset
-                                ('images/IMG_3895.jpg')}}" alt="gigs"></a>
+                                ('images/mounted3.jpg')}}" alt="gigs"></a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                 <div class="col-sm-6">
                     <div class="card">
                         <a href="{{route('shop.index')}}"><img class="card-img-top img-fluid" src="{{ URL::asset
-                        ('images/IMG_2073.JPG')}}" alt="gigs"></a>
+                        ('images/carp.JPG')}}" alt="gigs"></a>
                     </div>
                     <div class="center top-spacer-80">
                         <h1 class="text-white">
