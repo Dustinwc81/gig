@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', '|  Thank You')
+@section('title', 'JH2 Thanks You')
 
 @section('content')
 

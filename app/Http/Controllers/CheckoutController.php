@@ -61,32 +61,7 @@ class CheckoutController extends Controller
                 ],
             ]);
 
-            //insert into orders table
-            $order = Order::create([
-                'user_id' => auth()->user() ? auth()->user()->id : null,
-                'billing_email' => request('email'),
-                'billing_name' => request('name'),
-                'billing_address' => request('address'),
-                'billing_city' => request('city'),
-                'billing_state' => request('state'),
-                'billing_zipcode' => request('zipcode'),
-                'billing_phone' => request('phone'),
-                'billing_name_on_card' => request('name_on_card'),
-                'billing_subtotal' => $this->getNumbers()->get('newSubtotal'),
-                'billing_tax' => $this->getNumbers()->get('newTax'),
-                'billing_total' => $this->getNumbers()->get('newTotal'),
-                'error' => null,
-            ]);
-
-            //insert into order_product table
-            foreach (Cart::content() as $item)
-            {
-                OrderProduct::create([
-                    'order_id' => $order->id,
-                    'product_id' => $item->model->id,
-                    'quantity' => $item->qty,
-                ]);
-            }
+        $this->addToOrdersTables($request, null);
 
 
           // SUCCESSFUL
@@ -95,7 +70,38 @@ class CheckoutController extends Controller
 
             return redirect()->route('confirmation.index')->with('success_message', 'Thank you!  Your payment has been accepted!');
         } catch (CardErrorException $e) {
+            $this->addToOrdersTables($request, $e->getMessage());
             return back()->withErrors('Error!' . $e->getMessage());
+        }
+    }
+
+    protected function addToOrdersTables($request, $error)
+    {
+        //insert into read.blade.php table
+        $order = Order::create([
+            'user_id' => auth()->user() ? auth()->user()->id : null,
+            'billing_email' => request('email'),
+            'billing_name' => request('name'),
+            'billing_address' => request('address'),
+            'billing_city' => request('city'),
+            'billing_state' => request('state'),
+            'billing_zipcode' => request('zipcode'),
+            'billing_phone' => request('phone'),
+            'billing_name_on_card' => request('name_on_card'),
+            'billing_subtotal' => $this->getNumbers()->get('newSubtotal'),
+            'billing_tax' => $this->getNumbers()->get('newTax'),
+            'billing_total' => $this->getNumbers()->get('newTotal'),
+            'error' => $error,
+        ]);
+
+        //insert into order_product table
+        foreach (Cart::content() as $item)
+        {
+            OrderProduct::create([
+                'order_id' => $order->id,
+                'product_id' => $item->model->id,
+                'quantity' => $item->qty,
+            ]);
         }
     }
 
