@@ -39,7 +39,6 @@
                                     <div>Product Name: {{ $product->name }}</div>
                                     <div>Product Price: {{ moneyFormat($product->price/100, 'USD') }}</div>
                                     <div>Product Quantity: {{ $product->pivot->quantity }}</div>
-                                    {{--return $this->belongsTo('App\Product')->withPivot('quantity');--}}
                                 </li>
                             @endforeach
                         </ul>
