@@ -25,7 +25,7 @@
                   Webb, Botts. These were common names if you grew up around Delaware County in Northeastern Oklahoma
                   and spent time gigging at Lake Eucha, Low Water, or Drowning Creek.  However, when I tried to go and
                   buy a gig, I found that it was easier said than done.  Clarence Scroggins and Bill Sissom quit making
-                  gigs in the late 80’s-early 90’s, Jesse Webb still made a few of them but he was busy with other jobs
+                  gigs in the late 80s-early 90s, Jesse Webb still made a few of them but he was busy with other jobs
                   and only made them for a short time each year, and Tilford Botts lived in Colcord and I had no idea
                   how to find him.  I loved gigging, I had been going since I could walk and went every chance I got.
                   I couldn’t imagine not being able to go because I didn’t have a good gig.<br>
@@ -47,14 +47,14 @@
                   first gigs I made. If anyone gets any credit for helping my gig making career take off it would have
                   to go to him. He was one of the first people to buy my gigs and tell other people about them.  Greg
                   and his brother <a class="text-secondary underline" href="/facts">Steve Wilson</a> won 4 consecutive
-                  National Gigging Titles with my gigs in the early 2000's. That is when people began to notice more and
+                  National Gigging Titles with my gigs in the early 2000s. That is when people began to notice more and
                   more that my gigs held fish well and were built to last.  <br>
                <br>
-               Since 1998 I have made over 500 gigs in many different sizes and shapes, from 1” crawdad gigs to
-                  5 ¼” Spoonbill/Carp gigs and everything in between.  I’m sure there are several lost to the creeks and
+               Since 1998 I have made over 500 gigs in many different sizes and shapes, from 1" crawdad gigs to
+                  5 ¼" Spoonbill/Carp gigs and everything in between.  I’m sure there are several lost to the creeks and
                   lakes in which they are used but almost all of them are still in use today.  I still make them all by
                   hand in the same shop almost the same way I did in the beginning. The only difference is I use a new
-                  welder and I’ve learned a few things that save a little bit of time when making them.  Each gig takes
+                  welder and I&#8217;ve learned a few things that save a little bit of time when making them.  Each gig takes
                   about 2 hours to make and I take great pride in building each one.  I think if you take the time to
                   pick one up you will be quite happy you did.<br>
                <br>
