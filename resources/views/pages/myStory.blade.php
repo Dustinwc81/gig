@@ -15,7 +15,7 @@
       </div>
         <div class="row">
             <div class="col-sm-8 offset-sm-2 top-spacer-80">
-                <h1 class="text-light">Why it all Started</h1>
+                <h1 class="text-light font-weight-light">Why it all Started</h1>
 
                <p class="text-white text-left top-spacer-60">Back in 1998
                    I had lost one of my best gigs in Elk River. It broke off
