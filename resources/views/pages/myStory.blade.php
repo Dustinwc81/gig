@@ -6,11 +6,18 @@
       @section('content')
 
       <div class="row">
-            <div class="col-sm-10 offset-sm-1">
-                <div class="aboutMe-image">
-               <h1 class="hero-title spacer">JH2</h1>
+        <div class="hero">
+            <div class="hero-image">
+                <img src="{{ URL::asset('images/Henry.jpg')}}" alt="Henry" class="water-image height-50">
+            </div>
+            <h1 class="hero-title">MY STORY</h1>
+        </div>
+      </div>
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2 top-spacer-80">
+                <h1 class="text-light">Why it all Started</h1>
 
-               <p class="text-white text-left"><i>Why it all Started: </i>Back in 1998
+               <p class="text-white text-left top-spacer-60">Back in 1998
                    I had lost one of my best gigs in Elk River. It broke off
                   the handle and we could not find it after looking for almost an hour.  I had several other gigs that
                   I inherited from my dad but they were pretty worn out from many years of use and in need of some
@@ -23,7 +30,7 @@
                   how to find him.  I loved gigging, I had been going since I could walk and went every chance I got.
                   I couldn’t imagine not being able to go because I didn’t have a good gig.<br>
                <br>
-               When I was in my early 20's I had helped my cousin build a couple gigs that ended up winning the
+               When I was in my early twenties I had helped my cousin build a couple gigs that ended up winning the
                   <a class="text-secondary underline" href="/tournament">National Gigging Tournament</a> for us.  I started
                   thinking about how awesome it would be if I could build a gig myself.  I had some welding experience
                   so I created a gig design I liked.  However, I had no idea where to begin on making the ferrule and
@@ -56,7 +63,6 @@
                   JH2 Gigs</a>
                </p>
                </div>
-            </div>
-         </div>
+        </div>
 
       @endsection

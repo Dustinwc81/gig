@@ -10,7 +10,7 @@
         <div class="row">
             <div class="hero">
                <div class="hero-image">
-                   <img src="{{ URL::asset('images/IMG_3757.jpg') }}" alt="water" class="water-image">
+                   <img src="{{ URL::asset('images/IMG_3757.jpg') }}" alt="Gigs" class="water-image">
                </div>
                 <h1 class="hero-title">JH2 GIGS</h1>
             </div>
