@@ -144,6 +144,7 @@
 
 .waterways {
     background-image: url('../images/waterways.svg');
+    opacity: .5
     background-size: cover
     background-position: 100% 100%
 }
