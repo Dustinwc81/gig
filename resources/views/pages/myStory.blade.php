@@ -13,7 +13,7 @@
             <h1 class="hero-title">MY STORY</h1>
         </div>
       </div>
-        <div class="row">
+        <div class="row padding-bottom-60">
             <div class="col-sm-8 offset-sm-2 top-spacer-80">
                 <h1 class="text-light font-weight-light">Why it all Started</h1>
 
