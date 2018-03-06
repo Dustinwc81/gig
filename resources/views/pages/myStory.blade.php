@@ -8,7 +8,7 @@
       <div class="row">
         <div class="hero">
             <div class="hero-image">
-                <img src="{{ URL::asset('images/Henry.jpg')}}" alt="Henry" class="water-image height-50">
+                <img src="{{ URL::asset('images/Henry-bw.jpg')}}" alt="Henry" class="water-image height-50">
             </div>
             <h1 class="hero-title">MY STORY</h1>
         </div>
