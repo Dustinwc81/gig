@@ -129,10 +129,6 @@
     border: none;
 }
 
-/* img {
-    image-orientation: from-image;
-} */
-
 .card {
     overflow: hidden;
 }
@@ -146,6 +142,11 @@
     height: 150px;
 }
 
+.waterways {
+    background-image: url('../images/waterways.svg');
+    background-size: cover
+    background-position: 100% 100%
+}
 .aboutMe-image {
     background-image: url('../images/Henry2.jpg');
     height: 100%;

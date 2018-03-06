@@ -22,7 +22,7 @@
                 <h1 class="top-spacer-80 spacer font-weight-light text-light">High <span class="font-italic">Performance</span> Fishing Equipment</h1>
             </div>
         </div>
-        <div class="products-container padding-bottom-60 top-spacer-60">
+        <div class="products-container top-spacer-60">
             <div class="row top-spacer-60">
                 <div class="col-sm-6">
                     <div class="row">
@@ -48,17 +48,17 @@
                         ('images/IMG_2073.JPG')}}" alt="gigs"></a>
                     </div>
                     <div class="center top-spacer-80">
-
+                        
                     </div>
                 </div>
             </div>
-            <div class="row height-50 center">
-                <div class="col">
-                    <div class="top-spacer-80">
-                        <h2 class="text-light font-weight-light text-left text-center">
-                            Hand made gigs from <span class="font-italic">Oklahoma</span> since <span class="font-italic">1998</span>
-                        </h2>
-                    </div>
+        </div>
+        <div class="row height-50 padding-bottom-60 center waterways">
+            <div class="col">
+                <div class="top-spacer-80">
+                    <h2 class="text-light font-weight-light text-left text-center">
+                        Used on <span class="font-italic">Oklahoma</span> waterways since <span class="font-italic">1998</span>
+                    </h2>
                 </div>
             </div>
         </div>
