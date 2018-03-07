@@ -9,6 +9,7 @@
    <h4 class="spacer">A confirmation email was sent to:</h4>
     <h2 class="spacer"> {{ Auth::user()->email }} </h2>
    <a href="/" class="btn btn-large btn-light">HOME PAGE</a>
+    <div class="spacer"></div>
 
 </div>
 @endsection

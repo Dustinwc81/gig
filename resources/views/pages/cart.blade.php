@@ -96,6 +96,7 @@
 
    <h3 class="text-white spacer">No Items in Cart!</h3>
    <a href="{{ route('shop.index') }}" class="btn btn-light">Continue Shopping</a>
+   <div class="spacer"></div>
 
 @endif
 
