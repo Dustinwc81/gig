@@ -147,8 +147,8 @@
 
 (function(){
 
-     // var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o');//Live
-     var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN');//Test
+      var stripe = Stripe('pk_live_XRfZwsCmF50laMmrvrJDou3o');//Live
+     //var stripe = Stripe('pk_test_R1WpTmVCiad3bav8oLYtHdDN');//Test
 
      // Create an instance of Elements
      var elements = stripe.elements();
