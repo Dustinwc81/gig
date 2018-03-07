@@ -17,7 +17,7 @@
         <h3>{{ moneyFormat($product->price/100, 'USD') }}</h3>
         <p>{{ $product->description }}</p>
 
-        <form action="{{ route('cart.store') }}" method="POST">
+        <form action="{{ route('cart.store') }}" class="spacer" method="POST">
             {{ csrf_field() }}
             <input type="hidden" name="id" value=" {{ $product->id }}">
             <input type="hidden" name="name" value=" {{ $product->name }}">
