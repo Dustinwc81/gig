@@ -138,9 +138,16 @@
 }
 
 .product-image {
-    width: 75%;
-    height: 75%;
+    width: 175px;
+    height: 300px;
 }
+
+.productPage-image {
+    width: 292px;
+    height: 500px;
+}
+
+
 
 .waterways {
     background-image: url('../images/waterways.svg');

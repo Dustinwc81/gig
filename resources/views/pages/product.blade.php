@@ -8,7 +8,7 @@
 
 <div class="row text-white">
     <div class="col-sm-4 offset-sm-2">
-        <img src="{{ asset('images/'.$product->slug.'.jpg') }}" alt="">
+        <img class="productPage-image" src="{{ asset('images/'.$product->slug.'.jpg') }}" alt="">
     </div>
 
     <div class="col-sm-4">
