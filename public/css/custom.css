@@ -181,3 +181,7 @@
     border-bottom: thin solid;
     padding-bottom: 10px;
 }
+
+.tournament-text {
+    color: green;
+}

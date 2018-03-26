@@ -8,7 +8,18 @@
 
     <div class="row">
         <div class="col-md-12 text-white">
-            <p>Coming Soon!!</p>
+            <h1>NATIONAL GIGGING TOURNAMENT</h1>
+            <H4 class="text-muted">April 13th-14th</H4>
+            <div class="spacer"></div>
+            <h1>NATIONAL YOUTH GIGGING TOURNAMENT</h1>
+            <H4 class="text-muted">April 20th</H4>
+            <div class="spacer"></div>
+            <h1>SPEAR TOURNAMENT</h1>
+            <H4 class="text-muted">April 21st</H4>
+            <div class="spacer"></div>
+            <p>All tournaments will take place on Lake Eucha in Jay, Oklahoma <br>
+            More information coming soon!!</p>
+            <div class="spacer"></div>
         </div>
     </div>
 
