@@ -42,7 +42,7 @@
                </li>
 
                <li class="nav-item">
-                 <a class="nav-link" href="{{ route('forum.index') }}">Forum</a>
+                 <a class="nav-link" href="https://forum.jh2gigs.com">Forum</a>
                </li>
 
                <!-- Auth check, not logged in-->
