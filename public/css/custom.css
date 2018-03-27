@@ -183,5 +183,17 @@
 }
 
 .tournament-text {
+    font-size: 20px;
     color: green;
+    font-style: italic;
+}
+
+.tournament-text1 {
+    font-size: 30px;
+    color: green;
+    font-weight: bolder;
+}
+
+.tournament-dates {
+    font-style: italic;
 }
