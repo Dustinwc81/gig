@@ -21,7 +21,8 @@
             1 pt. per lb. - Carp, Drum, Perch, Shad and Flathead Catfish </p>
             <div class="spacer">
                <p>** In an effort to keep all results as accurate as possible, if you have any information regarding missing results, inaccurate results, or great stories to add to the notes,  please contact: <br>
-               John Henry Ward:  Phone Number:  918-964-9725 Email: jhward@ridgerunners.net
+               John Henry Ward<br>
+                  Email: johnhenry@jh2gigs.com
                </p>
             </div>
       </div>

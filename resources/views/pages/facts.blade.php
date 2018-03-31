@@ -20,8 +20,7 @@
                <p>** These Facts and Statistics are put together using only the information available to us, there are
                    several placings, weights, and points missing that could change a lot of records.  If you have any information regarding these records please contact: <br>
                John Henry Ward<br>
-                  Phone Number:  918-964-9725<br>
-                  Email: jhward@ridgerunners.net
+                  Email: johnhenry@jh2gigs.com
                </p>
             </div>
       </div>

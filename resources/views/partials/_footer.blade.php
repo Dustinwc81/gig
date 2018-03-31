@@ -9,11 +9,10 @@
             <!--First column-->
             <div class="col-md-4 offset-1">
                 <h5 class="title text-muted">GET IN TOUCH</h5>
-                <p>We would love to hear from you. The Site is still under construction, thank you for your patience.<br/>
+                <p>We would love to hear from you.  Use the CONTACT form or email us at:<br/>
                    <br/>
-                   (918) 964-9725<br/>
-                   <br/>
-                   Email:  bighenry71@gmail.com</p>
+                   Email:  johnhenry@jh2gigs.com
+                </p>
             </div>
             <!--/.First column-->
 
