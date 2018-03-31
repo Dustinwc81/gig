@@ -27,7 +27,7 @@ Route::get('/shop', 'ShopController@index')->name('shop.index');
 Route::get('/shop/{product}', 'ShopController@show')->name('shop.show');
 Route::get('/gigs', 'ShopController@index')->name('gig.index');
 
-// Custom Gig product routes
+// Custom Gig product routes.
 Route::resource('forgeYourOwn', 'ForgeYourOwnController');
 
 //Gigging tournament routes
