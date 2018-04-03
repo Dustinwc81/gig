@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 offset-2 quote-container center">
+            <div class="col-md-8 offset-2 top-spacer-20 padding-bottom-60 center">
                 <p class="quote">&ldquo;It was a little too crazy&rdquo;</p>
             </div>
         </div>
@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-8 offset-2 quote-container center">
+            <div class="col-md-8 offset-2 top-spacer-20 padding-bottom-60 center">
                 <p class="quote">&ldquo;in Delaware
                 and Mayes counties gigging is now allowed all year long&rdquo;</p>
             </div>
