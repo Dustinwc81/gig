@@ -139,7 +139,6 @@
   color: green;
 }
 
-
 @media (min-width: 40em) {
   .hero-image {
     grid-column: 1 / 3;

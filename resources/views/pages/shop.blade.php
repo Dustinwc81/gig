@@ -5,11 +5,14 @@
 
 @section('content')
 
-<div class="row spacer text-white">
-      <div class="col-md-4 offset-md-4">
-          <h2 class="spacer"><strong>JH2 EQUIPMENT</strong></h2>
-      </div>
-</div>
+    <div class="row">
+        <div class="hero">
+            <div class="hero-image">
+                <img src="{{ URL::asset('images/FullSizeR.jpg')}}" alt="Henry" class="water-image height-50">
+            </div>
+            <h1 class="hero-title">GIGS</h1>
+        </div>
+    </div>
 
 
 <div class="row spacer text-white text-center">
