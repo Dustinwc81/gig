@@ -163,13 +163,23 @@
    font-size: small;
 }
 
+/*.product-image {*/
+    /*width: 175px;*/
+    /*height: 300px;*/
+/*}*/
+
 .product-image {
-    width: 175px;
+    width: 225px;
     height: 300px;
 }
 
+/*.productPage-image {*/
+    /*width: 292px;*/
+    /*height: 500px;*/
+/*}*/
+
 .productPage-image {
-    width: 292px;
+    width: 375px;
     height: 500px;
 }
 
