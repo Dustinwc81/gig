@@ -80,6 +80,35 @@
 .height-50 {
     height: 50vh;
 }
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+    background-image: url(../images/_DSC6220.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.title-container h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.quote-container {
+    height: 25vh;
+}
+
+.quote {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    color: #1a5b3d;
+}
+
 /* main page */
 /* hero section */
 .hero {
@@ -113,6 +142,7 @@
   z-index: 10;
   color: green;
 }
+
 
 @media (min-width: 40em) {
   .hero-image {
